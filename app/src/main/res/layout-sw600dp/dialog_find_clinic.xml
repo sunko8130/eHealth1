@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:paddingBottom="@dimen/dimen_six_6dp"
+    android:paddingLeft="@dimen/dimen_six_6dp"
+    android:paddingRight="@dimen/dimen_six_6dp">
+
+    <LinearLayout
+        android:id="@+id/llcontent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_margin="@dimen/dimen_20dp">
+
+        <ImageView
+            android:id="@+id/imageclinicdefination"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/dimen_10dp"
+            android:src="@drawable/ic_chas" />
+
+        <TextView
+            android:id="@+id/txtclinicdef"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:text="Hello"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/dimen_22dp"></TextView>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btnfindClinic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_five_5dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:layout_below="@+id/llcontent"
+        android:background="@android:color/transparent"
+        android:textColor="@color/green_primary_700"
+        android:textStyle="bold"
+        android:layout_alignParentRight="true"
+        android:text="@string/action_Dialog_FindClinic"
+        android:textSize="@dimen/dimen_22dp"/>
+</RelativeLayout>

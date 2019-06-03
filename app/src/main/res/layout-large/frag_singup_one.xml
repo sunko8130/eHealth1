@@ -1,0 +1,549 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f5fa"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:src="@drawable/singup_one"
+        android:layout_marginTop="2dp"
+        android:background="#fff"
+        android:scaleType="fitCenter"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/txtbiodata"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Basic Info"
+                    android:fontFamily="@font/domine_regular"
+                    android:textSize="25sp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="8dp"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp">
+                    <ImageView
+                        android:id="@+id/imgstar0"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/ic_star_black_24dp" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/domine_regular"
+                        android:layout_marginTop="10dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="10dp"
+                        android:text="Country Code"/>
+                    <ImageView
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="80dp"
+                        android:src="@drawable/ic_star_black_24dp" />
+
+                    <ImageView
+                        android:layout_width="30dp"
+                        android:layout_height="25dp"
+                        android:layout_marginTop="10dp"
+                        android:src="@drawable/ic_phone" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/domine_regular"
+                        android:layout_marginTop="10dp"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        android:layout_marginLeft="5dp"
+                        android:text="Mobile no:"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <Button
+                        android:id="@+id/btn_fragtwo_dropdown_code"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:hint="SG +65"
+                        android:textSize="18sp"
+                        android:paddingRight="10dp"
+                        android:fontFamily="@font/domine_regular"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/edittext_create_account_background"
+                        android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginBottom="3dp"
+                        />
+                    <EditText
+                        android:id="@+id/et_fragtwo_mobileno2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="40dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/domine_regular"
+                        android:layout_marginLeft="40dp"
+                        android:paddingLeft="5dp"
+                        android:layout_weight="3"
+                        android:textSize="18sp"
+                        android:layout_marginRight="@dimen/dimen_40dp"
+                        android:inputType="phone"
+                        android:background="@drawable/edittext_create_account_background"
+                        android:ems="8"/>
+                </LinearLayout>
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="2dp">
+
+                    <ImageView
+                        android:id="@+id/imgstar1"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/ic_star_black_24dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="@font/domine_regular"
+                        android:textSize="18sp"
+                        android:text="ID Type :"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+              <!--  <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="50dp"
+                    android:layout_marginRight="40dp"
+                    android:background="@drawable/edittext_create_account_background"
+                    >
+
+                    <Spinner
+                        android:id="@+id/spinner_nric"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_alignParentBottom="true"
+                        android:layout_alignParentLeft="true"
+                        android:fontFamily="@font/domine_regular"
+                        android:layout_alignParentStart="true"
+                        android:entries="@array/array_nric_type"
+                        android:spinnerMode="dialog"/>
+
+                </RelativeLayout>
+
+-->
+                <Button
+                    android:id="@+id/spinner_nric"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:hint="Unknown"
+                    android:textSize="18sp"
+                    android:layout_gravity="start"
+                    android:textAlignment="textStart"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:fontFamily="@font/domine_regular"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/edittext_create_account_background"
+                    android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="@dimen/dimen_35dp"
+                    android:layout_marginBottom="3dp"
+                    />
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp">
+
+                    <ImageView
+                        android:id="@+id/imgstar2"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/ic_star_black_24dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/domine_regular"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Nric :"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/editText_nric"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:textSize="18sp"
+                    android:layout_marginLeft="60dp"
+                    android:fontFamily="@font/domine_regular"
+                    android:layout_marginRight="35dp"
+                    android:background="@drawable/edittext_create_account_background"
+                    android:inputType="textShortMessage"
+                    android:paddingLeft="5dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp">
+
+                    <ImageView
+                        android:id="@+id/imgstar3"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/ic_star_black_24dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/domine_regular"
+                        android:layout_marginTop="10dp"
+                        android:text="Name :"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <EditText
+                    android:id="@+id/editText_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="60dp"
+                    android:layout_marginRight="35dp"
+                    android:textSize="18sp"
+                    android:fontFamily="@font/domine_regular"
+                    android:background="@drawable/edittext_create_account_background"
+                    android:inputType="textShortMessage"
+                    android:paddingLeft="5dp" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="5dp">
+
+                    <ImageView
+                        android:id="@+id/imgstar4"
+                        android:layout_width="15dp"
+                        android:layout_height="15dp"
+                        android:layout_marginTop="8dp"
+                        android:src="@drawable/ic_star_black_24dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:fontFamily="@font/domine_regular"
+                        android:text="Date of Birth :"
+                        android:textSize="18sp"
+                        android:layout_marginTop="10dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rldob_frag_layout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="60dp"
+                    android:fontFamily="@font/domine_regular"
+                    android:layout_marginRight="35dp"
+                    android:background="@drawable/edittext_background">
+
+                    <EditText
+                        android:id="@+id/edt_frag_dob"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:background="@drawable/edittext_create_account_background"
+                        android:inputType="none"
+                        android:cursorVisible="false"
+                        android:fontFamily="@font/domine_regular"
+                        android:focusable="false"
+                        android:clickable="true"
+                        android:textSize="18sp"
+                        android:hint="Unknown"
+                        android:paddingLeft="10dp" />
+
+                    <ImageView
+                        android:id="@+id/img_frag_dobright_arrow"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:src="@drawable/ic_arrow_drop_down_black_24dp" />
+                </RelativeLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/domine_regular"
+                            android:layout_marginLeft="20dp"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:text="Gender :" />
+<!--
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="3dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/edittext_create_account_background">
+
+                            <Spinner
+                                android:id="@+id/spinner_gender"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_alignParentLeft="true"
+                                android:layout_alignParentStart="true"
+                                android:fontFamily="@font/domine_regular"
+                                android:layout_alignParentTop="true"
+                                android:entries="@array/array_gender"
+                                android:spinnerMode="dialog"/>
+
+                        </RelativeLayout>-->
+                        <Button
+                            android:id="@+id/spinner_gender"
+                            android:layout_width="230dp"
+                            android:layout_height="40dp"
+                            android:hint="Male"
+                            android:textSize="18sp"
+                            android:paddingRight="10dp"
+                            android:layout_gravity="start"
+                            android:textAlignment="textStart"
+                            android:paddingLeft="10dp"
+                            android:fontFamily="@font/domine_regular"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/edittext_create_account_background"
+                            android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                            android:layout_marginRight="@dimen/dimen_40dp"
+                            android:layout_marginBottom="3dp"
+                            />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/domine_regular"
+                            android:layout_marginLeft="20dp"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:text="Nationality :" />
+
+                    <!--    <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/edittext_create_account_background">
+
+                            <Spinner
+                                android:id="@+id/spinner_nationality"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginRight="10dp"
+                                android:fontFamily="@font/domine_regular"
+                                android:spinnerMode="dialog"
+                                android:entries="@array/array_nationality"/>
+                        </RelativeLayout>-->
+                        <Button
+                            android:id="@+id/spinner_nationality"
+                            android:layout_width="match_parent"
+                            android:layout_height="40dp"
+                            android:hint="Singaporean"
+                            android:text="Singaporean"
+                            android:textSize="18sp"
+                            android:layout_gravity="start"
+                            android:textAlignment="textStart"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:fontFamily="@font/domine_regular"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/edittext_create_account_background"
+                            android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginRight="@dimen/dimen_10dp"
+                            />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:orientation="horizontal">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/domine_regular"
+                            android:layout_marginLeft="20dp"
+                            android:textSize="18sp"
+                            android:textStyle="bold"
+                            android:text="Marrial Status :" />
+
+                      <!--  <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="3dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/edittext_create_account_background">
+
+                            <Spinner
+                                android:id="@+id/spinner_married"
+                                android:layout_width="match_parent"
+                                android:layout_height="30dp"
+                                android:layout_marginRight="10dp"
+                                android:fontFamily="@font/domine_regular"
+                                android:spinnerMode="dialog"
+                                android:entries="@array/array_marriedStaus"/>
+                        </RelativeLayout>-->
+                        <Button
+                            android:id="@+id/spinner_married"
+                            android:layout_width="230dp"
+                            android:layout_height="40dp"
+                            android:layout_gravity="start"
+                            android:layout_marginBottom="3dp"
+                            android:layout_marginRight="@dimen/dimen_10dp"
+                            android:layout_marginTop="5dp"
+                            android:background="@drawable/edittext_create_account_background"
+                            android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+                            android:fontFamily="@font/domine_regular"
+                            android:hint="Unknown"
+                            android:paddingLeft="10dp"
+                            android:paddingRight="10dp"
+                            android:textAlignment="textStart"
+                            android:textSize="18sp" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"></LinearLayout>
+                </LinearLayout>
+
+                <!--<LinearLayout
+                    android:layout_width="200dp"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/linear_continue_background">
+
+                    <Button
+                        android:id="@+id/btn_frag_singup_one"
+                        android:layout_width="200dp"
+                        android:layout_height="35dp"
+                        android:background="@android:color/transparent"
+                        android:fontFamily="@font/domine_regular"
+                        android:text="Continue   >>"
+                        android:textAllCaps="false"
+                        android:textColor="#fff" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:scaleType="fitXY"
+                        android:src="@drawable/gray_double_righship" />
+                </LinearLayout>-->
+                <LinearLayout
+                    android:layout_width="300dp"
+                    android:layout_height="@dimen/dimen_45dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="20dp"
+                    android:orientation="horizontal"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/linear_continue_background">
+                    <Button
+                        android:id="@+id/btn_frag_singup_one"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_50dp"
+                        android:layout_gravity="center_vertical"
+                        android:background="@android:color/transparent"
+                        android:textColor="#fff"
+                        android:textSize="25sp"
+                        android:layout_weight="1"
+                        android:fontFamily="@font/domine_regular"
+                        android:textAllCaps="false"
+                        android:layout_marginTop="15dp"
+                        android:paddingLeft="10dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="Continue"/>
+                    <ImageView
+                        android:id="@+id/img_frag_singup_one"
+                        android:layout_width="match_parent"
+                        android:layout_weight="3"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/white_double_rightship"/>
+                </LinearLayout>
+            </LinearLayout>
+        </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

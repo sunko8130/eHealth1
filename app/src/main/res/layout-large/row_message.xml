@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id= "@+id/txtclinic_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Assurance Technology"
+        android:textSize="15dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/colorblack"
+        android:layout_toLeftOf="@+id/txtcreatedate_value"
+        android:layout_marginTop="5dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/txtclinic_name"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_toLeftOf="@+id/txtcreatedate_value">
+
+
+        <TextView
+            android:id= "@+id/txtmessage_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Message"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/txtclinic_name"
+            android:layout_marginTop="5dp"
+            android:ellipsize="end"
+            android:maxEms="10"
+            android:maxLines="1"
+            android:textSize="14dp"
+            android:textColor="@color/colorblack"
+            android:layout_marginBottom="@dimen/dimen_five_5dp"
+            />
+
+
+    </LinearLayout>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id = "@+id/imag_rightarrow"
+        android:src="@drawable/ic_chevron_right"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+
+        />
+    <TextView
+        android:id= "@+id/txtcreatedate_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Date"
+        android:textColor="@color/colorblack"
+        android:textSize="13dp"
+
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/imag_rightarrow"
+        android:layout_toStartOf="@+id/imag_rightarrow" />
+
+</RelativeLayout>

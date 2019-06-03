@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:background="@color/colorwhite">
+
+    <TextView
+        android:id="@+id/timeslot_take"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text = "8:00 AM"
+        android:textSize="@dimen/dimen_15dp"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:textColor="@color/colorblack"
+        />
+    <TextView
+        android:id="@+id/timeslot"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text = "8:00 AM"
+
+        android:textSize="@dimen/dimen_17dp"
+        android:gravity="center"
+        android:layout_centerVertical="true"
+        android:textColor="@color/colorblack"
+        android:layout_toLeftOf="@+id/image"
+        />
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/ic_chevron_right"
+        android:background="@android:color/transparent"
+        android:focusable="false"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:focusableInTouchMode="false"/>
+</RelativeLayout>

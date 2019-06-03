@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f5fa"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#fff"
+        android:layout_marginTop="2dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/singup_four" />
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp">
+        <LinearLayout
+            android:id="@+id/llContactView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Clinic Summary Info"
+                android:fontFamily="@font/domine_regular"
+                android:layout_marginTop="4dp"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Clinic Summary Info"
+                android:fontFamily="@font/domine_regular"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="Chan Health Clinic"
+                android:textColor="#050AAE"
+                android:fontFamily="@font/domine_regular"
+                android:layout_marginTop="@dimen/dimen_two_2dp"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Clinic Code"
+                android:fontFamily="@font/domine_regular"
+                android:layout_marginTop="@dimen/dimen_seven_7dp"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="1000004"
+                android:textColor="#050AAE"
+                android:fontFamily="@font/domine_regular"
+                android:layout_marginTop="@dimen/dimen_two_2dp"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:text="Address"
+                android:fontFamily="@font/domine_regular"
+                android:layout_marginTop="@dimen/dimen_seven_7dp"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="blk 134 Jurong GateWay Road"
+                android:textColor="#050AAE"
+                android:fontFamily="@font/domine_regular"
+                android:layout_marginTop="@dimen/dimen_two_2dp"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:text="#04-309R"
+                android:textColor="#050AAE"
+                android:fontFamily="@font/domine_regular"
+                android:layout_marginTop="@dimen/dimen_two_2dp"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+            <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:text="s(600123)"
+            android:textColor="#050AAE"
+            android:fontFamily="@font/domine_regular"
+            android:layout_marginTop="@dimen/dimen_two_2dp"
+            android:textSize="13sp"
+            android:textStyle="bold" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="Please check Clinic summary info.Is this clinic you want to upload your Profile? Is correct.Please touch Confirm button."
+                android:textColor="#050AAE"
+                android:fontFamily="@font/domine_regular"
+                android:layout_marginTop="@dimen/dimen_four_4dp"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="@dimen/dimen_20dp">
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginRight="@dimen/dimen_15dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/linear_continue_background">
+                    <ImageView
+                        android:id="@+id/img_create_profile_fragfour_left_arrow"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_10dp"
+                        android:src="@drawable/white_double_leftship"/>
+                    <Button
+                        android:id="@+id/btn_create_profile_fragfour_continue"
+                        android:layout_width="wrap_content"
+                        android:layout_height="35dp"
+                        android:layout_gravity="center_horizontal"
+                        android:background="@android:color/transparent"
+                        android:textColor="#fff"
+                        android:fontFamily="@font/domine_regular"
+                        android:textAllCaps="false"
+                        android:textAlignment="textStart"
+                        android:layout_marginTop="15dp"
+                        android:layout_marginBottom="15dp"
+                        android:text="Back"
+                        tools:ignore="RtlCompat" />
+                </LinearLayout>
+                <Button
+                    android:id="@+id/btn_fragfour_create_profile_confirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:textColor="#fff"
+                    android:paddingLeft="50dp"
+                    android:paddingRight="50dp"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:textAllCaps="false"
+                    android:fontFamily="@font/domine_regular"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@drawable/linear_continue_background"
+                    android:text="Confrim"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <TextView
+        android:id="@+id/txt_imagecertstitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="title"
+        android:layout_toLeftOf="@+id/txt_imagecertcreateDate"
+        android:textSize="@dimen/dimen_15dp"
+        android:textColor="@color/colorblack"/>
+
+    <TextView
+        android:id="@+id/txt_imagecertsdesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="description"
+        android:layout_below="@+id/txt_imagecertstitle"
+        android:layout_toLeftOf="@+id/txt_imagecertcreateDate"
+        android:textSize="@dimen/dimen_15dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:textColor="@color/colorblack"/>
+    <TextView
+        android:id="@+id/txt_imagecertcreateDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2017-09-11"
+        android:textSize="@dimen/dimen_15dp"
+        android:layout_toLeftOf="@+id/imag_certrightarrow"
+        android:textColor="@color/colorblack"
+        android:layout_centerInParent="true"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id = "@+id/imag_certrightarrow"
+        android:src="@drawable/ic_chevron_right"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        />
+</RelativeLayout>

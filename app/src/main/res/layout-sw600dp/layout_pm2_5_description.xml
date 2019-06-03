@@ -1,0 +1,220 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+
+    android:orientation="vertical"
+    android:id="@+id/lly_pm2_5_description"
+
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text = "@string/header_pm2_5value"
+            android:textSize="@dimen/dimen_16dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:textColor="@color/colorblack"
+            android:gravity="right">
+
+        </TextView>
+
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+
+            android:textSize="@dimen/dimen_16dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:textColor="@color/colorblack"
+            android:text = "@string/header_pm2_5descriptor"
+            android:gravity="left">
+
+        </TextView>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_two_2dp"
+        android:background="@color/gray_view">
+
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text = "@string/pm2_5_0_55"
+            android:textSize="@dimen/dimen_16dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:gravity="right">
+
+        </TextView>
+
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text = "@string/Normal"
+            android:textSize="@dimen/dimen_16dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:gravity="left">
+
+        </TextView>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_two_2dp"
+        android:background="@color/gray_view">
+
+    </View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text = "@string/pm2_5_56_150"
+            android:textSize="@dimen/dimen_16dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:gravity="right">
+
+        </TextView>
+
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text = "@string/Elevated"
+            android:textSize="@dimen/dimen_16dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:gravity="left">
+
+        </TextView>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_two_2dp"
+        android:background="@color/gray_view">
+
+    </View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text = "@string/pm2_5_151_250"
+            android:textSize="@dimen/dimen_16dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:gravity="right">
+
+        </TextView>
+
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text = "@string/High"
+            android:textSize="@dimen/dimen_16dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:gravity="left">
+
+        </TextView>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_two_2dp"
+        android:background="@color/gray_view">
+
+    </View>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text = "@string/pm2_5_Above_250"
+            android:textSize="@dimen/dimen_16dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:gravity="right">
+
+        </TextView>
+
+
+        <TextView
+
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text = "@string/Very_High"
+            android:textSize="@dimen/dimen_16dp"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:gravity="left">
+
+        </TextView>
+    </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_two_2dp"
+        android:background="@color/gray_view">
+
+    </View>
+
+</LinearLayout>

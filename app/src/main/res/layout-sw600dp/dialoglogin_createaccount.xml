@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:background="@drawable/background"
+    >
+
+    <!--  <com.wonderkiln.blurkit.BlurLayout
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          app:blurRadius="20"
+          app:downscaleFactor="0.25"
+          >
+          <RelativeLayout
+              android:id= "@+id/relativeheader"
+              android:layout_width="match_parent"
+              android:layout_height="@dimen/dimen_70dp"
+
+              >
+              <TextView
+                  android:id="@+id/txtheader"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text = "eHealth Assist"
+                  android:layout_marginTop="@dimen/dimen_10dp"
+                  android:layout_centerHorizontal="true"
+                  android:textStyle="bold"
+                  android:textColor="#000"
+                  android:textSize="@dimen/dimen_20dp"/>
+              <TextView
+                  android:layout_below="@+id/txtheader"
+                  android:layout_width="wrap_content"
+                  android:layout_height="wrap_content"
+                  android:text = "your healthcare app"
+                  android:layout_alignParentRight="true"
+                  android:textColor="#000"
+                  android:layout_marginRight="40dp"
+                  android:textSize="@dimen/dimen_15dp"/>
+          </RelativeLayout>
+
+      </com.wonderkiln.blurkit.BlurLayout>
+-->
+
+
+
+    <LinearLayout
+        android:id="@+id/llTop"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_48dp"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_marginTop="@dimen/dimen_70dp"
+        >
+
+        <ImageView
+            android:id="@+id/imgheader"
+            android:layout_width="@dimen/dimen_38dp"
+            android:layout_height="@dimen/dimen_38dp"
+            android:layout_marginTop="@dimen/dimen_five_5dp"
+            android:src="@drawable/e" />
+
+        <customs_library.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/dimen_five_5dp"
+            android:layout_toRightOf="@+id/imgheader"
+            android:text="@string/_header"
+            android:textColor="@color/colorwhite"
+            android:textSize="@dimen/dimen_40dp"
+            android:textStyle="bold"
+            android:typeface="serif" />
+    </LinearLayout>
+    <!--  <ImageView
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:src = "@drawable/ehealthassist"
+          android:layout_below="@+id/llTop"
+          android:layout_marginTop="@dimen/activity_create_account_70dp"
+          />-->
+    <Button
+        android:id="@+id/btn_gotologin"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:background="@drawable/buttonround"
+        android:text="@string/activity_create_account_login"
+        android:textAllCaps="false"
+        android:textSize="@dimen/dimen_16dp"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        />
+    <Button
+        android:id="@+id/btn_create_account"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:layout_below="@+id/btn_gotologin"
+        android:textAllCaps="true"
+        android:layout_marginTop="@dimen/dimen_50dp"
+        android:textSize="@dimen/dimen_16dp"
+        android:background="@drawable/buttonround_orange"
+        android:text="@string/activity_create_account_createnewaccount"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:textColor="@color/colorwhite"
+
+        />
+
+    <Button
+        android:id="@+id/btn_skip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:layout_marginEnd="@dimen/dimen_10dp"
+        android:text="@string/activity_create_account_skip"
+        android:textSize="@dimen/dimen_18dp"
+        android:background="@android:color/transparent"
+        android:textColor="@color/colorwhite"
+        android:textAllCaps="false"
+        android:layout_alignParentRight="true"
+        android:layout_below="@+id/btn_create_account"
+        />
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/txt_imagetitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_five_5dp"
+        android:text="title"
+        android:textSize="@dimen/dimen_14dp"
+        android:layout_toLeftOf="@+id/txt_imagecreateDate"
+        android:textColor="@color/colorblack"/>
+
+    <TextView
+        android:id="@+id/txt_imagedesc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_five_5dp"
+        android:text="description"
+        android:layout_below="@+id/txt_imagetitle"
+        android:layout_toLeftOf="@+id/txt_imagecreateDate"
+        android:layout_marginRight="@dimen/dimen_five_5dp"
+        android:textSize="@dimen/dimen_14dp"
+        android:textColor="@color/colorblack"/>
+    <TextView
+        android:id="@+id/txt_imagecreateDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2017-09-11"
+        android:textSize="@dimen/dimen_14dp"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/imag_labrightarrow"
+        android:textColor="@color/colorblack"
+        />
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id = "@+id/imag_labrightarrow"
+        android:src="@drawable/ic_chevron_right"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+
+        />
+
+</RelativeLayout>

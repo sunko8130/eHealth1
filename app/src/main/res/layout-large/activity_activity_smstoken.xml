@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="sg.com.ehealthassist.ehealthassist.Account.ActivitySMSToken">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txtopt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/toolbar"
+            android:gravity="center_horizontal"
+            android:text="@string/sms_token"
+            android:textSize="18dp"
+
+            />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:id = "@+id/llcode"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="50dp"
+            android:layout_marginBottom="30dp"
+            >
+            <EditText
+                android:id="@+id/edit_activatecode"
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtopt"
+                android:layout_margin="10dp"
+                android:gravity="center"
+                android:hint="******"
+                android:inputType="number"
+                android:maxLength="6"
+                android:imeOptions="actionDone"/>
+
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnsubmit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/llcode"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/slot_rounded"
+            android:text="@string/action_manual"
+            android:textSize="16dp"
+            android:textColor="@color/colorwhite" />
+    </RelativeLayout>
+</RelativeLayout>

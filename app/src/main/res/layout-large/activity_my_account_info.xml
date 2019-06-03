@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite"
+    tools:context="sg.com.ehealthassist.ehealthassist.Account.ActivityMyAccountInfo">
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/rdl_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/txtupdatemobile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/input_mobile"
+            android:textSize="16dp" />
+
+        <Button
+            android:id="@+id/btn_accoinfodropdownccode"
+            android:layout_width="70dp"
+            android:layout_height="37dp"
+            android:layout_below="@+id/txtupdatemobile"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="13dp"
+            android:background="@drawable/buttonround"
+            android:drawableRight="@drawable/ic_arrow_drop_down_24"
+            android:focusable="true"
+            android:text="SG" />
+
+        <Button
+            android:id="@+id/btn_accoinfocountrycode"
+            android:layout_width="50dp"
+            android:layout_height="37dp"
+            android:layout_below="@+id/txtupdatemobile"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="13dp"
+            android:layout_toRightOf="@+id/btn_accoinfodropdownccode"
+            android:background="@drawable/buttonround"
+            android:text="+65"></Button>
+
+        <EditText
+            android:id="@+id/txtphone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtupdatemobile"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/btn_accoinfocountrycode"
+            android:gravity="left"
+            android:imeOptions="actionNext"
+            android:inputType="phone"
+            android:maxLength="@integer/max_length_tel_hp"
+            android:paddingLeft="2dp"
+            android:textSize="16dp"
+
+            />
+
+        <ImageButton
+            android:id="@+id/imagbtnresetpwd"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/selector_close_outline" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view1"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/rdl_phone"
+        android:layout_margin="10dp"
+        android:background="@color/gray_view" />
+
+    <RelativeLayout
+        android:id="@+id/rdl_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/view1"
+        android:layout_margin="10dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/txtviewEmail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="@string/msg_account_email"
+            android:textSize="16dp" />
+
+        <EditText
+            android:id="@+id/txtemail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/txtviewEmail"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:inputType="textEmailAddress|textMultiLine"
+            android:paddingLeft="10dp"
+            android:textSize="16dp"
+
+            />
+
+        <ImageButton
+            android:id="@+id/imagbtnresetemail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="3dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/selector_close_outline" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/rdl_email"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/gray_view" />
+
+    <RelativeLayout
+        android:id="@+id/rdl_pwd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/view2"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/selector_rlbackground"
+        android:clickable="true"
+        android:orientation="horizontal">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:text="@string/accinfo_label_changepwd"
+            android:textSize="16dp" />
+
+        <ImageView
+            android:id="@+id/imgaccountinfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="3dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_chevron_right" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/rdl_pwd"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/gray_view" />
+
+    <RelativeLayout
+        android:id="@+id/rdl_forgotpwd"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@+id/view3"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/selector_rlbackground"
+        android:clickable="true"
+        android:orientation="horizontal"
+
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/transparent"
+            android:paddingRight="10dp"
+            android:text="@string/accinfo_label_forgotpwd"
+            android:textColor="@color/blue_primary_900"
+            android:textSize="16dp" />
+
+    </RelativeLayout>
+
+    <View
+        android:id="@+id/view4"
+        android:layout_width="fill_parent"
+        android:layout_height="2dp"
+        android:layout_below="@+id/rdl_forgotpwd"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/gray_view" />
+
+    <Button
+        android:id="@+id/btn_accinfo_update"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_margin="20dp"
+        android:background="@drawable/slot_rounded"
+        android:text="@string/accinfo_label_update"
+        android:textColor="@color/colorwhite"
+        android:textSize="16dp"></Button>
+</RelativeLayout>

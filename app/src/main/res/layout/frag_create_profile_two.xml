@@ -1,0 +1,410 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#f1f5fa"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_marginTop="2dp"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:src="@drawable/singup_two"
+        android:background="#fff"
+        android:scaleType="fitCenter"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="@font/domine_regular"
+                        android:text="Contact"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Home No :"
+                            android:layout_marginLeft="@dimen/dimen_30dp"
+                            android:textSize="@dimen/dimen_12dp"
+                            android:fontFamily="@font/domine_regular"
+                            android:layout_marginTop="10dp"/>
+                    </LinearLayout>
+                    <EditText
+                        android:id="@+id/editText_HomeMobile"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="40dp"
+                        android:textSize="@dimen/dimen_12dp"
+                        android:fontFamily="@font/domine_regular"
+                        android:paddingLeft="5dp"
+                        android:inputType="textEmailAddress"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/edittext_create_account_background"
+                        android:ems="8"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+                        <ImageView
+                            android:layout_width="25dp"
+                            android:layout_height="20dp"
+                            android:layout_marginLeft="30dp"
+                            android:layout_marginTop="10dp"
+                            android:src="@drawable/email"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Email :"
+                            android:textSize="@dimen/dimen_12dp"
+                            android:fontFamily="@font/domine_regular"
+                            android:layout_marginTop="10dp"/>
+                    </LinearLayout>
+                    <EditText
+                        android:id="@+id/editTextLogInEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="50dp"
+                        android:layout_marginRight="40dp"
+                        android:textSize="@dimen/dimen_12dp"
+                        android:fontFamily="@font/domine_regular"
+                        android:paddingLeft="5dp"
+                        android:inputType="textEmailAddress"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/edittext_create_account_background"
+                        android:ems="8"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="2dp">
+                <LinearLayout
+                    android:id="@+id/llContactView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:padding="10dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:text="Address"
+                        android:fontFamily="@font/domine_regular"
+                        android:layout_marginTop="4dp"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="40dp"
+                        android:textSize="@dimen/dimen_12dp"
+                        android:fontFamily="@font/domine_regular"
+                        android:text="Postal Code"/>
+
+                    <LinearLayout
+                        android:id="@+id/rlpostalcode"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="25dp"
+                        android:weightSum="3"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginTop="5dp"
+                        android:textSize="@dimen/dimen_12dp"
+                        android:background="@drawable/edittext_create_account_background">
+
+                        <EditText
+                            android:id="@+id/editTexttelPostalCode"
+                            android:layout_width="match_parent"
+                            android:layout_height="30dp"
+                            android:background="@android:color/transparent"
+                            android:ems="5"
+                            android:fontFamily="@font/domine_regular"
+                            android:imeOptions="actionGo"
+                            android:layout_weight="2"
+                            android:inputType="number"
+                            android:textSize="@dimen/dimen_12dp"
+                            android:maxLength="6"
+                            android:paddingLeft="2dp"
+                            android:privateImeOptions="5dp" />
+
+                        <ImageButton
+                            android:id="@+id/img_postal_search"
+                            android:layout_width="30dp"
+                            android:layout_height="30dp"
+                            android:background="@android:color/transparent"
+                            android:layout_weight="1"
+                            android:scaleType="fitCenter"
+                            android:src="@drawable/ic_search_black_24dp" />
+                    </LinearLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="5dp">
+                        <TextView
+                            android:id="@+id/txt_block"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:textSize="@dimen/dimen_12dp"
+                            android:fontFamily="@font/domine_regular"
+                            android:layout_marginLeft="40dp"
+                            android:text="Block"/>
+                        <TextView
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="120dp"
+                            android:id="@+id/txt_unit_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:textSize="@dimen/dimen_12dp"
+                            android:fontFamily="@font/domine_regular"
+                            android:text="Unit No"/>
+
+                    </RelativeLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginRight="40dp"
+                        android:layout_marginLeft="25dp">
+                        <EditText
+                            android:id="@+id/editTextBlockNo"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:hint="Blk"
+                            android:fontFamily="@font/domine_regular"
+                            android:textSize="12dp"
+                            android:layout_marginBottom="3dp"
+                            android:paddingLeft="5dp"
+                            android:layout_weight="2"
+                            android:layout_marginRight="10dp"
+                            android:background="@drawable/edittext_create_account_background"
+                            android:ems="4"/>
+                        <EditText
+                            android:id="@+id/editTextUnitNo"
+                            android:layout_width="0dp"
+                            android:layout_height="30dp"
+                            android:layout_weight="2"
+                            android:textSize="@dimen/dimen_12dp"
+                            android:paddingLeft="5dp"
+                            android:layout_marginLeft="10dp"
+                            android:fontFamily="@font/domine_regular"
+                            android:layout_marginBottom="3dp"
+                            android:background="@drawable/edittext_create_account_background"
+                            android:ems="4"/>
+
+                    </LinearLayout>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="8dp"
+                        android:textSize="@dimen/dimen_12dp"
+                        android:fontFamily="@font/domine_regular"
+                        android:text="Street Name :"/>
+                    <EditText
+                        android:id="@+id/editTextStreet"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="40dp"
+                        android:paddingLeft="5dp"
+                        android:textSize="@dimen/dimen_12dp"
+                        android:fontFamily="@font/domine_regular"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/edittext_create_account_background"
+                        android:ems="8"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:layout_marginTop="8dp"
+                        android:textSize="@dimen/dimen_12dp"
+                        android:fontFamily="@font/domine_regular"
+                        android:text="Building Name :"/>
+                    <EditText
+                        android:id="@+id/editTextBuildingName"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:fontFamily="@font/domine_regular"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="25dp"
+                        android:layout_marginRight="@dimen/dimen_40dp"
+                        android:paddingLeft="5dp"
+                        android:textSize="@dimen/dimen_12dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/edittext_create_account_background"
+                        android:ems="8"/>
+
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp">
+                <LinearLayout
+                    android:id="@+id/llmultiaddressView"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:visibility="visible"
+                    android:layout_marginLeft="@dimen/dimen_15dp"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:fontFamily="@font/domine_regular"
+                        android:text="Address (foreign address)"
+                        android:layout_marginTop="4dp"
+                        android:textSize="15sp"
+                        android:textStyle="bold" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:fontFamily="@font/domine_regular"
+                        android:layout_marginTop="8dp"
+                        android:textSize="12sp"
+                        android:hint="Address 1"/>
+                    <EditText
+                        android:id="@+id/edt_profile_address1"
+                        android:layout_width="290dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/domine_regular"
+                        android:layout_marginLeft="25dp"
+                        android:paddingLeft="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/edittext_create_account_background"
+                        android:ems="8"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/domine_regular"
+                        android:layout_marginLeft="40dp"
+                        android:textSize="12sp"
+                        android:hint="Address 2" />
+                    <EditText
+                        android:id="@+id/edt_profile_address2"
+                        android:layout_width="290dp"
+                        android:fontFamily="@font/domine_regular"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="25dp"
+                        android:paddingLeft="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/edittext_create_account_background"
+                        android:ems="8"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/domine_regular"
+                        android:hint="Address 3"/>
+                    <EditText
+                        android:id="@+id/edt_profile_address3"
+                        android:fontFamily="@font/domine_regular"
+                        android:layout_width="290dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="25dp"
+                        android:paddingLeft="5dp"
+                        android:layout_marginBottom="5dp"
+                        android:background="@drawable/edittext_create_account_background"
+                        android:ems="8"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="40dp"
+                        android:textSize="12sp"
+                        android:fontFamily="@font/domine_regular"
+                        android:hint="Address 4"/>
+                    <EditText
+                        android:id="@+id/edt_profile_address4"
+                        android:fontFamily="@font/domine_regular"
+                        android:layout_width="290dp"
+                        android:layout_height="30dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_marginLeft="25dp"
+                        android:paddingLeft="5dp"
+                        android:layout_marginBottom="8dp"
+                        android:background="@drawable/edittext_create_account_background"
+                        android:ems="8"/>
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="20dp"
+                android:background="@drawable/linear_continue_background">
+                <ImageView
+                    android:id="@+id/img_profile_fragtwo_left_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingRight="15dp"
+                    android:src="@drawable/white_double_leftship"/>
+                <Button
+                    android:id="@+id/btn_create_profile_fragtwo_continue2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="35dp"
+                    android:layout_gravity="center_horizontal"
+                    android:background="@android:color/transparent"
+                    android:textColor="#fff"
+                    android:fontFamily="@font/domine_regular"
+                    android:textAllCaps="false"
+                    android:paddingRight="15dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginBottom="15dp"
+                    android:text="Continue"/>
+                <ImageView
+                    android:id="@+id/img_profile_fragtwo_right_arrow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/white_double_rightship"/>
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+</LinearLayout>

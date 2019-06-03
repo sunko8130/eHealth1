@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+
+    tools:context="sg.com.ehealthassist.ehealthassist.Medication.ActivityAlarmReminder">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/colorPrimary"
+
+        >
+        <TextView
+            android:id="@+id/main_toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/alarm_reminder_title"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/dimen_18dp"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:textColor="@color/colorwhite"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/alarm_reminder_message"
+        android:textSize="@dimen/dimen_16dp"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:textColor="@color/colorblack"/>
+
+    <TextView
+        android:id="@+id/txtmedmessage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dimen_16dp"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:textColor="@color/colorblack"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_one_1dp"
+        android:background="@color/gray_view"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        ></View>
+    <Button
+        android:id="@+id/btn_reminder_ok"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text = "@string/alarm_reminder_button"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:background="@android:color/transparent"
+        />
+</LinearLayout>

@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f5fa"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="#fff"
+        android:layout_marginTop="2dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/singup_four" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:padding="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/domine_regular"
+                android:text="Please Enter the OTP to Verify Your Account"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_marginLeft="30dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/txt_Register_Phno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:fontFamily="@font/domine_regular"
+                    android:text="We just sent the SMS Message to "
+                    android:textSize="18sp" />
+                <TextView
+                    android:id="@+id/txt_receive_phno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:textSize="12sp"
+                    android:fontFamily="@font/domine_regular"
+                    android:text="65********"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_height="wrap_content">
+
+                <EditText android:id="@+id/editText_activate_code_one"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="1"
+                    android:textSize="25sp"
+                    android:inputType="number"
+                    android:fontFamily="@font/domine_regular"
+                    android:hint="X"
+                    />
+
+                <EditText android:id="@+id/editText_activate_code_two"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="1"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="25sp"
+                    android:inputType="number"
+                    android:fontFamily="@font/domine_regular"
+                    android:hint="X"
+                    />
+
+                <EditText android:id="@+id/editText_activate_code_three"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="1"
+                    android:inputType="number"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/domine_regular"
+                    android:layout_marginLeft="10dp"
+                    android:hint="X"
+                    />
+
+                <EditText android:id="@+id/editText_activate_code_four"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="1"
+                    android:inputType="number"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="25sp"
+                    android:fontFamily="@font/domine_regular"
+                    android:hint="X"
+                    />
+
+                <EditText android:id="@+id/editText_activate_code_five"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:maxLength="1"
+                    android:textSize="25sp"
+                    android:inputType="number"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/domine_regular"
+                    android:hint="X"
+                    />
+                <EditText android:id="@+id/editText_activate_code_six"
+                    android:layout_width="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:maxLength="1"
+                    android:inputType="number"
+                    android:textSize="25sp"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/domine_regular"
+                    android:hint="X"
+                    />
+            </LinearLayout>
+
+            <!--<EditText android:id="@+id/pin_hidden_edittext"
+                android:layout_width="1dp"
+                android:layout_height="1dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:background="@null"
+                android:cursorVisible="false"
+                android:maxLength="5"
+                android:textColor="#00000000"
+                />-->
+
+            <TextView
+                android:id="@+id/txt_resend"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="Resend OTP"
+                android:fontFamily="@font/domine_regular"
+                android:textColor="@color/blue"
+                android:layout_marginTop="10dp"
+                android:textSize="18sp" />
+
+            <Button
+                android:id="@+id/btn_verify_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:background="@drawable/linear_continue_background"
+                android:layout_gravity="right"
+                android:layout_marginRight="50dp"
+                android:layout_marginTop="20dp"
+                android:paddingRight="@dimen/dimen_50dp"
+                android:paddingLeft="@dimen/dimen_50dp"
+                android:textColor="#fff"
+                android:textAllCaps="false"
+                android:textSize="18sp"
+                android:fontFamily="@font/domine_regular"
+                android:layout_marginBottom="30dp"
+                android:text="Verify"/>
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_five_5dp"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_five_5dp"
+        android:background="#fff"
+        card_view:cardCornerRadius="2dp"
+        card_view:contentPadding="10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_10dp">
+
+            <RelativeLayout
+                android:id="@+id/rlschedule"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/blue_100">
+
+                <TextView
+                    android:id="@+id/reminder_title"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_five_5dp"
+                    android:text="Reminder Schedule"
+                    android:textColor="@color/colorblack"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+            <!--    <Switch
+                    android:id="@+id/switch_reminder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_five_5dp"
+                    android:theme="@style/SCBSwitch"
+                    android:checked="false"
+                    android:visibility="gone"
+                    />-->
+          <!--      <Button  android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/btn"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_five_5dp"
+                    android:text="Summit"/>-->
+
+                <ToggleButton
+                    android:id="@+id/toggleBtn"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_five_5dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorwhite"
+                    android:background="@drawable/togglesector"
+                    />
+
+                <TextView
+                    android:id="@+id/reminder_freqcode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/reminder_title"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_five_5dp"
+                    android:textColor="@color/colorblack"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/reminder_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/reminder_freqcode"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_five_5dp"
+                    android:textColor="@color/colorblack"
+                    android:textSize="14dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/reminder_startdate_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/reminder_time"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_five_5dp"
+                    android:text="Start Date :"
+                    android:textColor="@color/colorblack"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/reminder_startdate_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/reminder_time"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_five_5dp"
+                    android:layout_toRightOf="@+id/reminder_startdate_label"
+                    android:textColor="@color/colorblack"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/reminder_enddate_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/reminder_startdate_value"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_five_5dp"
+                    android:text="End Date :"
+                    android:textColor="@color/colorblack"
+                    android:textSize="14dp" />
+
+                <TextView
+                    android:id="@+id/reminder_enddate_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/reminder_startdate_value"
+                    android:layout_marginBottom="@dimen/dimen_five_5dp"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_five_5dp"
+                    android:layout_toRightOf="@+id/reminder_enddate_label"
+                    android:textColor="@color/colorblack"
+                    android:textSize="14dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/label_medicationname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlschedule"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_five_5dp"
+                android:text="@string/rowitem_medname"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/dimen_14dp" />
+
+            <TextView
+                android:id="@+id/txt_dtlmedicationname"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlschedule"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_five_5dp"
+                android:layout_toRightOf="@+id/label_medicationname"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/dimen_14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/label_usage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_dtlmedicationname"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_five_5dp"
+                android:text="@string/rowitem_usage"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/dimen_14dp" />
+
+            <TextView
+                android:id="@+id/txt_usage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_dtlmedicationname"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_five_5dp"
+                android:layout_toRightOf="@+id/label_medicationname"
+                android:textSize="@dimen/dimen_14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/label_dosage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_usage"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_five_5dp"
+                android:text="@string/rowitem_dosage"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/dimen_14dp" />
+
+            <TextView
+                android:id="@+id/txt_dosage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_usage"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_five_5dp"
+                android:layout_toRightOf="@+id/label_medicationname"
+                android:text="1"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/dimen_14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/label_dosageunit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_dosage"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_five_5dp"
+                android:text="@string/rowitem_dosageunit"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/dimen_14dp" />
+
+            <TextView
+                android:id="@+id/txt_dosageunit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_dosage"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_five_5dp"
+                android:layout_toRightOf="@+id/label_medicationname"
+
+                android:text="1"
+                android:textSize="@dimen/dimen_14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/label_frequency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_dosageunit"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:text="@string/rowitem_freq"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/dimen_14dp" />
+
+            <TextView
+                android:id="@+id/txt_frequency"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_dosageunit"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_toRightOf="@+id/label_medicationname"
+                android:text="1"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/dimen_14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/label_totalQty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_frequency"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:text="@string/rowitem_totalqty"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/dimen_14dp" />
+
+            <TextView
+                android:id="@+id/txt_totalQty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_frequency"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_toRightOf="@+id/label_medicationname"
+                android:text="1"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/dimen_14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/label_totalQtyunit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_totalQty"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_five_5dp"
+                android:text="@string/rowitem_totalqty_unit"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/dimen_14dp" />
+
+            <TextView
+                android:id="@+id/txt_totalQtyunit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_totalQty"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_five_5dp"
+                android:layout_toRightOf="@+id/label_medicationname"
+                android:text="1"
+                android:textSize="@dimen/dimen_14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/label_precaution1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_totalQtyunit"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:text="@string/rowitem_pre1"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/dimen_14dp" />
+
+            <TextView
+                android:id="@+id/txt_precaution1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_totalQtyunit"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginRight="@dimen/dimen_five_5dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_toRightOf="@+id/label_medicationname"
+                android:text="1"
+                android:textSize="@dimen/dimen_14dp" />
+
+            <TextView
+                android:id="@+id/label_precaution2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_precaution1"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_five_5dp"
+                android:text="@string/rowitem_pre2"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/dimen_14dp" />
+
+            <TextView
+                android:id="@+id/txt_precaution2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_precaution1"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginRight="@dimen/dimen_five_5dp"
+                android:layout_marginTop="@dimen/dimen_five_5dp"
+                android:layout_toRightOf="@+id/label_medicationname"
+                android:text="1"
+                android:textSize="@dimen/dimen_14dp" />
+
+            <TextView
+                android:id="@+id/label_precaution3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_precaution2"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_five_5dp"
+                android:text="@string/rowitem_pre3"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/dimen_14dp" />
+
+            <TextView
+                android:id="@+id/txt_precaution3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_precaution2"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginRight="@dimen/dimen_five_5dp"
+                android:layout_marginTop="@dimen/dimen_five_5dp"
+                android:layout_toRightOf="@+id/label_medicationname"
+                android:textSize="@dimen/dimen_14dp" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>

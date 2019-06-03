@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sg.com.ehealthassist.ehealthassist.Events.ActivityEventDetails">
+    <include layout="@layout/toolbar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/txt_event_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="20dp"
+                android:layout_marginLeft="25dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="15dp"
+                android:text="Living with cancer"
+                android:textColor="@color/material_orange"
+                android:textStyle="bold"
+                android:textSize="17dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp">
+
+                <TextView
+                    android:id="@+id/txt_lblfromtime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_event_name"
+                    android:layout_marginLeft="30dp"
+                    android:text="@string/event_detail_label_date"
+                    android:textColor="@color/colorblack"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_event_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text=""
+                    android:textColor="@color/blue_primary_900"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/txt_lblTotime"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txt_event_name"
+                    android:layout_marginLeft="30dp"
+                    android:text="@string/event_detail_label_time"
+                    android:textColor="@color/colorblack"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:id="@+id/txt_event_time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="30dp"
+                    android:text=""
+                    android:textColor="@color/blue_primary_900"
+                    android:textSize="16dp" />
+            </LinearLayout>
+
+            <View
+                android:id="@+id/timeview"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray_view"></View>
+
+            <TextView
+                android:id="@+id/txt_lblvenue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/timeview"
+                android:layout_marginTop="15dp"
+                android:layout_marginLeft="30dp"
+                android:text="@string/event_detail_label_venue"
+                android:textColor="@color/colorblack"
+                android:textSize="15dp"
+                android:textStyle="bold"></TextView>
+
+            <TextView
+                android:id="@+id/txt_venue"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_lblvenue"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="NUH Medical Centre, Level 10, Corridor G, Health Resource Centre"
+                android:textColor="@color/colorblack"
+                android:textSize="16dp" />
+
+            <View
+                android:id="@+id/venueview"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray_view"
+                ></View>
+
+
+            <TextView
+                android:id="@+id/lbl_maxpeople"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Max People can Register"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/colorblack"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/txt_maxpeoplereg"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="30"
+                android:textColor="@color/colorblack"
+                android:textSize="16dp" />
+
+            <View
+                android:id="@+id/maxdateview"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray_view"
+                ></View>
+            <TextView
+                android:id="@+id/lblregisterenddate"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Registration End Date"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:textColor="@color/colorblack"
+                android:textSize="15dp"
+                android:textStyle="bold"/>
+            <TextView
+                android:id="@+id/txt_registerenddate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text="2017-04-34"
+                android:textColor="@color/colorblack"
+                android:textSize="16dp" />
+
+            <View
+                android:id="@+id/enddateview"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray_view"
+                ></View>
+
+            <TextView
+                android:id="@+id/txt_lbldescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="10dp"
+                android:text="@string/event_detail_label_description"
+                android:textColor="@color/colorblack"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:text=""
+                android:textColor="@color/colorblack"
+                android:textSize="16dp" />
+
+            <View
+                android:id="@+id/descripview"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray_view"></View>
+
+            <TextView
+                android:id="@+id/txt_lblcontact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_venue"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/event_detail_label_contact_no"
+                android:textColor="@color/colorblack"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_contactno"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_lblcontact"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:autoLink="phone"
+                android:clickable="true"
+                android:text=""
+                android:textColor="@color/colorblack"
+                android:textSize="16dp" />
+
+            <View
+                android:id="@+id/phoneview"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_marginTop="10dp"
+                android:background="@color/gray_view"></View>
+
+            <TextView
+                android:id="@+id/txt_lblemail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_contactno"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/event_detail_label_email"
+                android:textColor="@color/colorblack"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_lblemail"
+                android:layout_marginLeft="50dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="20dp"
+                android:textColor="@color/colorblack"
+                android:autoLink="email"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/btneventregister"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Register"
+                android:layout_marginRight="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:layout_marginBottom="@dimen/dimen_20dp"
+                android:layout_gravity="bottom|right"
+                android:background="@drawable/button_blue"
+                android:textColor="@color/colorwhite"
+                android:enabled="true"
+                >
+            </Button>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

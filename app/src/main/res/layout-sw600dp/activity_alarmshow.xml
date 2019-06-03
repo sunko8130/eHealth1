@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorlightblue"
+    tools:context="sg.com.ehealthassist.ehealthassist.Alarm.ActivityAlarmshow">
+
+    <TextView
+        android:id="@+id/alarmtext"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_300dp"
+        android:gravity="center"
+        android:text="@string/alarm_appton"
+        android:textColor="@color/colorwhite"
+        android:textSize="@dimen/dimen_22dp" />
+
+    <TextView
+        android:id="@+id/alarmdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alarmtext"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text=""
+        android:textColor="@color/colorwhite"
+        android:textSize="@dimen/dimen_22dp" />
+
+    <TextView
+        android:id="@+id/alarmtime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alarmdate"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text=""
+        android:textColor="@color/colorwhite"
+        android:textSize="@dimen/dimen_24dp" />
+    <TextView
+        android:id="@+id/patientnric"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alarmtime"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text=""
+        android:textColor="@color/colorwhite"
+        android:textSize="@dimen/dimen_22dp" />
+
+    <TextView
+        android:id="@+id/alarmclinic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/patientnric"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text=""
+        android:textColor="@color/colorwhite"
+        android:textSize="@dimen/dimen_22dp" />
+
+    <TextView
+        android:id="@+id/alarmdoctor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/alarmclinic"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text=""
+        android:textColor="@color/colorwhite"
+        android:textSize="@dimen/dimen_22dp" />
+
+    <ImageButton
+        android:id="@+id/btnalarmok"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btnstopalarm"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_150dp"
+        android:background="@android:color/transparent"
+        android:src="@drawable/alarm_clock"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/btnstopalarm"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="@dimen/dimen_50dp"
+        android:background="@drawable/roundalarm"
+        android:padding="@dimen/dimen_10dp"
+        android:text="@string/alarm_stop"
+        android:textColor="@color/colorwhite"
+        android:textSize="@dimen/dimen_20dp" />
+</RelativeLayout>

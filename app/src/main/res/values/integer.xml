@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!--millisecond start-->
+    <integer name="splash_screen_time_out">2000</integer>
+    <integer name="home_screen_flip_interval">2000</integer>
+    <!--millisecond end-->
+    <integer name="minutes_to_skip_pin_input">5</integer>
+    <integer name="minutes_to_block_pin_input_on_first_three_fail">10</integer>
+    <integer name="minutes_to_block_pin_input_on_second_three_fail">20</integer>
+    <integer name="minutes_to_block_pin_input_on_third_three_fail">60</integer>
+
+    <integer name="min_length_name">3</integer>
+    <integer name="max_length_email">100</integer>
+    <integer name="max_length_pin">6</integer>
+    <integer name="max_length_name">66</integer>
+    <integer name="max_length_nric">15</integer>
+    <integer name="max_length_tel_hp">15</integer>
+    <integer name="max_length_block_no">7</integer>
+    <integer name="max_length_street">30</integer>
+    <integer name="max_length_unit_no">10</integer>
+    <integer name="max_length_building_name">30</integer>
+    <integer name="max_length_postal_code">6</integer>
+    <integer name="max_length_tel_home">8</integer>
+    <integer name="max_length_nationality">25</integer>
+    <integer name="max_length_allergy">60</integer>
+    <integer name="max_length_clinicid">4</integer>
+</resources>

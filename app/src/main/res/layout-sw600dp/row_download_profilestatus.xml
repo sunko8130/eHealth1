@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cas_default_bg"
+
+    android:descendantFocusability="blocksDescendants">
+
+    <ImageButton
+        android:layout_width="@dimen/dimen_35dp"
+        android:layout_height="@dimen/dimen_35dp"
+        android:id="@+id/imgbtn_back"
+        android:src="@drawable/ic_chevron_left"
+        android:background="@android:color/transparent"
+        android:focusable="false"
+        android:layout_centerVertical="true"
+        />
+    <ImageView
+        android:id="@+id/imgv_profile_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/profile_f_adult"
+        android:layout_toRightOf="@+id/imgbtn_back"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height= "wrap_content"
+        android:id="@+id/txtprofile_name"
+        android:layout_toRightOf="@+id/imgv_profile_view"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:text = "MaMa"
+        android:textColor="@color/cas_color_black"
+        android:textSize="@dimen/dimen_16dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_marginBottom="@dimen/dimen_three_3dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height= "wrap_content"
+        android:id="@+id/txtprofile_nric"
+        android:layout_toRightOf="@+id/imgv_profile_view"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:text = "MaMa"
+        android:layout_below="@+id/txtprofile_name"
+        android:textColor="@color/cas_color_black"
+        android:textSize="@dimen/dimen_15dp"
+        android:layout_marginBottom="@dimen/dimen_five_5dp"
+        />
+    <ImageView
+        android:layout_width="@dimen/dimen_35dp"
+        android:layout_height="@dimen/dimen_35dp"
+        android:id="@+id/imgv_status"
+        android:src="@drawable/v_pending_50"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/dimen_30dp"
+        android:layout_marginTop="@dimen/dimen_five_5dp"
+        android:layout_marginBottom="@dimen/dimen_five_5dp"
+        android:layout_centerVertical="true"
+        />
+</RelativeLayout>

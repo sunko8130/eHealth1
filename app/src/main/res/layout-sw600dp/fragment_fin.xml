@@ -1,0 +1,152 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite"
+    tools:context="sg.com.ehealthassist.ehealthassist.eDocument.FragmentFin">
+
+    <!-- TODO: Update blank fragment layout -->
+   <!-- <RelativeLayout
+        android:id="@+id/rlfilter"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/blue_100"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/img_invoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/invoice_3" />
+
+        <TextView
+            android:id="@+id/txtTotalinvoice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            android:layout_toRightOf="@+id/img_invoice"
+            android:textColor="@color/colorblack"
+            android:textSize="15dp" />
+
+        <TextView
+            android:id="@+id/txtfilter_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="10dp"
+            android:layout_toLeftOf="@+id/btn_filter"
+            android:layout_toRightOf="@+id/txtTotalinvoice"
+            android:gravity="right"
+            android:singleLine="true"
+            android:text="All"
+            android:textColor="@color/colorblack"
+            android:textSize="15dp" />
+
+        <ImageButton
+            android:id="@+id/btn_filter"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="2dp"
+            android:layout_marginTop="5dp"
+            android:layout_toLeftOf="@+id/btn_ereceipt_refresh"
+            android:background="@color/blue_primary_900"
+            android:paddingBottom="7dp"
+            android:paddingLeft="7dp"
+            android:paddingRight="7dp"
+            android:paddingTop="7dp"
+            android:src="@drawable/empty_filter"
+
+            />
+
+        <ImageButton
+            android:id="@+id/btn_ereceipt_refresh"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/blue_primary_900"
+            android:paddingBottom="7dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:paddingTop="7dp"
+            android:src="@drawable/ic_refresh_white_24dp"
+
+            />
+    </RelativeLayout>
+-->
+    <ListView
+        android:id="@+id/lv_invoicereceipt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlfilter"
+        android:layout_marginTop="5dp"
+       >
+
+    </ListView>
+
+   <!-- <View
+        android:id="@+id/vseparate"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_one_1dp"
+        android:layout_below="@+id/lv_invoicereceipt"
+        android:background="@color/gray_very_light"></View>
+
+    <ListView
+        android:id="@+id/lv_fincapture"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lv_invoicereceipt"
+        android:layout_marginTop="3dp">
+
+    </ListView>-->
+
+    <TextView
+        android:id="@+id/txterrormessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="No Available Receipt for Now"
+        android:textColor="@color/colorred"
+        android:textSize="15dp"
+        android:visibility="gone" />
+
+    <FrameLayout
+        android:id="@+id/myfab_main"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true">
+
+        <View
+            android:id="@+id/myfab_show"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"></View>
+
+        <ImageButton
+            android:id="@+id/imgbtn_fincapture"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/fab_selector"
+            android:cropToPadding="true"
+            android:src="@drawable/ic_photo_camera_white_24dp"
+            android:stateListAnimator="@animator/fab_elevation_selector"
+            android:textColor="#fff"
+            android:textSize="24dp" />
+    </FrameLayout>
+
+</RelativeLayout>

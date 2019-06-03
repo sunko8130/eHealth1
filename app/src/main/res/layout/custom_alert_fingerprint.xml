@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#CCfce4ec">
+
+    <TextView
+        android:id="@+id/textView_Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:text="Register with Fingerprint"
+        android:layout_marginTop="5dp"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtView_CountryCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_Login"
+        android:layout_marginLeft="15dp"
+        android:text="Country Code"
+        android:layout_marginTop="13dp"
+        android:textSize="14sp" />
+
+    <ImageView
+        android:id="@+id/image_mobile_number"
+        android:layout_width="15dp"
+        android:layout_marginTop="15dp"
+        android:layout_height="16dp"
+        android:layout_below="@id/textView_Login"
+        android:layout_marginLeft="10dp"
+        android:layout_toRightOf="@id/txtView_CountryCode"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_phone_android_gray_24dp" />
+
+    <TextView
+        android:id="@+id/txtView_MobileNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_Login"
+        android:layout_marginTop="13dp"
+        android:layout_toRightOf="@id/image_mobile_number"
+        android:text="Mobile Number"
+        android:textSize="14sp" />
+
+    <Button
+        android:id="@+id/btn_alert_dropdowncode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_arrow_drop_down_black_24dp"
+        android:layout_below="@id/image_mobile_number"
+        android:layout_marginLeft="16dp"
+        android:layout_alignBottom="@+id/et_alert_login_mobileId"
+        android:text="SG +65"
+        android:layout_alignTop="@+id/et_alert_login_mobileId"
+        android:background="@drawable/login_edittext_background"
+        android:popupBackground="#fff" />
+
+    <EditText
+        android:id="@+id/et_alert_login_mobileId"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/image_mobile_number"
+        android:layout_toRightOf="@id/btn_alert_dropdowncode"
+        android:ems="10"
+        android:paddingLeft="10dp"
+        android:background="@drawable/login_edittext_background"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/image_password"
+        android:layout_width="25dp"
+        android:layout_height="20dp"
+        android:layout_below="@id/btn_alert_dropdowncode"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:src="@drawable/ic_lock_gray_24dp" />
+
+    <TextView
+        android:id="@+id/txtView_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp"
+        android:layout_alignBottom="@+id/image_password"
+        android:layout_below="@id/et_alert_login_mobileId"
+        android:layout_toRightOf="@id/image_password"
+        android:text="Password"
+        android:textSize="14sp" />
+
+    <EditText
+        android:id="@+id/et_alert_login_password"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/txtView_password"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="15dp"
+        android:layout_alignRight="@+id/et_alert_login_mobileId"
+        android:layout_alignLeft="@+id/btn_alert_dropdowncode"
+        android:ems="10"
+        android:paddingLeft="10dp"
+        android:hint="******"
+        android:background="@drawable/login_edittext_background"
+        android:inputType="textPassword" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/et_alert_login_password"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="20dp">
+
+        <Button
+            android:id="@+id/btn_alert_cancel"
+            android:layout_width="0dp"
+            android:layout_height="35dp"
+            android:text="Cancel"
+            android:layout_weight="1"
+            android:background="@drawable/btn_account_style"
+            android:textColor="#fff"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btn_alert_ok"
+            android:text="Ok"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginLeft="5dp"
+            android:background="@drawable/btn_account_style"
+            android:layout_height="35dp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:weightSum="2"
+    >
+
+    <TextView
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtquestion"
+        android:text="Custom Rating"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_gravity="center_vertical"
+        android:layout_weight="1.4"
+        android:textSize="@dimen/dimen_15dp"
+        />
+
+    <RatingBar
+        android:id="@+id/ratebar"
+        style="@style/customRatingBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="@dimen/dimen_five_5dp"
+        android:layout_marginBottom="@dimen/dimen_five_5dp"
+        android:stepSize="1"
+        />
+</LinearLayout>

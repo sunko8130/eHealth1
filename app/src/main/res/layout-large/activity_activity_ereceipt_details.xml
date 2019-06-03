@@ -1,0 +1,399 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_ereceipt_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cas_background"
+    tools:context="sg.com.ehealthassist.ehealthassist.Payment.ActivityEReceiptDetails">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:id = "@+id/scrollview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:descendantFocusability="beforeDescendants"
+        android:focusableInTouchMode="true"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:id="@+id/txt_invoice_no_1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:text="INVOICE"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/dimen_15dp" />
+                <TextView
+                    android:id="@+id/txt_invoice_no_status"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+
+                    android:textColor="@color/colorblack"
+                    android:textAllCaps="true"
+                    android:textSize="@dimen/dimen_15dp" />
+
+            </LinearLayout>
+
+
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_five_5dp"
+                android:background="#fff"
+                card_view:cardCornerRadius="2dp"
+                card_view:contentPadding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <TextView
+                            android:id="@+id/txtname"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/dimen_10dp"
+                            android:text="Name :"
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/dimen_14dp" />
+
+                        <TextView
+                            android:id="@+id/txtname_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_30dp"
+                            android:layout_marginRight="@dimen/dimen_10dp"
+                            android:text="-&#45;&#45;"
+                            android:layout_toRightOf="@+id/txtname"
+                            android:textColor="@color/colorblack"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/dimen_14dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_five_5dp">
+
+                        <TextView
+                            android:id="@+id/txtnric"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/dimen_10dp"
+                            android:text="ID :"
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/dimen_14dp" />
+
+                        <TextView
+                            android:id="@+id/txtnric_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_55dp"
+                            android:layout_toRightOf="@+id/txtnric"
+                            android:layout_marginRight="@dimen/dimen_10dp"
+                            android:text="-&#45;&#45;"
+                            android:textColor="@color/colorblack"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/dimen_14dp" />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_five_5dp">
+
+                        <TextView
+                            android:id="@+id/txtclinic_name"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/dimen_10dp"
+                            android:text="Clinic :"
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/dimen_14dp" />
+
+                        <TextView
+                            android:id="@+id/txt_clinicname_value"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_35dp"
+                            android:text="Assurance Technology Ptl"
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/dimen_14dp"
+                            android:textStyle="bold"
+                            android:layout_toRightOf="@id/txtclinic_name"
+                            />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_15dp">
+
+                        <TextView
+                            android:id="@+id/txtclinicgst"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/dimen_10dp"
+                            android:text="Clinc GST No :"
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/dimen_14dp"
+                            android:visibility="gone"/>
+
+                        <TextView
+                            android:id="@+id/txtclinic_gst_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_35dp"
+                            android:layout_marginRight="@dimen/dimen_10dp"
+                            android:layout_toRightOf="@id/txtclinicgst"
+                            android:text="-&#45;&#45;"
+                            android:textColor="@color/blue_primary_900"
+                            android:textSize="@dimen/dimen_14dp"
+                            android:visibility="gone"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_five_5dp">
+
+                        <TextView
+                            android:id="@+id/txtinvoice_no"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/dimen_10dp"
+                            android:text="Invoice No :"
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/dimen_14dp" />
+
+                        <TextView
+                            android:id="@+id/txtinvoice_no_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/dimen_10dp"
+                            android:layout_alignParentRight="true"
+                            android:text="-&#45;&#45;"
+                            android:textColor="@color/colorblack"
+                            android:textStyle="bold"
+                            android:textSize="@dimen/dimen_14dp" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_five_5dp">
+
+                        <TextView
+                            android:id="@+id/txtinvoice_date"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/dimen_10dp"
+                            android:text="Date :"
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/dimen_14dp" />
+
+                        <TextView
+                            android:id="@+id/txtinvoice_date_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="@dimen/dimen_10dp"
+                            android:layout_alignParentRight="true"
+                            android:text="-&#45;&#45;"
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/dimen_14dp"
+                            android:textStyle="bold"
+                            />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_five_5dp">
+
+                        <TextView
+                            android:id="@+id/txtinvoice_amt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/dimen_10dp"
+                            android:text="Amount :"
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/dimen_14dp" />
+
+                        <TextView
+                            android:id="@+id/txtinvoice_amt_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="@dimen/dimen_10dp"
+                            android:layout_marginRight="@dimen/dimen_10dp"
+                            android:text="-&#45;&#45;"
+                            android:textColor="@color/blue_primary_900"
+                            android:textSize="@dimen/dimen_16dp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <Button
+                        android:id="@+id/btn_invoice_pdf"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_38dp"
+                        android:layout_below="@+id/txt_rl_existing"
+                        android:layout_marginBottom="@dimen/dimen_five_5dp"
+                        android:layout_marginLeft="@dimen/dimen_10dp"
+                        android:layout_marginRight="@dimen/dimen_10dp"
+                        android:layout_marginTop="@dimen/dimen_15dp"
+                        android:background="@drawable/button_blue"
+                        android:text="View Invoice"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="@dimen/dimen_14dp" />
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+
+            <sg.com.ehealthassist.ehealthassist.CustomUI.CustomListView
+                android:id="@+id/lv_receiptview"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@android:color/transparent"
+                android:focusable="false">
+
+            </sg.com.ehealthassist.ehealthassist.CustomUI.CustomListView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:text="SUMMARY AMOUNT"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/dimen_14dp" />
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_five_5dp"
+                android:background="#fff"
+                card_view:cardCornerRadius="2dp"
+                card_view:contentPadding="10dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_five_5dp">
+
+                        <TextView
+                            android:id="@+id/txtinvoice_amt2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/dimen_10dp"
+                            android:text="Invoice Amount :"
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/dimen_14dp" />
+
+                        <TextView
+                            android:id="@+id/txtinvoice_amt_value2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="@dimen/dimen_10dp"
+                            android:layout_marginRight="@dimen/dimen_10dp"
+                            android:text="-&#45;&#45;"
+                            android:textColor="@color/blue_primary_900"
+                            android:textSize="@dimen/dimen_15dp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10dp">
+
+                        <TextView
+                            android:id="@+id/txtTotal_receipt_amt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/dimen_10dp"
+                            android:text="Paid Amount :"
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/dimen_14dp" />
+
+                        <TextView
+                            android:id="@+id/txtTotal_paid_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="@dimen/dimen_10dp"
+                            android:layout_marginRight="@dimen/dimen_10dp"
+                            android:text="-&#45;&#45;"
+                            android:textColor="@color/blue_primary_900"
+                            android:textSize="@dimen/dimen_15dp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_10dp">
+
+                        <TextView
+                            android:id="@+id/txtTotal_payable_amt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/dimen_10dp"
+                            android:text="Outstanding Amount :"
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/dimen_14dp" />
+
+                        <TextView
+                            android:id="@+id/txtTotal_remain_amt_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="@dimen/dimen_10dp"
+                            android:layout_marginRight="@dimen/dimen_10dp"
+                            android:text="-&#45;&#45;"
+                            android:textColor="@color/blue_primary_900"
+                            android:textSize="@dimen/dimen_15dp"
+                            android:textStyle="bold" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </android.support.v7.widget.CardView>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

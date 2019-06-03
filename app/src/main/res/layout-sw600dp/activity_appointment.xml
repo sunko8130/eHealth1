@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activity_appointment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="sg.com.ehealthassist.ehealthassist.Appointment.ActivityAppointment">
+    <include layout="@layout/toolbar"/>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_35dp"
+        android:layout_below="@+id/toolbar"
+        android:background="@color/colorPrimaryDark"
+        android:id="@+id/rlappt_doct_list"
+        >
+        <TextView
+            android:id="@+id/dod_name"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Select a day for appointment request"
+            android:layout_marginLeft="@dimen/dimen_30dp"
+            android:layout_centerVertical="true"
+            android:textColor="@color/colorwhite"
+            android:textSize="@dimen/dimen_16dp"/>
+
+    </RelativeLayout>
+    <com.prolificinteractive.materialcalendarview.MaterialCalendarView
+        android:id="@+id/calendarView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/rlappt_doct_list"
+        app:mcv_showOtherDates="all"
+        app:mcv_selectionColor="#006BBA"
+        app:mcv_dateTextAppearance="@style/new_calendar_date_style"
+        app:mcv_headerTextAppearance="@style/new_calendar_header_style"
+        app:mcv_weekDayTextAppearance="@style/new_calendar_week_style"
+        app:mcv_tileHeight="@dimen/dimen_45dp"
+        >
+    </com.prolificinteractive.materialcalendarview.MaterialCalendarView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:layout_below="@+id/calendarView"
+        android:id="@+id/rltextview">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/title_dod_lists"
+            android:id="@+id/txtview"
+            android:layout_marginLeft="@dimen/dimen_30dp"
+            android:textColor="@color/colorwhite"
+            android:textSize="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            />
+    </RelativeLayout>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id= "@+id/lv_doctorlist"
+        android:layout_below="@+id/rltextview"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:listSelector="@color/cas_background"
+        >
+    </ListView>
+    <TextView
+        android:id="@+id/txtnodoctor_msg"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text= "No doctor available"
+        android:textColor="@color/colorred"
+        android:layout_below="@+id/rltextview"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:layout_centerHorizontal="true"/>
+</RelativeLayout>

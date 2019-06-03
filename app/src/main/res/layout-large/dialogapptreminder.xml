@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/ll_apptreminder"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:orientation="vertical">
+        <CheckBox
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alarm_checkbox_2hr"
+            android:id="@+id/chk_2hours"
+
+            />
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "@string/alarm_checkbox_1d"
+            android:id="@+id/chk_1day"
+            android:layout_below="@+id/chk_2hours"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text = "@string/alarm_checkbox_2d"
+            android:id="@+id/chk_2day"
+            android:layout_below="@+id/chk_2hours"/>
+        <CheckBox
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alarm_checkbox_1w"
+            android:id="@+id/chk_1week"
+            android:layout_below="@+id/chk_1day"/>
+    </LinearLayout>
+    <View
+        android:id="@+id/fview"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_one_1dp"
+        android:layout_below="@+id/ll_apptreminder"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:background="#ccc"></View>
+
+    <LinearLayout
+        android:id="@+id/llBottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fview"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnnocancel"
+            android:layout_width="@dimen/dimen_zero_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="@string/alarm_cancel" />
+
+        <View
+            android:layout_width="@dimen/dimen_two_2dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:background="#ccc"></View>
+
+        <Button
+            android:id="@+id/btnnoset"
+            android:layout_width="@dimen/dimen_zero_0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:layout_toRightOf="@+id/btnnocancel"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            android:text="@string/alarm_set" />
+    </LinearLayout>
+</RelativeLayout>

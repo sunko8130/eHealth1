@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <ImageView
+        android:id="@+id/imgv_driveid"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:src="@drawable/google_drive_icon" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgv_driveid"
+        android:textSize="@dimen/dimen_16dp"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:text="@string/cloud_message"
+        android:textColor="@color/colorblack"/>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10dp">
+        <Button
+            android:id="@+id/btndownloadfromdrive"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            android:text="Sync From Drive"
+            android:background="@drawable/buttonround_drive_blue"
+            android:textColor="@color/colorwhite"
+            android:textSize="@dimen/dimen_16dp"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_10dp"/>
+        <Button
+            android:id="@+id/btnuploadtodrive"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            android:text="Sync To Drive"
+            android:layout_below="@+id/btndownloadfromdrive"
+            android:background="@drawable/buttonround_drive_blue"
+            android:textColor="@color/colorwhite"
+            android:textSize="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_five_5dp"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:visibility="gone"/>
+        <Button
+            android:id="@+id/btndrive_cancel"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_45dp"
+            android:text="Cancel"
+            android:background="@drawable/buttonround_drive_blue"
+            android:layout_below="@+id/btnuploadtodrive"
+            android:textColor="@color/colorwhite"
+            android:textSize="@dimen/dimen_16dp"
+            android:layout_marginTop="@dimen/dimen_five_5dp"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            />
+    </RelativeLayout>
+</LinearLayout>

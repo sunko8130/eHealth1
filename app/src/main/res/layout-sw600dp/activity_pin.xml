@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sg.com.ehealthassist.ehealthassist.Account.ActivityPIN">
+    <include layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/textenterPIN"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="@dimen/dimen_140dp"
+        android:text="@string/textview_activity_pin"
+        android:layout_below="@id/toolbar"
+        android:layout_centerHorizontal="true"
+        android:textColor="@color/colorblack"
+        android:textSize="@dimen/dimen_20dp"
+
+        android:textStyle="bold"/>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llBottom"
+        android:layout_below="@+id/textenterPIN"
+        android:padding="@dimen/dimen_10dp">
+        <LinearLayout
+            android:id="@+id/llPINGroup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="@dimen/dimen_30dp"
+            android:orientation="horizontal"
+            android:weightSum="16">
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_one_1dp"
+                android:layout_weight="5" />
+
+            <ImageView
+                android:id="@+id/ivPIN1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_pin_empty" />
+
+            <ImageView
+                android:id="@+id/ivPIN2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_pin_empty" />
+
+            <ImageView
+                android:id="@+id/ivPIN3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_pin_empty" />
+
+            <ImageView
+                android:id="@+id/ivPIN4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_pin_empty" />
+
+            <ImageView
+                android:id="@+id/ivPIN5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_pin_empty" />
+
+            <ImageView
+                android:id="@+id/ivPIN6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:src="@drawable/ic_pin_empty" />
+
+            <View
+                android:layout_width="0dp"
+                android:layout_height="@dimen/dimen_one_1dp"
+                android:layout_weight="5" />
+        </LinearLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llPINGroup"
+            android:layout_centerHorizontal="true"
+            >
+
+            <GridLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:columnCount="3"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/buttonPinPad1"
+                    android:layout_width="@dimen/dimen_60dp"
+                    android:height="@dimen/dimen_60dp"
+                    android:text="1"
+                    android:layout_marginLeft="@dimen/dimen_30dp"
+                    android:layout_marginTop="@dimen/dimen_30dp"
+                    android:textSize="@dimen/dimen_25dp"
+                    android:background="@drawable/fab_selector"
+                    android:textColor="@color/colorwhite"/>
+
+                <Button
+                    android:id="@+id/buttonPinPad2"
+                    android:layout_width="@dimen/dimen_60dp"
+                    android:height="@dimen/dimen_60dp"
+                    android:text="2"
+                    android:layout_marginLeft="@dimen/dimen_30dp"
+                    android:layout_marginTop="@dimen/dimen_30dp"
+                    android:textSize="@dimen/dimen_25dp"
+                    android:background="@drawable/fab_selector"
+                    android:textColor="@color/colorwhite"/>
+
+                <Button
+                    android:id="@+id/buttonPinPad3"
+                    android:layout_width="@dimen/dimen_60dp"
+                    android:height="@dimen/dimen_60dp"
+                    android:text="3"
+                    android:textSize="@dimen/dimen_25dp"
+                    android:layout_marginLeft="@dimen/dimen_30dp"
+                    android:layout_marginTop="@dimen/dimen_30dp"
+                    android:background="@drawable/fab_selector"
+                    android:textColor="@color/colorwhite"/>
+
+                <Button
+                    android:id="@+id/buttonPinPad4"
+                    android:layout_width="@dimen/dimen_60dp"
+                    android:background="@drawable/fab_selector"
+                    android:height="@dimen/dimen_60dp"
+                    android:layout_marginLeft="@dimen/dimen_30dp"
+                    android:layout_marginTop="@dimen/dimen_30dp"
+                    android:text="4"
+                    android:textSize="@dimen/dimen_25dp"
+                    android:textColor="@color/colorwhite"/>
+
+                <Button
+                    android:id="@+id/buttonPinPad5"
+                    android:height="@dimen/dimen_60dp"
+                    android:layout_width="@dimen/dimen_60dp"
+                    android:background="@drawable/fab_selector"
+                    android:text="5"
+                    android:layout_marginLeft="@dimen/dimen_30dp"
+                    android:layout_marginTop="@dimen/dimen_30dp"
+                    android:textSize="@dimen/dimen_25dp"
+                    android:textColor="@color/colorwhite"/>
+
+                <Button
+                    android:id="@+id/buttonPinPad6"
+                    android:height="@dimen/dimen_60dp"
+                    android:layout_width="@dimen/dimen_60dp"
+                    android:background="@drawable/fab_selector"
+                    android:text="6"
+                    android:layout_marginLeft="@dimen/dimen_30dp"
+                    android:layout_marginTop="@dimen/dimen_30dp"
+                    android:textSize="@dimen/dimen_25dp"
+                    android:textColor="@color/colorwhite"/>
+
+                <Button
+                    android:id="@+id/buttonPinPad7"
+                    android:height="@dimen/dimen_60dp"
+                    android:layout_width="@dimen/dimen_60dp"
+                    android:background="@drawable/fab_selector"
+                    android:text="7"
+                    android:layout_marginLeft="@dimen/dimen_30dp"
+                    android:layout_marginTop="@dimen/dimen_30dp"
+                    android:textSize="@dimen/dimen_25dp"
+                    android:textColor="@color/colorwhite"/>
+
+                <Button
+                    android:id="@+id/buttonPinPad8"
+                    android:height="@dimen/dimen_60dp"
+                    android:layout_width="@dimen/dimen_60dp"
+                    android:background="@drawable/fab_selector"
+                    android:text="8"
+                    android:layout_marginLeft="@dimen/dimen_30dp"
+                    android:layout_marginTop="@dimen/dimen_30dp"
+                    android:textSize="@dimen/dimen_25dp"
+                    android:textColor="@color/colorwhite"/>
+
+                <Button
+                    android:id="@+id/buttonPinPad9"
+                    android:height="@dimen/dimen_60dp"
+                    android:layout_width="@dimen/dimen_60dp"
+                    android:background="@drawable/fab_selector"
+                    android:text="9"
+                    android:layout_marginLeft="@dimen/dimen_30dp"
+                    android:layout_marginTop="@dimen/dimen_30dp"
+                    android:textSize="@dimen/dimen_25dp"
+                    android:textColor="@color/colorwhite"/>
+
+                <Button
+                    android:id="@+id/buttonPinPadClear"
+                    android:height="@dimen/dimen_60dp"
+                    android:text="CLR"
+                    android:layout_marginLeft="@dimen/dimen_30dp"
+                    android:layout_marginTop="@dimen/dimen_30dp"
+                    android:layout_width="@dimen/dimen_60dp"
+                    android:background="@drawable/fab_selector"
+                    android:textSize="@dimen/dimen_20dp"
+                    android:textColor="@color/colorwhite"/>
+
+                <Button
+                    android:id="@+id/buttonPinPad0"
+                    android:height="@dimen/dimen_60dp"
+                    android:layout_width="@dimen/dimen_60dp"
+                    android:background="@drawable/fab_selector"
+                    android:text="0"
+                    android:layout_marginLeft="@dimen/dimen_30dp"
+                    android:layout_marginTop="@dimen/dimen_30dp"
+                    android:textSize="@dimen/dimen_25dp"
+                    android:textColor="@color/colorwhite"/>
+
+                <Button
+                    android:id="@+id/buttonPinPadBackspace"
+                    android:height="@dimen/dimen_60dp"
+                    android:layout_width="@dimen/dimen_60dp"
+                    android:background="@drawable/fab_selector"
+                    android:text="DEL"
+                    android:layout_marginLeft="@dimen/dimen_30dp"
+                    android:layout_marginTop="@dimen/dimen_30dp"
+                    android:textSize="@dimen/dimen_20dp"
+                    android:textColor="@color/colorwhite"/>
+
+            </GridLayout>
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

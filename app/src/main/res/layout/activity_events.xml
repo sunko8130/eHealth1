@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sg.com.ehealthassist.ehealthassist.Events.ActivityEvents">
+
+    <include layout="@layout/toolbar" />
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id = "@+id/lvevents"
+        android:layout_below = "@+id/toolbar"
+        android:layout_above="@+id/llBottom"
+        >
+    </ListView>
+
+    <TextView
+        android:id = "@+id/txt_msgevent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:text="@string/no_event_info"
+        android:textColor="@color/colorred"
+        android:visibility="gone"/>
+
+    <FrameLayout
+        android:id="@+id/myfab_main"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true">
+        <View
+            android:id="@+id/myfab_show"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_gravity="center"
+            ></View>
+
+        <ImageButton
+            android:id="@+id/imgbtn_refresh"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/fab_selector"
+            android:cropToPadding="true"
+            android:src="@drawable/ic_refresh_white_24dp"
+            android:stateListAnimator="@animator/fab_elevation_selector"
+            android:textColor="#fff"
+            android:textSize="24dp" />
+    </FrameLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,528 @@
+<resources>
+
+    <!-- activity_login -->
+    <string name="input_mobileno">Mobile No</string>
+    <string name="input_password">Password</string>
+    <string name="login_infromation">You do not have login yet. Please login or create new account for use the application functions</string>
+    <string name="msg_new_account">Create New Account</string>
+    <string name="login_btn_skip">Skip</string>
+    <string name="login_tv_country_code">Country Code</string>
+    <string name="login_tv_mobile_no">Mobile Number</string>
+    <string name="login_tv_password">Password</string>
+    <string name="login_tv_create_new_account">Create New Account >></string>
+    <string name="login_tv_skip">Skip >></string>
+    <string name="login_btn_country_code_txt">SG +65</string>
+    <string name="frag_signup_one_tv_basic_info">Basic Info</string>
+    <string name="frag_signup_one_tv_idtype">ID Type :</string>
+    <string name="frag_signup_one_tv_nric">Nric :</string>
+    <string name="msg_forgotpwd">forget your password?</string>
+    <string name="msg_Sign_up">Login</string>
+    <string name="title_activity_login">Login or Sign Up</string>
+    <!-- activity_forgot_pwd -->
+    <string name="fogot_pwd_label_info">Provide us the email id of your account and we will sent you an email to reset your password</string>
+    <string name="fogot_pwd_label_enter_email">Enter Mobile Number :</string>
+    <string name="fogot_pwd_label_send">SEND</string>
+    <string name="title_activity_forgot_pwd">Forgot Password</string>
+    <!-- activity_home -->
+    <string name="_header">HealthAssist</string>
+    <string name="nav_search_clinic">Find Clinic</string>
+    <string name="nav_my_queue_appt">Queue &amp; Appointments</string>
+    <string name="nav_med_reminder">Med Reminder</string>
+    <string name="nav_message">Message</string>
+    <!-- activity_signup -->
+    <string name="title_activity_signup">Create New Account</string>
+    <string name="activity_signup_BIODATA">BIODATA</string>
+    <!-- activity_setting -->
+    <string name="title_setting">Setting</string>
+    <string name="msg_account_info">Account</string>
+    <string name="setting_label_mobile">Mobile</string>
+    <string name="msg_account_notlogin">Login or Sign Up</string>
+    <string name="msg_account_login">Login/Sign up</string>
+    <string name="msg_account_setting">Account Pending Verification. Touch to verify</string>
+    <string name="setting_label_accinfo">My Account Info</string>
+    <string name="msg_security_info">Security</string>
+    <string name="msg_security_pin">PIN</string>
+    <string name="msg_app_info">APP Info</string>
+    <string name="msg_app_version">Version</string>
+    <string name="msg_term_conditions">Terms &amp; Conditions</string>
+    <string name="msg_privacy">Privacy Policies</string>
+    <!-- activityTncWebview -->
+    <string name="activity_tnc_title_term_conditions">Terms &amp; Conditions</string>
+    <string name="activity_tnc_title_privacy">Privacy Policies</string>
+    <!-- activity_my_account_info -->
+    <string name="msg_account_email">Email</string>
+    <!-- activity_hazeinfo -->
+    <string name="title_activity_haze_info">Haze Information</string>
+    <!-- activity_searchclinic_detailed -->
+    <string name="textview_hinit_24hrclinic">24 Hours clinic</string>
+    <string name="textview_lable_note">Note</string>
+    <string name="textview_lable_address">Address</string>
+    <string name="textview_lable_contact">Contact</string>
+    <string name="textview_lable_fax">Fax</string>
+    <string name="textview_lable_email">Email</string>
+    <string name="textview_lable_openhr">Operating Hours</string>
+    <string name="textview_lable_showalltime">Show All Times</string>
+    <!-- activity search clinic -->
+    <string name="input_search_clinic_by_etc">Search </string>
+    <string name="checkbox_24hr">24 Hours</string>
+    <string name="checkbox_CHAS">CHAS</string>
+    <string name="checkbox_queuenow">Queue Now</string>
+    <string name="noclick"> No Clinics Found. Search Again.</string>
+    <string name="ActivitySearchClinic">ActivitySearchClinic</string>
+    <!-- activity_-->
+    <string name="title_qrclinicDetail">Profile Submission</string>
+    <string name="textview_qrclinicid">Clinic id :</string>
+    <string name="button_qrclinicConfirm">CONFIRM</string>
+    <!-- activity_home -->
+    <string name="nav_my_queue">My Queue</string>
+    <string name="nav_my_app">Appointments</string>
+    <!-- activity_manual_clinic_dialog -->
+    <string name="title_manual_clinic_Dialog">Profile Submission</string>
+    <string name="msg_enter_clinic">Please Enter Clinic Id</string>
+    <string name="error_manual_clinic_Dialog">  Clinic not Exist , Please choose other</string>
+    <string name="input_clinic_id">Clinic Id</string>
+    <string name="action_manual">SUBMIT</string>
+    <string name="action_scan">MANUAL KEY IN</string>
+    <string name="scan_title">Scan Clinic QR Code</string>
+    <!-- activity_medical_profile-->
+    <string name="title_activity_medical_profile">Medical Profile</string>
+    <!-- activity_nearby_doctor-->
+    <string name="title_activity_nearby_doctor"> Find Clinic</string>
+    <string name="input_clinic">Clinic Name or Street Name</string>
+    <string name="input_pcode">Clinic Postal Code</string>
+    <string name="button_input_search">Search</string>
+    <string name="textview_input_or"> or </string>
+    <string name="button_input_nearme"> Clinics Near Me</string>
+    <string name="button_gp"> GP Clinics</string>
+    <string name="button_sp"> Specialist Clinics</string>
+    <string name="button_dental"> Dental Clinics</string>
+    <string name="nearbydoc">NBD</string>
+    <string name="account_birthday">Birthday</string>
+    <string name="account_address">Current Address</string>
+    <!-- activity_pin-->
+    <string name="textview_activity_pin">Enter Password</string>
+    <!-- activity_preferred_clinic -->
+    <string name="textview_activity_preferred_myclinic">My Clinic</string>
+    <string name="queue_detail_dialog_DOB">DOB</string>
+    <string name="queue_detail_dialog_Request_date">Request Date</string>
+    <string name="queue_detail_dialog_QueueNO">QueueNO</string>
+    <string name="queue_detail_dialog_CurrentQueue">Current Queue</string>
+    <string name="queue_detail_dialog_Description">Description</string>
+    <string name="ActivityPreferredClinic">ActivityPreferredClinic</string>
+    <!-- activity_queue_dialog -->
+    <string name="input_nric">ID Number</string>
+    <string name="queue_dialog_dob">Date of Birth</string>
+    <string name="action_queue">SEND</string>
+    <!-- activity_search_clinic_detailed -->
+    <string name="detailed_clinicname">ClinicName</string>
+    <string name="detailed_block">Block</string>
+    <string name="detailed_street">Street</string>
+    <string name="detailed_unit">Unit</string>
+    <string name="detailed_Building">Building</string>
+    <string name="prefix_detailed_postalcode">S(</string>
+    <string name="detailed_postalcode">PostalCode</string>
+    <string name="postfix_detailed_postalcode">)</string>
+    <string name="detailed_contact">Contact</string>
+    <string name="detailed_fax">Fax:</string>
+    <string name="detailed_website">Website:</string>
+    <string name="detailed_nopeopelq">No of people in queue :</string>
+    <string name="detailed_available">No one in Queue</string>
+    <string name="button_detailed_dod">DOCTOR ON DUTY</string>
+    <string name="button_detailed_register_q">REGISTER QUEUE</string>
+    <string name="button_detailed_locate">LOCATE US</string>
+    <string name="Activityclinicdetailed">clinicdetailed</string>
+    <!-- activity_setting -->
+    <string name="mp_myself">MYSELF</string>
+    <!-- activity_setup pin -->
+    <string name="msg_app_note"> Note: PIN is irrecoverable</string>
+    <string name="pin_setup">Enter PIN</string>
+    <string name="confirm_setup">Confirm PIN</string>
+    <string name="pin_lock_profile">Lock Profile</string>
+    <string name="spinner_gender">Gender</string>
+    <string name="input_spinner_choose_nric_type">NRIC Type</string>
+    <string name="input_spinner_choose_relation_type">Relationship</string>
+    <string name="input_spinner_choose_language">Language Spoken</string>
+    <string name="input_spinner_choose_nationality">Nationality</string>
+    <string name="input_spinner_choose_marriage">Choose Status</string>
+    <string name="input_spinner_prefixph">+65</string>
+    <string name="input_spinner_choose_setup_type">Pin Setup Time</string>
+    <string name="button_setup_confirm">CONFIRM</string>
+    <!-- activity_sign_up -->
+    <string name="msg_sign_up">Below is all we need to create your account</string>
+    <string name="input_name">Name</string>
+    <string name="input_mobile">Mobile Number</string>
+    <string name="msg_sign_up_agree">By signing up, I agree to the </string>
+    <string name="tnc_link"><a href="">Terms &amp; </a></string>
+    <string name="tnc_linkcon"><a href=""> Conditions</a></string>
+    <string name="largetnc_linkcon"><a href="">Terms &amp; Conditions</a></string>
+    <string name="privacy_link"><a href="">Privacy Policies</a></string>
+    <string name="action_sign_up">Sign Up</string>
+    <string name="app_direction"><a href="">~ DIRECTION</a></string>
+    <!-- activity_tncweb_view -->
+    <string name="activity_tnc_offline">Can\'t connect while OFFLINE</string>
+    <!-- dialog_find_clinic -->
+    <string name="action_Dialog_FindClinic">FIND CLINIC</string>
+    <string name="msg_queue_45mins">10 minutes</string>
+    <string name="msg_queue_10mins">10 minutes</string>
+
+    <string name="msg_queue_info1_part1">You must be an existing patient of this clinic to get a queue number, submit profile and verify at clinic within</string>
+    <string name="msg_queue_info_part3">to speed up profile registration process.</string>
+    <string name="msg_queue_info_pending1">Your profile is pending download and verification by the clinic. Please go to clinic within</string>
+    <string name="msg_queue_info_pending2"> to get your profile verified to complete the patient registration process.</string>
+
+    <string name="msg_queue_unknown1">1.If the profile is an existing patient of the clinic then there is not need to submit the profile to request
+    a queue number.</string>
+    <string name="msg_queue_unknown2">Please allow</string>
+    <string name="msg_queue_unknown3">for the clinic to respond to your queue request.</string>
+    <string name="msg_queue_unknown4">A notification will be sent to you once the clinic responded to your request.</string>
+
+
+    <!-- <string name="msg_queue_info2">1. It might take up to 10 minutes for the clinic to response to your request.\n\n
+        2. A notification will be sent to you once the clinic responded to your request.</string>
+    <string name="msg_queue_info">
+     2. It might take up to 10 minutes for the clinic to response to your request.\n\n
+         3. A notification will be sent to you once the clinic responded to your request.</string>-->
+    <string name="action_queue_continue">CONTINUE</string>
+    <!-- fragment biodata -->
+    <string name="input_nric_type">ID Type :</string>
+    <string name="input_error_nric_type">** NRIC Type is Required</string>
+    <string name="input_error_dob">** DOB is Required</string>
+    <string name="input_error_relation">** Relationship is Required</string>
+    <string name="input_sex">Gender</string>
+    <string name="input_female">Female</string>
+    <string name="input_male">Male</string>
+    <string name="input_nationality">Nationality</string>
+    <string name="input_autonationality">Search Nationality</string>
+    <string name="input_relation">Relationship</string>
+    <string name="input_married">Marital</string>
+    <string name="input_upload">Submit</string>
+    <string name="input_local">SAVE</string>
+    <!-- fragment contact -->
+    <string name="input_contact_address">ADDRESS</string>
+    <string name="input_block_no">Block No</string>
+    <string name="input_street">Street</string>
+    <string name="input_building_name">Building Name</string>
+    <string name="input_unit_no">Unit No</string>
+    <string name="input_postal_code">Postal Code</string>
+    <string name="input_pcode_search">Search</string>
+    <string name="input_contact">CONTACT</string>
+    <string name="input_allergy">Allergy</string>
+    <string name="input_tel_home">Tel (Home)</string>
+    <!-- queue header -->
+    <string name="input_date">DATE</string>
+    <string name="input_clinicname">CLINIC</string>
+    <string name="input_queue">QUEUE</string>
+    <string name="input_STATUS">STATUS</string>
+    <!-- spinner_row_nothing_selected-->
+    <string name="spinner_chose">[Choose]</string>
+    <string name="spinner_chose_nric_type">[Choose NRIC Type]</string>
+    <string name="spinner_chose_marrital">Marrital Status</string>
+    <!-- Dialog Queue Inform -->
+    <string name="msg_queue_checkbox">Don\'t show again this message</string>
+    <string name="chas_title">CHAS</string>
+    <string name="queue_title">QUEUE</string>
+    <string name="hr24_title">24 HOUR</string>
+    <string name="help">Help</string>
+    <string name="queue_info_title">Terms &amp; Conditions</string>
+    <string name="email_change">Change Email</string>
+    <string name="mobile_change">Mobile Change</string>
+    <!-- Dialog Inform -->
+    <string name="msgbox_icon_24HC">Clinic that operate 24 hours a day ,7 days a week.</string>
+    <string name="msgbox_icon_CHAS">The Community Health Assist Scheme(CHAS) is a scheme by the Ministry of Health(MOH).That provides accessible and affordable medical and dental care to Singapore Citizen.</string>
+    <string name="msgbox_icon_QNow">Clinic that participate in QNow, allow patient to get Queue Number and Check Waiting Time.</string>
+    <!-- activityMap-->
+    <string name="ActivityMap">ActivityMap</string>
+    <string name="search_bynearme">NM</string>
+    <!-- Title -->
+    <string name="title_activity_activity_home">ActivityHome</string>
+    <string name="title_activity_activity_login">Log In</string>
+    <string name="title_activity_sign_up">Sign Up</string>
+    <string name="title_activity_activity_setting">Setting</string>
+    <string name="title_activity_setup_pin">Setup PIN</string>
+    <string name="title_activity_activity_nearby_doctor">Search Clinic</string>
+    <string name="title_activity_activity_pin">Enter PIN</string>
+    <string name="title_activity_activity_request_qappointment">ActivityRequestQAppointment</string>
+    <string name="title_activity_activity_preferred_clinic">My Clinic</string>
+    <string name="title_activity_activity_search_clinic">Lists of Clinics</string>
+    <string name="title_activity_activity_search_clinic_detailed">Clinic Details</string>
+    <string name="title_activity_activity_map">Map</string>
+    <string name="title_activity_activity_queue_dialog">ActivityQueueDialog</string>
+    <string name="title_activity_activity_doctor__on__duty">Doctor On Duty</string>
+    <string name="title_activity_activity_select_profile">Register Queue</string>
+    <string name="title_activity_activity_appointment_flow">Appointment Flow</string>
+    <string name="title_activity_activity_tncweb_view">Terms &amp; Conditions</string>
+    <string name="title_activity_activity_manual_clinic_dialog">ActivityManualClinicDialog</string>
+    <string name="title_activity_activity_clinic_deatail">ActivityClinicDeatail</string>
+    <string name="title_activity_activity_queue_detail_dialog">Queue Detail</string>
+    <!--<string name="sign_verification_message">Account created successfully, check your email for verification instruction or press SMS for OTP</string>-->
+    <string name="sign_verification_message1">Account created successfully and OTP code will be sent via SMS to </string>
+    <string name="sign_verification_message2">, submit the OTP code to complete the account verification </string>
+    <!--  <string name="sign_verification_message2">Account created successfully and OTP Code will be sent via SMS,please submit the OTP code to complete the account verification.</string>-->
+    <string name="sign_verification">Verification</string>
+    <!-- Error -->
+    <string name="err_invalid_pwd_length">Required</string>
+    <string name="err_invalid_email">Invalid Email</string>
+    <string name="err_invalid_pin_length">6-digits PIN required</string>
+    <string name="err_invalid_clinic_id">Invalid Clinic Id</string>
+    <string name="err_invalid_pin">Wrong PIN</string>
+    <string name="err_pin_not_match">PIN not match</string>
+    <string name="err_invalid_mobile">Invalid Mobile</string>
+    <string name="err_invalid_nric">Invalid NRIC</string>
+    <string name="err_name_too_short">Name too short</string>
+    <string name="err_invalid_postal_code">Invalid Postal Code</string>
+    <string name="err_invalid_contact_number">Invalid Number</string>
+    <string name="err_invalid_pin_clinic_id_length">4-digits PIN required</string>
+    <string name="err_invalid_pin_clinic_hecode_length">10-digits PIN required</string>
+    <string name="err_invalid_login">Invalid user id or password</string>
+    <!-- Preference -->
+    <string name="preference_name">CASUsersData</string>
+    <string name="preference_constant">CASConstantData</string>
+    <string name="pref_user_last_pin_login_time_millis">UserLastPinLogin</string>
+    <!-- OTHER -->
+    <string name="app_name">EHealthAssist</string>
+
+    <!--  <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyDPLXLZPrhbtT6J3PcJbUZccEXE_mFEr6k</string>-->
+    <string name="action_logout">LOGOUT</string>
+    <string name="msg_no_internet_connection_setup">Internet required, please check if you have internet access.</string>
+    <string name="msg_google_map_required">Google Maps is required to use this function</string>
+    <string name="msgbox_sign_out_confirm_msg">Are you sure you want to exit.</string>
+    <string name="msgbox_delete_medication_msg">Are you sure to delete this medication?</string>
+    <string name="msgbox_delete_profile">Are you sure you want to delete this Profile ?</string>
+    <string name="msgbox_signup_agree_to_continue"><![CDATA[Agree to our Term & Condition is required to Proceed]]></string>
+    <string name="title_internet_require">Internet Required</string>
+    <string name="title_activity_activity_Home">ActivityHome</string>
+    <string name="title_activity_activity_medical_profile">ActivityMedicalProfile</string>
+    <string name="nearbyme_doctor">Near_Me</string>
+    <string name="msg_queuedetailed_current_no">Please click on Refresh to get Current Queue No if you aren\'t Login </string>
+    <string name="activity_clinic_detailed">ActivitySearchClinicDetailed</string>
+    <string name="pin_message">PIN must contain at least 6 numbers.</string>
+    <string name="activity_tnc">ActivityTNCWebView</string>
+
+    <string name="activity_queue_detailed">ActivityQueueDetailDialog</string>
+    <string name="title_activity_activity_card_qappointment">ActivityCardQAppointment</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="alarm_stop">Stop Alarm</string>
+    <string name="alarm_appton">You have appointment on </string>
+    <string name="appt_view_label_name">Name :</string>
+    <string name="appt_view_label_patient_id">Patient id :</string>
+    <string name="appt_view_label_status">Status :</string>
+    <string name="appt_view_label_dtime">Date  &amp; Time:</string>
+    <string name="appt_view_label_docname">Doctor Name :</string>
+    <string name="appt_view_label_address">Address :</string>
+    <string name="appt_view_label_clinic_remarks">Clinic Remarks :</string>
+    <string name="appt_view_label_patient_remarks">Patient Remarks :</string>
+    <string name="appt_view_label_setreminder">SET REMINDER +</string>
+    <string name="appt_view_label_cancel_appt">Cancel Appointment</string>
+    <string name="appt_view_label_confirm">Confirm</string>
+    <string name="event_detail_label_date">Date :</string>
+    <string name="event_detail_label_time">Time :</string>
+    <string name="event_detail_label_description">Description :</string>
+    <string name="event_detail_label_venue">Venue :</string>
+    <string name="event_detail_label_contact_no">Contact no:</string>
+    <string name="event_detail_label_email">Email :</string>
+    <string name="title_activity_activity_list_appointment_slot">Lists of Doctors</string>
+    <string name="title_activity_activity_available_time_slot">Select a time slot</string>
+    <string name="title_activity_activity_book_contact_detail">Book Contact Detail</string>
+    <string name="title_activity_activity_book_confirm_detail">Book\'s Confirm Detail</string>
+    <string name="title_activity_activity_booked_list">Booked lists</string>
+    <string name="title_activity_appointment_page">Appointment Book</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="vweb"><a href="">VISIT WEBSITE</a></string>
+    <string name="title_activity_activity_clinic_website">Clinic\'s Website</string>
+    <string name="title_activity_activity_med_reminder">Medicines Reminder</string>
+    <string name="title_activity_activity_add_reminder">Add Medication</string>
+    <string name="title_activity_activity_time_picker">Set Time and Quantity</string>
+    <string name="title_activity_activity_reminder_week">Pick Day</string>
+    <string name="reminder_save">Save</string>
+    <string name="reminder_medname">Medication Name</string>
+    <string name="reminder_brandname">brand name</string>
+    <string name="reminder_time">Reminder Times</string>
+    <string name="reminder_changetime">Change timings</string>
+    <string name="reminder_schedule">Schedule</string>
+    <string name="reminder_startdate">Start date:</string>
+    <string name="reminder_duration">Duration</string>
+    <string name="reminder_continuous">continuous</string>
+    <string name="reminder_no_day">number of days</string>
+    <string name="reminder_days">Days</string>
+    <string name="reminder_everyday">Every day</string>
+    <string name="reminder_week">specific days of week</string>
+    <string name="reminder_inteval">days interval</string>
+    <string name="title_activity_activity_med_profile_list">Medical Profile</string>
+    <string name="med_profile_create">Create</string>
+    <string name="med_profile_text">"No Profiles exist on this Device,Tap \"+\" button to create profile"</string>
+    <string name="med_profile_text1">"No patient Profile Found, Please create your profile"</string>
+    <string name="title_activity_activity_eappointment_card">Your Appointments</string>
+    <string name="title_activity_activity_eappt_card_detail">Appointment Details</string>
+    <string name="ecard_remark">Blood test - Do not eat breakfast before appointment</string>
+    <string name="title_activity_activity_dialog_appointment">ActivityDialogAppointment</string>
+    <string name="title_activity_activity_queue__appoint">ActivityQueue_Appoint</string>
+    <string name="title_activity_activity_alarmshow">ActivityAlarmshow</string>
+    <string name="title_activity_activity_medcine_alarm">ActivityMedcineAlarm</string>
+    <string name="title_activity_activity_reminder_detail">Reminder Details</string>
+    <string name="title_activity_activity_events">Events</string>
+    <string name="title_activity_account_verfication">Account Verfication</string>
+    <string name="title_activity_my_account">My Account</string>
+    <string name="title_activity_account_setting">Account Setting</string>
+    <string name="title_activity_event_detail">Event Details</string>
+    <string name="title_activity_main2">Main2Activity</string>
+    <string name="title_activity_">Activity</string>
+    <string name="title_activity_downloadprofile_status">Profile List</string>
+    <string name="title_activity_activity_specialist_clinic_lists">Specialty</string>
+    <string name="title_dod_lists">Select a doctor to view available timings</string>
+    <string name="sms_token">Please enter the 6 digit activation code </string>
+    <string name="no_event_info">No events information can\'t get for now</string>
+    <string name="no_message_info">No Message for now</string>
+    <string name="med_reminder_label_current_med">CURRENT MEDICINES</string>
+    <string name="accinfo_label_changepwd">Change Password</string>
+    <string name="accinfo_label_forgotpwd">Forgot Password</string>
+    <string name="accinfo_label_oldpwd">OLD Password :</string>
+    <string name="accinfo_label_newpwd">New Password :</string>
+    <string name="accinfo_label_confirmpwd">Confirm Password :</string>
+    <string name="accinfo_label_change">CHANGE</string>
+    <string name="accinfo_label_update">UPDATE</string>
+    <string name="no_profile_message">No Profiles exist on this Device.Please goto profile section to create new profile. </string>
+    <string name="appt_appointment_message">Please remember to bring along your identification card. </string>
+    <string name="response_10patients">Your can only set for 10 patients per account</string>
+    <string name="signup_next">Next</string>
+    <string name="signup_back">Back</string>
+    <string name="noinfo">NA</string>
+    <string name="appt_btn_book">Book</string>
+    <string name="appt_btn_detail">Detail</string>
+    <string name="queue_detail_patient">Patient:</string>
+    <string name="queue_detail_dob">DOB :</string>
+    <string name="queue_detail_Request_date">Request Date:</string>
+    <string name="queue_detail_status"> Status:</string>
+    <string name="queue_detail_currentno">Current Queue No :</string>
+    <string name="queue_detail_queue">Queue No :</string>
+    <string name="queue_detail_message">Message</string>
+    <string name="queue_detail_reject_descriotion">Reject Description</string>
+    <string name="alarm_checkbox_2hr">2 hours before</string>
+    <string name="alarm_checkbox_1d">1 day before</string>
+    <string name="alarm_checkbox_2d">2 days before</string>
+    <string name="alarm_checkbox_1w">1 week before</string>
+    <string name="alarm_cancel">Cancel</string>
+    <string name="alarm_set">Set</string>
+    <string name="eappt_card_bdate">Booking Date :</string>
+    <string name="eappt_card_cname">Clinic Name :</string>
+    <!-- starting again -->
+    <string name="activity_create_account_createnewaccount">Create New Account</string>
+    <string name="activity_create_account_login">LOGIN</string>
+    <string name="activity_create_account_skip">Skip</string>
+    <!-- HazeInfo -->
+    <string name="Good">Good</string>
+    <string name="Moderate">Moderate</string>
+    <string name="Unhealthy">Unhealthy</string>
+    <string name="Very_Unhealthy">Very Unhealthy</string>
+    <string name="Hazardous">Hazardous</string>
+    <string name="header_psivalue">24 hr PSI Value</string>
+    <string name="header_psides">Air Quality Descriptor</string>
+    <string name="psi_0_55">0-50</string>
+    <string name="psi_51_100">51-100</string>
+    <string name="psi_101_200">101-200</string>
+    <string name="psi_201_300">201-300</string>
+    <string name="psi_Above_300">Above 300</string>
+    <string name="header_pm2_5value">1-hr PM2.5</string>
+    <string name="header_pm2_5band">Band</string>
+    <string name="header_pm2_5descriptor">Descriptor</string>
+    <string name="Normal">Normal</string>
+    <string name="Elevated">Elevated</string>
+    <string name="High">High</string>
+    <string name="Very_High">Very High</string>
+    <string name="pm2_5_0_55">0-55</string>
+    <string name="pm2_5_56_150">56-150</string>
+    <string name="pm2_5_151_250">151-250</string>
+    <string name="pm2_5_Above_250">Above 250</string>
+    <string name="account_info_update">Please change your Phone and Email from user account info</string>
+    <string name="_32">32</string>
+    <string name="err_author">NO GOOGLE DRIVE ACCESS!</string>
+    <string name="pref_backup_drive_checked">pref_drive_backup</string>
+    <string name="pref_request_sync">pref_request_sync</string>
+    <string name="pref_gdaa_connect_sync">pref_request_sync</string>
+    <string name="pref_update_profile_flag">pref_update_profile_flag</string>
+    <string name="cloud_message">Your Patients Biodata is not same with your Drive, do you want to sync your drive Patients to this Application.
+    Your Patients Biodata will be deleted and replaced by your drive Patients Biodata</string>
+    <string name="spinner_patient">Patients</string>
+
+
+    <string name="progressloading">Loading</string>
+    <string name="progressclinic">clinics updated</string>
+    <string name="msgsessiondata">No Session available</string>
+
+    <string name="alerts_profile">"All required fields (*) need to be filled"</string>
+    <string name="default_countryisocode">SG</string>
+    <string name="default_countrycode">65</string>
+    <string name="passportno">Passport Number</string>
+    <string name="login_caccount">You do not have login yet,Please login or create new account for use the application functions</string>
+
+
+    <!-- alarm reminder -->
+    <string name="alarm_reminder_title">Reminders</string>
+    <string name="alarm_reminder_message">Time to take your medication :</string>
+    <string name="alarm_reminder_button">OK</string>
+    <!-- medical dispense-->
+    <string name="medDispense_reminder">Reminder</string>
+    <string name="medDispense_datetime">Start Date Time :</string>
+    <string name="medDispense_days">How many day(s)?</string>
+    <string name="medDispense_medtitle">Medication</string>
+    <string name="medDispense_name">Name :</string>
+    <string name="medDispense_nrictype">Nric Type :</string>
+    <string name="medDispense_nric">Nric :</string>
+    <string name="medDispense_dob">DOB :</string>
+    <string name="medDispense_visitno">Visit No :</string>
+    <string name="medDispense_visitdate">Visit Date :</string>
+    <string name="medDispense_clinic">Clinic :</string>
+    <string name="medDispense_medicals">Medical(s)</string>
+    <!--dialogdays -->
+    <string name="dayDialog_title">Days</string>
+    <string name="dayDialog_message">Enter Number of Days</string>
+    <string name="dayDialog_button">Save</string>
+    <!--row dispense/clinic -->
+    <string name="rowdis_visitno">Visit No :</string>
+    <string name="rowdis_visitdate">Visit Date :</string>
+    <string name="rowpatien_name">Patient Name :</string>
+    <!--row meditem -->
+    <string name="rowitem_medname">Medication Name :</string>
+    <string name="rowitem_usage">Usage  :</string>
+    <string name="rowitem_dosage">Dosage  :</string>
+    <string name="rowitem_dosageunit">Dosage Unit  :</string>
+    <string name="rowitem_freq">Frequency  :</string>
+    <string name="rowitem_totalqty">Total Qty  :</string>
+    <string name="rowitem_totalqty_unit">Total Qty Unit :</string>
+    <string name="rowitem_pre1">PreCaution 1 :</string>
+    <string name="rowitem_pre2">PreCaution 2 :</string>
+    <string name="rowitem_pre3">PreCaution 3 :</string>
+    <string name="defaultnational">SINGAPOREAN</string>
+    <string name="textbiodata"> PLEASE DO NOT SUBMIT YOUR PROFILE AGAIN TO THE CLINIC,IF YOU ARE EXISTING PATIENT FROM THE CLINIC</string>
+    <string name="title_activity_e_doc">eDocActivity</string>
+    <string name="loginmes">Please sign in/verified your account to access more features of system</string>
+    <string name="reviewq1">Please select Clinic for rating and rate all questions with at least 1 star. </string>
+
+    <!-- Navigation Drawer menu labels -->
+    <string name="nav_clinic">Find Clinic</string>
+    <string name="nav_add_favoiurite_clinic">Add Favourite Clinic</string>
+    <string name="nav_create_new_account">Create New Account</string>
+    <string name="nav_login">Login</string>
+    <string name="nav_event">Event</string>
+    <string name="nav_haze_info">Haze Info</string>
+    <string name="nav_setting">Setting</string>
+    <string name="nav_bio_data">Bio Data</string>
+    <string name="nav_vital_sign">Vital Sign</string>
+    <string name="nav_lab_result">Lab Result</string>
+    <string name="nav_queue">Queue</string>
+    <string name="nav_appointment">Appointment</string>
+    <string name="nav_medical_reminder">Medical Reminder</string>
+    <string name="nav_edocument">eDocument</string>
+    <string name="nav_clinic_message">Clinic Message</string>
+    <string name="nav_logout">Logout</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="frag_create_profile_three_suggest">Do you have any alleries? if have ,please let us know.This information will be held.</string>
+
+
+    <!-- <string name="default_weekslot1">Sun,Mon,Tue,Wed,Thu,Fri,Sat</string>-->
+
+
+</resources>

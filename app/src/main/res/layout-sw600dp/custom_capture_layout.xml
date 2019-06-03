@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <SurfaceView
+        android:id="@+id/zxing_preview_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <com.google.zxing.client.android.ViewfinderView
+        android:id="@+id/zxing_viewfinder_view"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/zxing_status_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|center_horizontal"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:background="@color/zxing_transparent"
+            android:text="@string/scan_title"
+            android:textColor="@color/zxing_status_text"
+            android:textSize="@dimen/dimen_24dp"/>
+
+        <Button
+            android:id="@+id/zxing_back_button"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom"
+            android:layout_margin="@dimen/dimen_10dp"
+            android:height="@dimen/dimen_58dp"
+            android:text="@string/action_scan"
+            android:textAlignment="center"
+            android:textSize="@dimen/dimen_22dp"
+            android:visibility="gone"/>
+
+    </LinearLayout>
+</merge>
+

@@ -1,0 +1,884 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:id="@+id/rl_image"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_180dp">
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pager_introduction"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_180dp"
+            android:fitsSystemWindows="true"
+            tools:listitem="@layout/pager_item" />
+
+        <LinearLayout
+            android:id="@+id/viewPagerCountDots"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dimen_55dp"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:orientation="horizontal" />
+
+    </RelativeLayout>
+
+    <!--  <android.support.v7.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:app="http://schemas.android.com/apk/res-auto"
+          android:id="@+id/custom_toolbar"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:background="@android:color/transparent"
+          android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+          app:popupTheme="@style/ThemeOverlay.AppCompat.Light">
+
+          <TextView
+              android:id="@+id/main_toolbar_title"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:layout_marginLeft="20dp"
+              android:gravity="left"
+              android:text="Assurance Technology Co ltd"
+              android:textColor="@color/textcolor_white"
+              android:textSize="16dp" />
+
+      </android.support.v7.widget.Toolbar>-->
+
+    <ScrollView
+        android:id="@+id/scroll_vdetail"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/rlayout_bottom"
+        android:layout_below="@id/toolbar"
+        android:descendantFocusability="beforeDescendants"
+        android:fillViewport="true"
+        android:focusableInTouchMode="true">
+
+        <LinearLayout
+            android:id="@+id/ll_detllayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_five_5dp">
+
+                <ImageButton
+                    android:id="@+id/buttonmyclinic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/dimen_five_5dp"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_star_border_black_24dp" />
+
+                <ImageView
+                    android:id="@+id/imageViewClinicDetails24Hours"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/dimen_15dp"
+                    android:src="@drawable/ic_hours_24" />
+
+                <TextView
+                    android:id="@+id/textview24Hr"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_four_4dp"
+                    android:layout_toRightOf="@+id/imageViewClinicDetails24Hours"
+                    android:text="@string/textview_hinit_24hrclinic"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/dimen_13dp" />
+
+                <ImageView
+                    android:id="@+id/imageViewClinicDetailsCHAS"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_15dp"
+                    android:layout_toLeftOf="@+id/buttonmyclinic"
+                    android:padding="@dimen/dimen_two_2dp"
+                    android:src="@drawable/ic_chas" />
+
+
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v1_icon"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_one_1dp"
+                android:layout_marginTop="@dimen/dimen_seven_7dp"
+                android:background="@color/gray_view">
+
+            </View>
+
+            <TextView
+                android:id="@+id/textViewClinicDetailsClinicName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_five_5dp"
+                android:gravity="left"
+                android:text="Assurance Technology Co ltd"
+                android:textColor="@color/colorblack"
+                android:textSize="@dimen/dimen_15dp"
+                android:textStyle="bold" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_one_1dp"
+                android:layout_marginTop="@dimen/dimen_seven_7dp"
+                android:background="@color/gray_view">
+
+            </View>
+
+            <RelativeLayout
+                android:id="@+id/rlnote"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/dimen_five_5dp">
+
+                <ImageView
+                    android:id="@+id/imagnote"
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_30dp"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginRight="@dimen/dimen_five_5dp"
+                    android:src="@drawable/ic_note_text"></ImageView>
+
+                <TextView
+                    android:id="@+id/lbl_note"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_five_5dp"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_five_5dp"
+                    android:layout_toRightOf="@+id/imagnote"
+                    android:text="@string/textview_lable_note"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/dimen_16dp" />
+
+
+                <TextView
+                    android:id="@+id/textviewclinicNote"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_seven_7dp"
+                    android:layout_toRightOf="@+id/lbl_note"
+                    android:text="sdfdsdf"
+                    android:textColor="@color/colororange"
+                    android:textSize="@dimen/dimen_14dp">
+
+                </TextView>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v2_remark"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_one_1dp"
+                android:layout_marginTop="@dimen/dimen_seven_7dp"
+                android:background="@color/gray_view">
+
+            </View>
+
+            <RelativeLayout
+                android:id="@+id/rladdress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_five_5dp">
+
+                <ImageButton
+                    android:id="@+id/image_map"
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_20dp"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_location_on_black_18dp"></ImageButton>
+
+                <TextView
+                    android:id="@+id/lbl_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_five_5dp"
+                    android:layout_marginRight="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_toRightOf="@+id/image_map"
+                    android:text="@string/textview_lable_address"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/dimen_16dp" />
+
+                <TextView
+                    android:id="@+id/textViewClinicDetailsBlockNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_four_4dp"
+                    android:layout_marginTop="@dimen/dimen_four_4dp"
+                    android:layout_toRightOf="@+id/lbl_address"
+                    android:text="@string/detailed_block"
+                    android:textColor="@color/blue_primary_900"
+                    android:textSize="@dimen/dimen_14dp" />
+
+                <TextView
+                    android:id="@+id/textViewClinicDetailsStreet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_four_4dp"
+                    android:layout_marginStart="@dimen/dimen_four_4dp"
+                    android:layout_marginTop="@dimen/dimen_four_4dp"
+                    android:layout_toRightOf="@+id/textViewClinicDetailsBlockNo"
+                    android:text="@string/detailed_street"
+                    android:textColor="@color/blue_primary_900"
+                    android:textSize="@dimen/dimen_14dp" />
+
+                <TextView
+                    android:id="@+id/textViewClinicDetailsUnitNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/textViewClinicDetailsStreet"
+                    android:layout_marginLeft="@dimen/dimen_four_4dp"
+                    android:layout_toRightOf="@+id/lbl_address"
+                    android:text="@string/detailed_unit"
+                    android:textColor="@color/blue_primary_900"
+                    android:textSize="@dimen/dimen_14dp" />
+
+                <TextView
+                    android:id="@+id/textViewClinicDetailsBuildingName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewClinicDetailsStreet"
+                    android:layout_marginLeft="@dimen/dimen_four_4dp"
+                    android:layout_marginStart="@dimen/dimen_four_4dp"
+                    android:layout_toRightOf="@id/textViewClinicDetailsUnitNo"
+                    android:text="@string/detailed_Building"
+                    android:textColor="@color/blue_primary_900"
+                    android:textSize="@dimen/dimen_14dp" />
+
+                <TextView
+                    android:id="@+id/textViewClinicDetailsPostalCodePrefix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewClinicDetailsBuildingName"
+                    android:layout_marginLeft="@dimen/dimen_four_4dp"
+                    android:layout_toRightOf="@+id/lbl_address"
+                    android:text="@string/prefix_detailed_postalcode"
+                    android:textColor="@color/blue_primary_900"
+                    android:textSize="@dimen/dimen_14dp" />
+
+                <TextView
+                    android:id="@+id/textViewClinicDetailsPostalCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewClinicDetailsBuildingName"
+                    android:layout_toRightOf="@+id/textViewClinicDetailsPostalCodePrefix"
+                    android:text="@string/detailed_postalcode"
+                    android:textColor="@color/blue_primary_900"
+                    android:textSize="@dimen/dimen_14dp" />
+
+                <TextView
+                    android:id="@+id/textViewClinicDetailsPostalCodeSuffix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewClinicDetailsBuildingName"
+                    android:layout_toRightOf="@+id/textViewClinicDetailsPostalCode"
+                    android:text="@string/postfix_detailed_postalcode"
+                    android:textColor="@color/blue_primary_900"
+                    android:textSize="@dimen/dimen_14dp" />
+
+                <!--       <View
+                           android:id="@+id/addressview"
+                           android:layout_width="match_parent"
+                           android:layout_height="@dimen/reminder_margin1"
+                           android:layout_below="@+id/textViewClinicDetailsPostalCodeSuffix"
+                           android:layout_marginBottom="10dp"
+                           android:layout_marginRight="10dp"
+                           android:layout_marginTop="15dp"
+                           android:layout_toRightOf="@+id/image_map"
+                           android:background="@android:color/transparent">
+
+                       </View>-->
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v3_Address"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_one_1dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@color/gray_view">
+
+            </View>
+
+            <RelativeLayout
+                android:id="@+id/rlcontact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_seven_7dp">
+
+                <ImageView
+                    android:id="@+id/imagcall"
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_20dp"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginRight="@dimen/dimen_five_5dp"
+                    android:src="@drawable/ic_phone"></ImageView>
+
+                <TextView
+                    android:id="@+id/lbl_contact"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimen_20dp"
+                    android:layout_toRightOf="@+id/imagcall"
+                    android:text="@string/textview_lable_contact"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/dimen_16dp" />
+
+                <TextView
+                    android:id="@+id/textViewClinicDetailsContact1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_four_4dp"
+                    android:layout_toRightOf="@+id/lbl_contact"
+                    android:autoLink="phone"
+                    android:clickable="true"
+                    android:text="12345678"
+                    android:textSize="@dimen/dimen_15dp"></TextView>
+
+                <TextView
+                    android:id="@+id/textViewClinicDetailsContact2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/textViewClinicDetailsContact1"
+                    android:layout_marginLeft="@dimen/dimen_four_4dp"
+                    android:layout_marginTop="@dimen/dimen_five_5dp"
+                    android:layout_toRightOf="@+id/lbl_contact"
+                    android:autoLink="phone"
+                    android:clickable="true"
+                    android:text="12345678"
+                    android:textSize="@dimen/dimen_15dp"></TextView>
+
+                <!--   <View
+                       android:id="@+id/contactview"
+                       android:layout_width="match_parent"
+                       android:layout_height="@dimen/reminder_margin1"
+                       android:layout_below="@+id/textViewClinicDetailsContact2"
+                       android:layout_marginBottom="10dp"
+                       android:layout_marginRight="10dp"
+                       android:layout_marginTop="15dp"
+                       android:layout_toRightOf="@+id/imagcall"
+                       android:background="@color/gray_view"></View>-->
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v3_Contact"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_one_1dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@color/gray_view">
+
+            </View>
+
+            <RelativeLayout
+                android:id="@+id/rlFax"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_seven_7dp">
+
+                <TextView
+                    android:id="@+id/textViewClinicDetailsFax"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_50dp"
+                    android:clickable="true"
+                    android:text="@string/textview_lable_fax"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/dimen_16dp"></TextView>
+
+                <TextView
+                    android:id="@+id/textViewClinicFax_detail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_50dp"
+                    android:layout_toRightOf="@+id/textViewClinicDetailsFax"
+                    android:clickable="true"
+                    android:text="123456789"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/dimen_15dp"
+                    tools:ignore="HardcodedText"></TextView>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v4_Fax"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_one_1dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@color/gray_view">
+
+            </View>
+
+            <RelativeLayout
+                android:id="@+id/rlEmail"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_seven_7dp">
+
+                <TextView
+                    android:id="@+id/textViewClinicDetailsEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_50dp"
+                    android:clickable="true"
+                    android:text="@string/textview_lable_email"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/dimen_16dp"></TextView>
+
+                <TextView
+                    android:id="@+id/textViewClinicEmail"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_30dp"
+                    android:layout_toRightOf="@+id/textViewClinicDetailsEmail"
+                    android:autoLink="email"
+                    android:clickable="true"
+                    android:text="support@eclinic.com.sg"
+                    android:textSize="@dimen/dimen_15dp"></TextView>
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v5_email"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_one_1dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@color/gray_view">
+
+            </View>
+
+            <RelativeLayout
+                android:id="@+id/rlwebsite"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp">
+
+                <ImageView
+                    android:id="@+id/imagwebsite"
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_20dp"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:src="@drawable/ic_web"></ImageView>
+
+                <Button
+                    android:id="@+id/btn_website"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_40dp"
+                    android:layout_marginLeft="@dimen/dimen_four_4dp"
+                    android:layout_marginTop="@dimen/dimen_minus_10dp"
+                    android:layout_toRightOf="@+id/imagwebsite"
+                    android:background="@android:color/transparent"
+                    android:text="@string/vweb"
+                    android:textAllCaps="false"
+                    android:textColor="@color/green_primary_700"
+                    android:textSize="@dimen/dimen_16dp" />
+
+                <TextView
+                    android:id="@+id/txt_website_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="@dimen/dimen_40dp"
+                    android:layout_marginLeft="@dimen/dimen_four_4dp"
+                    android:layout_toRightOf="@+id/imagwebsite"
+                    android:background="@android:color/transparent"
+                    android:text="@string/noinfo"
+                    android:textSize="@dimen/dimen_16dp"
+                    android:visibility="gone" />
+
+                <!--    <View
+                        android:id="@+id/webview"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/reminder_margin1"
+                        android:layout_below="@+id/btn_website"
+                        android:layout_marginRight="10dp"
+                        android:layout_toRightOf="@+id/imagwebsite"
+                        android:background="@color/gray_view">
+
+                    </View>-->
+            </RelativeLayout>
+
+            <View
+                android:id="@+id/v3_website"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_one_1dp"
+                android:layout_marginTop="@dimen/dimen_five_5dp"
+                android:background="@color/gray_view">
+
+            </View>
+
+            <RelativeLayout
+                android:id="@+id/rlnewopenhr"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp">
+
+
+                <ImageView
+                    android:id="@+id/imagnewopenclock"
+                    android:layout_width="@dimen/dimen_20dp"
+                    android:layout_height="@dimen/dimen_20dp"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_two_2dp"
+                    android:src="@drawable/ic_clock"></ImageView>
+
+                <TextView
+                    android:id="@+id/txtopenhrlabel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_two_2dp"
+                    android:layout_toRightOf="@+id/imagnewopenclock"
+                    android:text="@string/textview_lable_openhr"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/dimen_16dp" />
+
+                <sg.com.ehealthassist.ehealthassist.CustomUI.CustomListView
+                    android:id="@+id/lvcustomopenhrheader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/txtopenhrlabel"
+                    android:layout_marginLeft="@dimen/dimen_50dp"
+
+                    android:divider="@android:color/transparent">
+
+                </sg.com.ehealthassist.ehealthassist.CustomUI.CustomListView>
+
+            </RelativeLayout>
+
+            <!--    <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_one_1dp"
+                    android:id="@+id/view_rlnewopenhr"
+                    android:layout_below="@+id/rlnewopenhr"
+                    android:layout_marginTop="@dimen/dimen_seven_7dp"
+                    android:background="@color/gray_view"
+                    android:visibility="gone">
+
+                </View>-->
+
+            <RelativeLayout
+                android:id="@+id/rladvertise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:visibility="gone">
+
+                <ImageView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginRight="@dimen/dimen_20dp"
+                    android:src="@drawable/images">
+
+                </ImageView>
+            </RelativeLayout>
+
+            <!--    <RelativeLayout
+                    android:id="@+id/rlopeninghr"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_seven_7dp"
+                    android:visibility="gone">
+
+                    <ImageView
+                        android:id="@+id/imagclock"
+                        android:layout_width="@dimen/dimen_20dp"
+                        android:layout_height="@dimen/dimen_20dp"
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:layout_marginRight="@dimen/dimen_10dp"
+                        android:layout_marginTop="@dimen/dimen_two_2dp"
+                        android:src="@drawable/ic_clock"></ImageView>
+
+                    <TextView
+                        android:id="@+id/textViewClinicDetailsOperatingHoursLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toRightOf="@+id/imagclock"
+                        android:text="@string/textview_lable_openhr"
+                        android:textColor="@color/colorblack"
+                        android:layout_marginRight="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/dimen_two_2dp"
+                        android:textSize="@dimen/dimen_16dp" />
+
+                    <TextView
+                        android:id="@+id/textViewClinicDetailsOperatingHours"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="@dimen/dimen_three_3dp"
+                        android:layout_marginRight="@dimen/dimen_three_3dp"
+                        android:layout_toRightOf="@+id/textViewClinicDetailsOperatingHoursLabel"
+                        android:text="9:00 AM - 9:00 PM"
+                        android:textColor="@color/colorblack"
+                        android:textSize="@dimen/dimen_15dp"></TextView>
+
+                    <TextView
+                        android:id="@+id/txtshowalltime"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textViewClinicDetailsOperatingHours"
+                        android:layout_toRightOf="@+id/textViewClinicDetailsOperatingHoursLabel"
+                        android:clickable="true"
+                        android:paddingBottom="@dimen/dimen_five_5dp"
+                        android:paddingTop="@dimen/dimen_five_5dp"
+                        android:text="@string/textview_lable_showalltime"
+                        android:textColor="@color/green_primary_700"
+
+                        android:textSize="@dimen/dimen_15dp">
+
+                    </TextView>
+
+                    &lt;!&ndash;   <View
+                           android:id="@+id/openhrview"
+                           android:layout_width="match_parent"
+                           android:layout_height="@dimen/reminder_margin1"
+                           android:layout_below="@+id/txtshowalltime"
+                           android:layout_marginBottom="10dp"
+                           android:layout_marginRight="10dp"
+                           android:layout_marginTop="10dp"
+                           android:layout_toRightOf="@+id/imagclock"
+                           android:background="@color/gray_view">
+
+                       </View>&ndash;&gt;
+                </RelativeLayout>-->
+
+
+            <!--  <RelativeLayout
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:id="@+id/rlophrexpandable"
+                  android:visibility="gone"
+                  >
+
+                  <LinearLayout
+                      android:layout_width="match_parent"
+                      android:layout_height="match_parent"
+                      android:orientation="vertical"
+                      >
+
+
+                      <com.github.aakira.expandablelayout.ExpandableWeightLayout
+                          android:id="@+id/expandableLayout"
+                          android:layout_width="match_parent"
+                          android:layout_height="@dimen/dimen_zero_0dp"
+                          android:layout_weight="6"
+                          android:background="#F5F5F5"
+                          android:padding="@dimen/dimen_10dp"
+                          app:ael_duration="500"
+                          app:ael_expanded="false"
+                          app:ael_interpolator="anticipateOvershoot">
+
+                          <RelativeLayout
+                              android:layout_width="match_parent"
+                              android:layout_height="wrap_content">
+
+                              <ImageButton
+                                  android:id="@+id/imagebtn_openclose"
+                                  android:layout_width="@dimen/dimen_25dp"
+                                  android:layout_height="@dimen/dimen_25dp"
+                                  android:layout_marginBottom="@dimen/dimen_10dp"
+                                  android:layout_marginLeft="@dimen/dimen_10dp"
+                                  android:layout_marginRight="@dimen/dimen_10dp"
+                                  android:background="@android:color/transparent"
+                                  android:src="@drawable/close"></ImageButton>
+
+                              <TextView
+                                  android:id="@+id/txtopenhr"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:layout_toRightOf="@+id/imagebtn_openclose"
+                                  android:text="Clinic open hour"
+                                  android:textColor="#000"
+                                  android:textSize="@dimen/dimen_16dp"></TextView>
+
+                              <View
+                                  android:id="@+id/opendialogview"
+                                  android:layout_width="match_parent"
+                                  android:layout_height="@dimen/dimen_one_1dp"
+                                  android:layout_below="@+id/txtopenhr"
+                                  android:layout_marginTop="@dimen/dimen_10dp"
+                                  android:background="@color/gray_view" />
+
+                              <sg.com.ehealthassist.ehealthassist.CustomUI.CustomListView
+                                  android:id="@+id/lvopeninghr"
+                                  android:layout_width="wrap_content"
+                                  android:layout_height="wrap_content"
+                                  android:layout_below="@+id/opendialogview"
+                                  android:layout_margin="@dimen/dimen_10dp"
+                                  android:background="#F5F5F5"
+                                  android:divider="@android:color/transparent"
+                                  android:textColor="#000">
+
+                              </sg.com.ehealthassist.ehealthassist.CustomUI.CustomListView>
+                          </RelativeLayout>
+                      </com.github.aakira.expandablelayout.ExpandableWeightLayout>
+
+
+                  </LinearLayout>
+              </RelativeLayout>-->
+
+
+            <View
+                android:id="@+id/view_services"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_one_1dp"
+                android:layout_below="@+id/rlophrexpandable"
+                android:layout_marginTop="@dimen/dimen_seven_7dp"
+                android:background="@color/gray_view"></View>
+
+            <RelativeLayout
+                android:id="@+id/rlservices"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/gray_view"
+                android:layout_marginTop="@dimen/dimen_seven_7dp">
+
+                <TextView
+                    android:id="@+id/txt_services"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_50dp"
+                    android:clickable="true"
+                    android:text="Services"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/dimen_16dp" />
+
+                <sg.com.ehealthassist.ehealthassist.CustomUI.CustomListView
+                    android:id="@+id/lvclinic_services"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_toRightOf="@+id/txt_services"
+                    android:divider="@android:color/transparent"
+                    android:focusable="false"></sg.com.ehealthassist.ehealthassist.CustomUI.CustomListView>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </ScrollView>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeLayoutQueueDetails"
+        android:layout_width="fill_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:layout_above="@+id/llBottom"
+        android:layout_marginBottom="@dimen/dimen_8dp"
+        android:layout_marginLeft="@dimen/dimen_four_4dp"
+        android:layout_marginRight="@dimen/dimen_four_4dp"
+        android:background="@drawable/border_frame"
+        android:gravity="center"
+        android:visibility="gone">
+        />
+
+        <TextView
+            android:id="@+id/textViewClinicDetailsPeopleInQueue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:paddingTop="@dimen/dimen_seven_7dp"
+            android:text="@string/detailed_nopeopelq"
+            android:textAppearance="?android:attr/textAppearanceSmall" />
+
+        <TextView
+            android:id="@+id/textViewClinicDetailsPeopleInQueueResult"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_six_6dp"
+            android:layout_toLeftOf="@+id/imageButtonRefreshQueueStatus"
+            android:layout_toRightOf="@+id/textViewClinicDetailsPeopleInQueue"
+            android:paddingTop="@dimen/dimen_8dp"
+            android:text="@string/detailed_available"
+            android:textAppearance="?android:attr/textAppearanceSmall"
+            android:textColor="@color/colorlightblue"
+            android:textStyle="bold" />
+
+        <ImageButton
+            android:id="@+id/imageButtonRefreshQueueStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginRight="@dimen/dimen_five_5dp"
+            android:layout_marginTop="@dimen/dimen_seven_7dp"
+            android:background="@color/cas_default_bg_coreColorLight"
+            android:clickable="true"
+            android:src="@drawable/selector_ic_refresh" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlayout_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:background="@color/cas_default_bg_coreColorLight">
+
+        <TextView
+            android:id="@+id/queue_appt_message"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="No Queue and Appointment available for this clinic"
+            android:textColor="#000"
+            android:textSize="@dimen/dimen_16dp"
+            android:visibility="gone" />
+
+        <ImageButton
+            android:id="@+id/buttonDrDuty"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/selector_dod"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/buttonRegisterQueue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_toLeftOf="@+id/buttonApptSlot"
+            android:background="@android:color/transparent"
+            android:src="@drawable/selector_queue"></ImageButton>
+
+        <ImageButton
+            android:id="@+id/buttonApptSlot"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:background="@android:color/transparent"
+            android:src="@drawable/selector_appointment"></ImageButton>
+
+    </RelativeLayout>
+
+</RelativeLayout>

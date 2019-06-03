@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    tools:context="sg.com.ehealthassist.ehealthassist.Medication.ActivityMedicalDispense">
+
+    <include layout="@layout/toolbar" />
+
+    <!-- <RelativeLayout
+         android:id="@+id/rlfilter"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/dimen_40dp"
+         android:layout_below="@+id/toolbar"
+         android:background="@color/light_blue">
+
+         <TextView
+             android:id="@+id/txtfilter_name"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_centerVertical="true"
+             android:layout_marginLeft="@dimen/dimen_15dp"
+             android:layout_marginRight="@dimen/dimen_10dp"
+             android:layout_toRightOf="@+id/txtTotalinvoice"
+             android:gravity="right"
+             android:layout_toLeftOf="@+id/btn_filter"
+             android:singleLine="true"
+             android:text="All"
+             android:textSize="@dimen/dimen_15dp"
+             android:textColor="@color/cas_color_black" />
+
+         <ImageButton
+             android:id="@+id/btn_filter"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentRight="true"
+             android:layout_centerVertical="true"
+             android:layout_marginBottom="@dimen/dimen_five_5dp"
+             android:layout_marginRight="@dimen/dimen_10dp"
+             android:layout_marginTop="@dimen/dimen_five_5dp"
+             android:background="@color/blue_primary_900"
+             android:paddingBottom="@dimen/dimen_seven_7dp"
+             android:paddingLeft="@dimen/dimen_seven_7dp"
+             android:paddingRight="@dimen/dimen_seven_7dp"
+             android:paddingTop="@dimen/dimen_seven_7dp"
+             android:src="@drawable/empty_filter"
+
+             />
+     </RelativeLayout>-->
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lvdispense"
+        android:layout_below="@+id/toolbar">
+
+    </ListView>
+    <FrameLayout
+        android:id="@+id/myfab_main"
+        android:layout_width="@dimen/dimen_100dp"
+        android:layout_height="@dimen/dimen_100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true">
+        <View
+            android:id="@+id/myfab_show"
+            android:layout_width="@dimen/dimen_80dp"
+            android:layout_height="@dimen/dimen_80dp"
+            android:layout_gravity="center"
+            ></View>
+
+        <ImageButton
+            android:id="@+id/imgbtn_medDipsenseRefresh"
+            android:layout_width="@dimen/dimen_50dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/fab_selector"
+            android:cropToPadding="true"
+            android:src="@drawable/ic_refresh_white_24dp"
+            android:stateListAnimator="@animator/fab_elevation_selector"
+            android:textColor="#fff"
+            android:textSize="@dimen/dimen_24dp" />
+    </FrameLayout>
+</RelativeLayout>

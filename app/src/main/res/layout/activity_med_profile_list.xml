@@ -1,0 +1,288 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f5fa"
+    tools:context="sg.com.ehealthassist.ehealthassist.Profiles.ActivityMedProfileList">
+
+    <include
+        android:id="@+id/toolbar_id"
+        layout="@layout/toolbar" />
+
+    <TextView
+        android:id="@+id/txt_main_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar_id"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:text="Main Profile" />
+
+    <ImageView
+        android:layout_width="@dimen/dimen_30dp"
+        android:layout_height="@dimen/dimen_25dp"
+        android:layout_below="@id/toolbar_id"
+        android:layout_marginLeft="@dimen/dimen_five_5dp"
+        android:layout_marginTop="@dimen/dimen_five_5dp"
+        android:layout_toRightOf="@id/txt_main_profile"
+        android:scaleType="fitCenter"
+        android:src="@drawable/ic_account" />
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/nested_card_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txt_main_profile"
+        android:layout_marginBottom="@dimen/dimen_five_5dp"
+        android:layout_marginLeft="@dimen/dimen_five_5dp"
+        android:layout_marginRight="@dimen/dimen_five_5dp"
+        android:layout_marginTop="@dimen/dimen_five_5dp"
+        android:orientation="vertical"
+        app:cardCornerRadius="@dimen/dimen_10dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+
+            >
+
+            <ImageView
+                android:id="@+id/imgv_profile_view"
+                android:layout_width="@dimen/dimen_40dp"
+                android:layout_height="@dimen/dimen_40dp"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_toRightOf="@+id/imgbtn_back"
+                android:scaleType="fitCenter"
+                android:src="@drawable/userrounded" />
+
+            <TextView
+                android:id="@+id/txt_med_profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_seven_7dp"
+                android:layout_toRightOf="@+id/imgv_profile_view"
+                android:text="TTT"
+                android:textColor="@color/blue_primary_900"
+                android:textSize="@dimen/dimen_15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_med_profile_nric"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_med_profile_name"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_toRightOf="@+id/imgv_profile_view"
+                android:text="(S111d)"
+                android:textColor="@color/blue_primary_900"
+                android:textSize="@dimen/dimen_15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/txt_med_error"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="@dimen/dimen_three_3dp"
+                android:text="( )"
+                android:textColor="@color/colorred"
+                android:textSize="@dimen/dimen_20dp"
+                android:textStyle="bold"
+                android:visibility="gone" />
+
+            <ImageView
+                android:id="@+id/imgupload"
+                android:layout_width="@dimen/dimen_25dp"
+                android:layout_height="@dimen/dimen_25dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:layout_centerInParent="true"
+                android:scaleType="fitCenter"
+                android:src="@drawable/right_arrow" />
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/txt_sub_profile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nested_card_view"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:layout_marginTop="@dimen/dimen_seven_7dp"
+        android:text="Sub Profiles(Family)" />
+    <ImageView
+        android:layout_width="@dimen/dimen_30dp"
+        android:layout_height="@dimen/dimen_25dp"
+        android:layout_below="@id/nested_card_view"
+        android:layout_marginLeft="@dimen/dimen_15dp"
+        android:layout_marginTop="@dimen/dimen_five_5dp"
+        android:layout_toRightOf="@id/txt_sub_profile"
+        android:scaleType="fitCenter"
+        android:src="@drawable/multiaccount" />
+
+    <com.thazin.swipelibrary.SwipeMenuListView
+        android:id="@+id/med_profile_lst"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llBottom"
+        android:layout_below="@+id/txt_sub_profile"
+        android:layout_margin="@dimen/dimen_four_4dp"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="@dimen/dimen_zero_0dp" />
+
+
+    <TextView
+        android:id="@+id/txtcheckprofile"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/med_profile_lst"
+        android:gravity="center"
+        android:text="@string/med_profile_text1"
+        android:textColor="@color/colorred"
+        android:textSize="@dimen/dimen_16dp"
+        android:visibility="visible" />
+
+    <!-- &lt;!&ndash;bottom menu &ndash;&gt;
+     <LinearLayout
+         android:id="@+id/llBottom"
+         android:layout_width="match_parent"
+         android:layout_height="@dimen/dimen_58dp"
+         android:layout_alignParentBottom="true"
+         android:background="@color/colorPrimaryDark"
+         android:baselineAligned="false"
+         android:orientation="horizontal"
+         android:weightSum="5">
+
+         <LinearLayout
+             android:id="@+id/tabHome"
+             style="@style/toolbarBottom">
+
+             <ImageView
+                 android:id="@+id/iconHome"
+                 style="@style/toolbarBottom.ImageView"
+                 android:src="@drawable/home_white" />
+         </LinearLayout>
+
+         <LinearLayout
+             android:id="@+id/tabProfile"
+             style="@style/toolbarBottom">
+
+             <ImageView
+                 android:id="@+id/iconProfile"
+                 style="@style/toolbarBottom.ImageView"
+                 android:src="@drawable/my_profile_press" />
+         </LinearLayout>
+
+         <LinearLayout
+             android:id="@+id/tabClinic"
+             style="@style/toolbarBottom">
+
+             <ImageView
+                 android:id="@+id/iconClinic"
+                 style="@style/toolbarBottom.ImageView"
+                 android:src="@drawable/my_clinic_white" />
+         </LinearLayout>
+
+         <LinearLayout
+             android:id="@+id/tabAppointment"
+             style="@style/toolbarBottom">
+
+             <ImageView
+                 android:id="@+id/iconAppt"
+                 style="@style/toolbarBottom.ImageView"
+                 android:src="@drawable/my_queue_white" />
+         </LinearLayout>
+
+         <LinearLayout
+             android:id="@+id/tabSetting"
+             style="@style/toolbarBottom">
+
+             <ImageView
+                 android:id="@+id/iconAbout"
+                 style="@style/toolbarBottom.ImageView"
+                 android:src="@drawable/setting_white" />
+         </LinearLayout>
+     </LinearLayout>-->
+    <!-- End Bottom menu -->
+    <FrameLayout
+        android:id="@+id/myfab_main"
+        android:layout_width="@dimen/dimen_100dp"
+        android:layout_height="@dimen/dimen_100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true">
+
+        <View
+            android:id="@+id/myfab_show"
+            android:layout_width="@dimen/dimen_80dp"
+            android:layout_height="@dimen/dimen_80dp"
+            android:layout_gravity="center"></View>
+
+        <ImageButton
+            android:id="@+id/btncreate"
+            android:layout_width="@dimen/dimen_50dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/fab_selector"
+            android:cropToPadding="true"
+            android:src="@drawable/ic_add_white_24dp"
+            android:stateListAnimator="@animator/fab_elevation_selector"
+            android:textColor="#fff"
+            android:textSize="@dimen/dimen_24dp" />
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/med_profile_loadingPanel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60dp"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="@dimen/dimen_60dp"
+        android:alpha="0.5"
+        android:background="#DD111120"
+        android:visibility="gone">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal">
+
+            <ProgressBar
+                android:id="@+id/FC_Prgogress"
+                android:layout_width="@dimen/dimen_30dp"
+                android:layout_height="@dimen/dimen_30dp"
+                android:indeterminate="true" />
+
+            <TextView
+                android:id="@+id/txtdownloadac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_five_5dp"
+                android:text="@string/progressloading"
+                android:textColor="#fff"></TextView>
+
+            <TextView
+                android:id="@+id/txtdownloadaccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:textColor="#fff"></TextView>
+
+            <TextView
+                android:id="@+id/txtdownloadlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:text="@string/progressclinic"
+                android:textColor="#fff"></TextView>
+        </LinearLayout>
+    </RelativeLayout>
+    <!--</RelativeLayout>-->
+
+</RelativeLayout>

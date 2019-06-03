@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sg.com.ehealthassist.ehealthassist.Messages.ActivityMessageDetails">
+
+    <include layout="@layout/toolbar"></include>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:focusable="true"
+            android:focusableInTouchMode="true">
+            <RelativeLayout
+                android:id="@+id/rlclinicname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                >
+                <TextView
+                    android:id="@+id/lblclinicname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clinic Name:"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_marginBottom="@dimen/dimen_10dp"
+                    android:textColor="@color/colorblack"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/txtclinicname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clinic Name :"
+                    android:textSize="16dp"
+                    android:layout_toRightOf="@+id/lblclinicname"
+                    android:layout_marginLeft="@dimen/dimen_40dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_marginBottom="@dimen/dimen_10dp"
+                    android:textColor="@color/colorblack"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rlclinicaddress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlclinicname"
+
+                >
+
+                <TextView
+                    android:id="@+id/txtaddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:text="Clinic Address :"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginBottom="@dimen/dimen_10dp"
+                    android:textColor="@color/colorblack"
+                    android:textStyle="bold"
+                    ></TextView>
+
+                <TextView
+                    android:id="@+id/textViewClinicDetailsBlockNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_40dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_toRightOf="@+id/txtaddress"
+                    android:text="@string/detailed_block"
+                    android:textSize="@dimen/dimen_15dp"
+                    android:textColor="@color/colorblack"
+
+                    />
+
+                <TextView
+                    android:id="@+id/textViewClinicDetailsStreet"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_toRightOf="@+id/textViewClinicDetailsBlockNo"
+                    android:text="@string/detailed_street"
+                    android:textSize="@dimen/dimen_15dp"
+                    android:textColor="@color/colorblack"
+                    android:layout_marginStart="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_20dp" />
+
+                <TextView
+                    android:id="@+id/textViewClinicDetailsUnitNo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@id/textViewClinicDetailsBlockNo"
+                    android:layout_alignStart="@id/textViewClinicDetailsBlockNo"
+                    android:layout_below="@id/textViewClinicDetailsStreet"
+                    android:text="@string/detailed_unit"
+                    android:textSize="@dimen/dimen_15dp"
+                    android:textColor="@color/colorblack"
+                     />
+
+
+
+                <TextView
+                    android:id="@+id/textViewClinicDetailsBuildingName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@id/textViewClinicDetailsUnitNo"
+                    android:layout_below="@+id/textViewClinicDetailsStreet"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginStart="@dimen/dimen_10dp"
+                    android:layout_toRightOf="@id/textViewClinicDetailsUnitNo"
+                    android:text="@string/detailed_Building"
+                    android:textSize="@dimen/dimen_15dp"
+                    android:textColor="@color/colorblack"
+                    />
+
+                <TextView
+                    android:id="@+id/textViewClinicDetailsPostalCodePrefix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignLeft="@+id/textViewClinicDetailsBlockNo"
+                    android:layout_alignStart="@+id/textViewClinicDetailsBlockNo"
+                    android:layout_below="@+id/textViewClinicDetailsUnitNo"
+                    android:text="@string/prefix_detailed_postalcode"
+                    android:textSize="@dimen/dimen_15dp"
+                    android:textColor="@color/colorblack"/>
+
+                <TextView
+                    android:id="@+id/textViewClinicDetailsPostalCode"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textViewClinicDetailsPostalCodePrefix"
+                    android:layout_toRightOf="@+id/textViewClinicDetailsPostalCodePrefix"
+                    android:text="@string/detailed_postalcode"
+                    android:textSize="@dimen/dimen_15dp"
+                    android:textColor="@color/colorblack" />
+
+                <TextView
+                    android:id="@+id/textViewClinicDetailsPostalCodeSuffix"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignBottom="@+id/textViewClinicDetailsPostalCode"
+                    android:layout_toRightOf="@+id/textViewClinicDetailsPostalCode"
+                    android:text="@string/postfix_detailed_postalcode"
+                    android:textSize="@dimen/dimen_15dp"
+                    android:textColor="@color/colorblack"
+                     />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id= "@+id/rlpatientname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlclinicaddress"
+                >
+                <TextView
+                    android:id="@+id/lblpatientname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Patient Name :"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_marginBottom="@dimen/dimen_10dp"
+                    android:textColor="@color/colorblack"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:id="@+id/txtpatientname"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textSize="15dp"
+                    android:layout_toRightOf="@+id/lblpatientname"
+                    android:layout_marginLeft="@dimen/dimen_40dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_marginBottom="@dimen/dimen_10dp"
+                    android:textColor="@color/colorblack"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id= "@+id/rldate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlpatientname"
+                >
+                <TextView
+                    android:id="@+id/lbldate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Date :"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_marginBottom="@dimen/dimen_10dp"
+                    android:textColor="@color/colorblack"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtdate"
+                    android:textSize="15dp"
+                    android:layout_toRightOf="@+id/lbldate"
+                    android:layout_marginLeft="110dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_marginBottom="@dimen/dimen_10dp"
+                    android:textColor="@color/colorblack"/>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id= "@+id/rlclinicmessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rldate"
+                >
+                <TextView
+                    android:id="@+id/lblclinicmessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Clinic Message :"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_marginBottom="@dimen/dimen_five_5dp"
+                    android:textColor="@color/colorblack"
+                    android:textStyle="bold"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txtclinicmessage"
+                    android:textSize="15dp"
+                    android:layout_below="@+id/lblclinicmessage"
+                    android:layout_marginLeft="@dimen/dimen_70dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginBottom="@dimen/dimen_10dp"
+                    android:textColor="@color/colorblack"/>
+
+            </RelativeLayout>
+            <View
+                android:id="@+id/rlview"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/gray_light"
+                android:layout_below="@+id/rlclinicmessage"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+
+                ></View>
+            <RelativeLayout
+                android:id= "@+id/rlreplymessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlview"
+                >
+                <TextView
+                    android:id="@+id/lblreplymessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Reply Message :"
+                    android:textSize="16dp"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_marginBottom="@dimen/dimen_10dp"
+                    android:textColor="@color/colorblack"
+                    android:textStyle="bold"/>
+            <RelativeLayout
+                android:id= "@+id/rleditext"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/cas_default_bg_coreColorDark"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:layout_below="@+id/lblreplymessage"
+                >
+                <EditText
+                    android:id="@+id/editreplymessage"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:scrollHorizontally="false"
+                    android:textSize="15dp"
+                    android:inputType="textMultiLine"
+                    android:lines="10"
+                    android:gravity="top|left"
+                    android:background="@android:color/transparent"
+                    android:layout_marginLeft="@dimen/dimen_30dp"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginBottom="@dimen/dimen_10dp"
+                    android:textColor="@color/colorblack"
+                    android:scrollbars="vertical"
+                    />
+                </RelativeLayout>
+            </RelativeLayout>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dip"
+                android:id="@+id/btn_messagereply"
+                android:text="Reply"
+                android:background="@drawable/button_blue"
+                android:textColor="@color/colorwhite"
+                android:paddingLeft="@dimen/dimen_10dp"
+                android:paddingRight="@dimen/dimen_10dp"
+                android:layout_marginRight="@dimen/dimen_20dp"
+                android:layout_gravity="right"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:textSize="15dp"
+                android:visibility="gone"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                />
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

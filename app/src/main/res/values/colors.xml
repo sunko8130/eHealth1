@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#2F456A</color>
+    <color name="colorPrimaryDark">#233251</color>
+    <color name="colorAccent">#006BBA</color>
+
+    <color name="colorwhite">#fff</color>
+    <color name="gray_view">#ccc</color>
+    <color name="colorred">#ff0000</color>
+    <color name="colorblack">#000</color>
+    <color name="colorhint">#A0A0A0</color>
+    <color name="transpearance">#73F2F8F9</color>
+    <color name="blue_primary_900">#0D47A1</color>
+        <color name="colorlightblue">#0099cc</color>
+    <color name="blue_100">#BBDEFB</color>
+    <color name="gray_light">#E0E0E0</color>
+    <color name="spinner_bg">#ECEFF1</color>
+    <color name="bg_psi3hr_color">#1DB5FE</color>
+    <color name="bg_psi24hr_color">#30CED0</color>
+    <color name="bg_pm25_color">#A3D3E1</color>
+    <color name="green_primary_700">#009688</color>
+    <color name="pink_accent_900">#880E4F</color>
+    <color name="cas_default_bg_coreColorDark">#add8e6</color>
+    <color name="queue_green">#00C853</color>
+    <color name="green">#9fc6ca</color>
+    <color name="cas_color_green">#66ff66</color>
+    <color name="colorblue">#01579B</color>
+    <color name="cas_color_tab_yellow">#FFB300</color>
+    <color name="cas_success_green">#4CAF50</color>
+    <color name="cas_background">#E0E0E0</color>
+    <color name="colororange"> #FF5722</color>
+    <color name="cas_default_bg_coreColorLight">#f3ffff</color>
+    <color name="cas_default_textColor">#000</color>
+    <color name="text_hintcolor">#757575</color>
+    <color name="cas_default_bg">#fff</color>
+    <color name="cas_color_red">#ff0000</color>
+    <color name="cas_color_black">#000000</color>
+
+    <color name="blue">#123256</color>
+    <color name="gray">#444444</color>
+    <color name="gray_very_light">#DDDDDD</color>
+    <color name="material_orange">#E65100</color>
+
+    <color name="skyblue">#0683C7</color>
+    <color name="dark_gray">#343F4B</color>
+    <color name="orange">#EB5907</color>
+    <color name="greblue">#085883</color>
+    <color name="lightgreen">#6DD4D4</color>
+    <color name="red">#ff0000</color>
+    <color name="yellow">#FFB300</color>
+    <color name="purple">#7D46C8</color>
+    <color name="darkpink">#B80A9E</color>
+    <color name="edocred">#E44A3D</color>
+    <color name="edocyellow">#E1A541</color>
+    <color name="edoclightpink">#D954C6</color>
+    <color name="edoclightblue">#5E79F0</color>
+    <color name="mlightskyblue">#D1EBF8</color>
+
+
+
+</resources>

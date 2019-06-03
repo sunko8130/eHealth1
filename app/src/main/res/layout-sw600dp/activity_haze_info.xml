@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sg.com.ehealthassist.ehealthassist.Haze.ActivityHazeInfo">
+
+    <include layout="@layout/toolbar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar"
+        android:layout_above="@+id/llbutton_bottom">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rlsg_map"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#178AC1">
+
+                <TextView
+                    android:id="@+id/txthazeheader"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/dimen_15dp"
+                    android:gravity="center"
+                    android:text="Haze PSI 24 Hours"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="@dimen/dimen_20dp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_300dp"
+                    android:layout_below="@+id/txthazeheader"
+                    android:src="@drawable/sg_map" />
+
+                <RelativeLayout
+                    android:id="@+id/rlnorth"
+                    android:layout_width="@dimen/dimen_80dp"
+                    android:layout_height="@dimen/dimen_60dp"
+                    android:layout_below="@+id/txthazeheader"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/dimen_25dp"
+                    android:alpha="0.6"
+                    android:background="@drawable/rounded_pm25"
+                    android:padding="@dimen/dimen_three_3dp">
+
+                    <TextView
+                        android:id="@+id/txt_north_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="North"
+                        android:textColor="#000"
+                        android:textSize="@dimen/dimen_15dp" />
+
+                    <TextView
+                        android:id="@+id/txt_north_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_north_text"
+                        android:layout_marginTop="@dimen/dimen_five_5dp"
+                        android:gravity="center_horizontal"
+                        android:text="36"
+                        android:textColor="#000"
+                        android:textSize="@dimen/dimen_20dp"
+                        android:textStyle="bold" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rleast"
+                    android:layout_width="@dimen/dimen_80dp"
+                    android:layout_height="@dimen/dimen_60dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/txthazeheader"
+                    android:layout_marginRight="@dimen/dimen_110dp"
+                    android:layout_marginTop="@dimen/dimen_140dp"
+                    android:alpha="0.6"
+                    android:background="@drawable/rounded_pm25"
+                    android:padding="@dimen/dimen_five_5dp">
+
+                    <TextView
+                        android:id="@+id/txt_east_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_east_text"
+                        android:gravity="center_horizontal"
+                        android:text="56"
+                        android:textColor="#000"
+                        android:textSize="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/dimen_five_5dp"
+                        android:textStyle="bold"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/txt_east_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="East"
+                        android:textColor="#000"
+                        android:textSize="@dimen/dimen_15dp"
+
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlcenter"
+                    android:layout_width="@dimen/dimen_80dp"
+                    android:layout_height="@dimen/dimen_60dp"
+                    android:layout_below="@+id/rlnorth"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/dimen_50dp"
+                    android:alpha="0.6"
+                    android:background="@drawable/rounded_pm25"
+                    android:padding="@dimen/dimen_five_5dp">
+
+                    <TextView
+                        android:id="@+id/txt_center_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_center_text"
+                        android:gravity="center_horizontal"
+                        android:text="46"
+                        android:textColor="#000"
+                        android:layout_marginTop="@dimen/dimen_five_5dp"
+                        android:textSize="@dimen/dimen_20dp"
+                        android:textStyle="bold"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/txt_center_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Center"
+                        android:textColor="#000"
+                        android:textSize="@dimen/dimen_15dp"
+
+                        />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlsouth"
+                    android:layout_width="@dimen/dimen_80dp"
+                    android:layout_height="@dimen/dimen_60dp"
+                    android:layout_below="@+id/rlcenter"
+                    android:layout_centerInParent="true"
+                    android:layout_marginTop="@dimen/dimen_30dp"
+                    android:alpha="0.6"
+                    android:background="@drawable/rounded_pm25"
+                    android:padding="@dimen/dimen_three_3dp"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/txt_south_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="South"
+                        android:textColor="#000"
+                        android:textSize="@dimen/dimen_15dp"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/txt_south_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_south_text"
+
+                        android:gravity="center_horizontal"
+                        android:text="26"
+                        android:layout_marginTop="@dimen/dimen_three_3dp"
+                        android:textColor="#000"
+                        android:textSize="@dimen/dimen_20dp"
+                        android:textStyle="bold"
+
+                        />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rlwest"
+                    android:layout_width="@dimen/dimen_80dp"
+                    android:layout_height="@dimen/dimen_60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_below="@+id/txthazeheader"
+                    android:layout_marginLeft="@dimen/dimen_110dp"
+                    android:layout_marginTop="@dimen/dimen_120dp"
+                    android:alpha="0.6"
+                    android:background="@drawable/rounded_pm25"
+                    android:padding="@dimen/dimen_three_3dp">
+
+                    <TextView
+                        android:id="@+id/txt_west_value"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_west_text"
+                        android:layout_marginTop="@dimen/dimen_five_5dp"
+                        android:gravity="center_horizontal"
+                        android:text="16"
+                        android:textColor="#000"
+                        android:textSize="@dimen/dimen_20dp"
+                        android:textStyle="bold"
+
+                        />
+
+                    <TextView
+                        android:id="@+id/txt_west_text"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="West"
+                        android:textSize="@dimen/dimen_15dp"
+                        android:textColor="#000"
+
+                        />
+                </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/txttimestamp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_below="@+id/rleast"
+                    android:layout_marginTop="@dimen/dimen_70dp"
+                    android:text="Last update: 10am"
+                    android:alpha="0.8"
+                    android:textColor="@color/colorwhite"
+                    android:layout_marginRight="@dimen/dimen_15dp"
+
+                    />
+            </RelativeLayout>
+
+            <include layout="@layout/layout_psi_descirption" />
+            <include layout="@layout/layout_pm2_5_description"></include>
+        </LinearLayout>
+    </ScrollView>
+    <LinearLayout
+        android:id="@+id/llbutton_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/button_psi3hr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:background="@drawable/selector_psi3hr"
+            android:src="@drawable/psi_3hr_light" />
+
+        <ImageButton
+            android:id="@+id/button_psi24hr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:background="@drawable/selector_psi24hr"
+            android:src="@drawable/psi24hr_light" />
+
+        <ImageButton
+            android:id="@+id/button_pm2_5hr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:background="@drawable/selector_pm25"
+            android:src="@drawable/pm2_5_light" />
+    </LinearLayout>
+</RelativeLayout>

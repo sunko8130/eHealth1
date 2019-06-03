@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    >
+
+    <ListView
+        android:id="@+id/listcontent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llBottom"
+        android:layout_below="@+id/toolbar"
+        android:divider="@android:color/transparent"
+        android:dividerHeight="@dimen/dimen_zero_0dp"
+        android:focusable="false"
+        android:focusableInTouchMode="false"/>
+
+    <FrameLayout
+        android:id="@+id/myfab_main"
+        android:layout_width="@dimen/dimen_100dp"
+        android:layout_height="@dimen/dimen_100dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true">
+        <View
+            android:id="@+id/myfab_show"
+            android:layout_width="@dimen/dimen_80dp"
+            android:layout_height="@dimen/dimen_80dp"
+            android:layout_gravity="center"
+            ></View>
+
+        <ImageButton
+            android:id="@+id/btn_queue_refresh"
+            android:layout_width="@dimen/dimen_50dp"
+            android:layout_height="@dimen/dimen_50dp"
+            android:layout_gravity="center"
+            android:background="@drawable/fab_selector"
+            android:cropToPadding="true"
+            android:src="@drawable/ic_refresh_white_24dp"
+            android:stateListAnimator="@animator/fab_elevation_selector"
+            android:textColor="#fff"
+            android:textSize="@dimen/dimen_24dp" />
+    </FrameLayout>
+    <RelativeLayout
+        android:id="@+id/queue_loadingPanel"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60dp"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="@dimen/dimen_60dp"
+        android:background="#DD111120"
+        android:alpha="0.5"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal">
+            <ProgressBar
+                android:id="@+id/FC_Prgogress"
+                android:layout_width="@dimen/dimen_30dp"
+                android:layout_height="@dimen/dimen_30dp"
+                android:indeterminate="true" />
+            <TextView
+                android:id="@+id/txtdownloadac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/progressloading"
+                android:layout_marginLeft="@dimen/dimen_five_5dp"
+                android:textColor="#fff"></TextView>
+            <TextView
+                android:id="@+id/txtdownloadaccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:textColor="#fff"></TextView>
+            <TextView
+                android:id="@+id/txtdownloadlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:text="@string/progressclinic"
+                android:textColor="#fff"></TextView>
+        </LinearLayout>
+    </RelativeLayout>
+</RelativeLayout>

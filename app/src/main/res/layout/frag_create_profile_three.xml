@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f5fa"
+    android:orientation="vertical">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="2dp"
+        android:background="#fff"
+        android:scaleType="fitCenter"
+        android:src="@drawable/singup_three" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="4dp"
+                android:fontFamily="@font/domine_regular"
+                android:text="Medical Condition"
+                android:textSize="15dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/domine_regular"
+                android:padding="@dimen/dimen_seven_7dp"
+                android:text="@string/frag_create_profile_three_suggest"
+                android:textColor="@color/cas_color_black"
+                android:textSize="13sp" />
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:layout_marginLeft="@dimen/dimen_35dp"
+                android:layout_marginRight="@dimen/dimen_35dp"
+                android:layout_marginTop="@dimen/dimen_two_2dp"
+                android:cursorVisible="true"
+                android:background="@drawable/frag_create_profile_three_txt_background"
+                android:fontFamily="@font/domine_regular"
+                android:inputType="textMultiLine"
+                android:paddingLeft="@dimen/dimen_five_5dp"
+                android:paddingRight="@dimen/dimen_two_2dp"
+                android:textSize="12sp" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dimen_seven_7dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/domine_regular"
+                android:padding="10dp"
+                android:text="Thank you for sharing your infromation. Now your Profile data is completed. If you want to keep your data is local. Please touch Save buttton."
+                android:textColor="#050AAE"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_fragthree_create_profile_sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/linear_continue_background"
+                android:fontFamily="@font/domine_regular"
+                android:paddingLeft="70dp"
+                android:paddingRight="70dp"
+                android:text="Save"
+                android:textAllCaps="false"
+                android:textColor="#fff" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:fontFamily="@font/domine_regular"
+                android:padding="10dp"
+                android:text="If you want to submit your profile to Clinic. Please touch Profile submit button."
+                android:textColor="#050AAE"
+                android:textSize="13sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_fragthree_create_profile_submit"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="@dimen/dimen_20dp"
+                android:background="@drawable/linear_continue_background"
+                android:fontFamily="@font/domine_regular"
+                android:paddingLeft="70dp"
+                android:paddingRight="70dp"
+                android:text="Profile Submit to Clinic"
+                android:textAllCaps="false"
+                android:textColor="#fff" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+</LinearLayout>

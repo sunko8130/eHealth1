@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f1f5fa"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:scaleType="fitCenter"
+        android:layout_marginTop="2dp"
+        android:background="#fff"
+        android:src="@drawable/singup_three" />
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="2dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                >
+
+                <ImageView
+                    android:id="@+id/imgstar1"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="8dp"
+                    android:src="@drawable/ic_star_black_24dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:fontFamily="@font/domine_regular"
+                    android:text="Password"
+                    android:textSize="18sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+            <EditText
+                android:id="@+id/editext_Password"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:inputType="textPassword"
+                android:layout_marginLeft="40dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginRight="@dimen/dimen_100dp"
+                android:textSize="@dimen/dimen_14dp"
+                android:textAlignment="textStart"
+                android:gravity="center"
+                android:fontFamily="@font/domine_regular"
+                android:paddingLeft="5dp"
+                android:background="@drawable/edittext_create_account_background"
+                android:hint="******"
+                tools:ignore="RtlCompat" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Note"
+                android:textColor="#050AAE"
+                android:fontFamily="@font/domine_regular"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="15dp"
+                android:textSize="18sp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Forgetten password details will be sent to email address entered. OTP will be sent to the phone number enter for verification."
+                android:textColor="#050AAE"
+                android:fontFamily="@font/domine_regular"
+                android:layout_marginLeft="30dp"
+                android:padding="10dp"
+                android:textSize="18sp"/>
+            <Button
+                android:id="@+id/btn_fragthree_sign_up"
+                android:layout_width="wrap_content"
+                android:layout_height="45dp"
+                android:textColor="#fff"
+                android:paddingLeft="80dp"
+                android:paddingRight="80dp"
+                android:textSize="18sp"
+                android:textAllCaps="false"
+                android:fontFamily="@font/domine_regular"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/linear_continue_background"
+                android:text="Sign Up"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <CheckBox
+                    android:id="@+id/cbAgree"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="20dp"
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/domine_regular"
+                    android:textSize="18sp"
+                    android:layout_marginTop="10dp"
+                    android:textColor="#050AAE"
+                    android:text="By Singing up, I agree to the"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_fragthree_terms_and_condition"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:clickable="true"
+                android:textSize="18sp"
+                android:textColor="#050AAE"
+                android:fontFamily="@font/domine_regular"
+                android:textStyle="italic"
+                android:layout_marginLeft="50dp"
+                android:text="Terms &amp; Conditions"
+                />
+            <TextView
+                android:id="@+id/txt_fragthree_privacy_policies"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Privacy Policies"
+                android:fontFamily="@font/domine_regular"
+                android:textColor="#050AAE"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginBottom="10dp"
+                android:textStyle="italic"/>
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+</LinearLayout>
+
+
+
+

@@ -1,0 +1,265 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="5dp"
+    android:descendantFocusability="blocksDescendants"
+
+    app:cardUseCompatPadding="true">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+
+            >
+
+            <ImageView
+                android:id="@+id/imgleftarrow"
+                android:layout_width="25dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_chevron_left"
+                android:layout_marginTop="25dp"
+                android:layout_alignParentLeft="true"/>
+
+            <ImageView
+                android:id="@+id/image_clinictype"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/imgleftarrow"
+                android:src="@drawable/clinicsp_35" />
+
+            <TextView
+                android:id="@+id/textViewClinicName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="7dp"
+                android:layout_toRightOf="@+id/image_clinictype"
+                android:layout_marginLeft="5dp"
+                android:text="Clinic Name"
+                android:singleLine="true"
+                android:textAllCaps="true"
+                android:textColor="@color/colorblue"
+                android:textSize="10dp"
+                android:textStyle="bold"
+                />
+
+
+            <TextView
+                android:id="@+id/textViewClinicId"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/textViewClinicName"
+                android:text="ID"
+                android:textSize="15dp"
+                android:visibility="gone" />
+
+
+
+            <TextView
+                android:id="@+id/textViewClinicDetailsBlockNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textViewClinicName"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/image_clinictype"
+                android:text="@string/detailed_block"
+                android:textColor="#000000"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/textViewClinicDetailsStreet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textViewClinicDetailsBlockNo"
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_toEndOf="@+id/textViewClinicDetailsBlockNo"
+                android:layout_toRightOf="@+id/textViewClinicDetailsBlockNo"
+                android:text="@string/detailed_street"
+                android:textColor="#000000"
+                android:textSize="0dp" />
+
+            <TextView
+                android:id="@+id/textViewClinicDetailsUnitNo"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@id/textViewClinicDetailsBlockNo"
+                android:layout_alignStart="@id/textViewClinicDetailsBlockNo"
+                android:layout_below="@id/textViewClinicDetailsBlockNo"
+                android:text="@string/detailed_unit"
+                android:textColor="#000000"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/textViewClinicDetailsBuildingName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/textViewClinicDetailsUnitNo"
+                android:layout_below="@+id/textViewClinicDetailsBlockNo"
+                android:layout_marginLeft="4dp"
+                android:layout_marginStart="4dp"
+                android:layout_toRightOf="@id/textViewClinicDetailsUnitNo"
+                android:text="@string/detailed_Building"
+                android:textColor="#000000"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/textViewClinicDetailsPostalCodePrefix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignLeft="@+id/textViewClinicDetailsBlockNo"
+                android:layout_alignStart="@+id/textViewClinicDetailsBlockNo"
+                android:layout_below="@+id/textViewClinicDetailsBuildingName"
+                android:layout_marginBottom="4dp"
+                android:text="@string/prefix_detailed_postalcode"
+                android:textColor="#000000"
+                android:textSize="10dp" />
+
+            <TextView
+                android:id="@+id/textViewClinicDetailsPostalCode"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textViewClinicDetailsPostalCodePrefix"
+                android:layout_below="@+id/textViewClinicDetailsBuildingName"
+                android:layout_toRightOf="@+id/textViewClinicDetailsPostalCodePrefix"
+                android:text="@string/detailed_postalcode"
+                android:textColor="#000000"
+                android:textSize="@dimen/dimen_10dp" />
+
+            <TextView
+                android:id="@+id/textViewClinicDetailsPostalCodeSuffix"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/textViewClinicDetailsPostalCode"
+                android:layout_below="@+id/textViewClinicDetailsBuildingName"
+                android:layout_toRightOf="@+id/textViewClinicDetailsPostalCode"
+                android:text="@string/postfix_detailed_postalcode"
+                android:textColor="#000000"
+                android:textSize="@dimen/dimen_10dp" />
+
+            <LinearLayout
+                android:id="@+id/icon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_50dp"
+                android:layout_below="@+id/textViewClinicDetailsPostalCodeSuffix"
+                android:orientation="horizontal"
+                android:layout_marginBottom="@dimen/dimen_three_3dp"
+                android:layout_marginTop="@dimen/dimen_five_5dp"
+                >
+
+                <ImageView
+                    android:id="@+id/img_favourite"
+                    android:layout_width="@dimen/dimen_15dp"
+                    android:layout_height="@dimen/dimen_15dp"
+                    android:clickable="true"
+                    android:background="@drawable/bg_oval_rounded"
+                    android:src="@drawable/ic_star_border_black_24dp"
+                    />
+
+                <ImageView
+                    android:id="@+id/imageViewClinicListAdaptServiceIcon24Hours"
+                    android:layout_width="@dimen/dimen_17dp"
+                    android:layout_height="@dimen/dimen_17dp"
+                    android:layout_marginLeft="@dimen/dimen_three_3dp"
+                    android:src="@drawable/ic_hours_24"
+                    />
+
+                <ImageView
+                    android:id="@+id/imageViewClinicListAdaptServiceIconChas"
+                    android:layout_width="@dimen/dimen_15dp"
+                    android:layout_height="@dimen/dimen_15dp"
+                    android:layout_marginLeft="@dimen/dimen_three_3dp"
+                    android:src="@drawable/ic_chas" />
+
+                <ImageView
+                    android:id="@+id/imageViewClinicListAdaptServiceIconQueue"
+                    android:layout_width="@dimen/dimen_16dp"
+                    android:layout_height="@dimen/dimen_16dp"
+                    android:layout_marginLeft="@dimen/dimen_five_5dp"
+                    android:layout_marginTop="-2dp"
+                    android:src="@drawable/ic_supervisor_account_black_24dp" />
+
+                <ImageView
+                    android:id="@+id/imageViewClinicListAdaptServiceIconAppt"
+                    android:layout_width="@dimen/dimen_15dp"
+                    android:layout_height="@dimen/dimen_15dp"
+                    android:layout_marginLeft="@dimen/dimen_five_5dp"
+
+                    android:src="@drawable/appointment_36" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rldirection"
+            android:layout_width="@dimen/dimen_zero_0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+
+
+            >
+            <View
+                android:layout_width="@dimen/dimen_one_1dp"
+                android:layout_height="@dimen/dimen_80dp"
+                android:background="@color/gray_view"
+                android:layout_margin="@dimen/dimen_five_5dp"
+                >
+
+            </View>
+
+            <TextView
+                android:id="@+id/txt_direction_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/imgrightarrow"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:text="Direction"
+                android:textColor="#000"
+                android:textSize="@dimen/dimen_9dp"
+                android:textStyle="bold" />
+
+            <ImageButton
+                android:id="@+id/imgbtn_direction"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txt_direction_text"
+                android:layout_toLeftOf="@+id/imgrightarrow"
+                android:layout_marginTop="@dimen/dimen_three_3dp"
+                android:background="@drawable/bg_rectangle_rounded"
+                android:focusable="false"
+                android:src="@drawable/rain_direction_icon_40" />
+
+            <TextView
+                android:id="@+id/txt_distance_value"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/imgbtn_direction"
+                android:layout_toLeftOf="@+id/imgrightarrow"
+                android:text="190.56m"
+                android:textColor="#000"
+                android:textSize="@dimen/dimen_9dp"
+                android:textStyle="bold"
+                />
+            <ImageView
+                android:id="@+id/imgrightarrow"
+                android:layout_width="@dimen/dimen_25dp"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_chevron_right"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"/>
+        </RelativeLayout>
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

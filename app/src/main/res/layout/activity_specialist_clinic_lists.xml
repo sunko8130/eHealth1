@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height = "wrap_content"
+    >
+    <RelativeLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+
+        <TextView
+
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            android:text="@string/title_activity_activity_specialist_clinic_lists"
+            android:textColor="@color/colorwhite"
+            android:textSize="22dp"
+            android:id="@+id/tool"/>
+
+        <ImageButton
+            android:layout_width="@dimen/dimen_25dp"
+            android:layout_height="@dimen/dimen_30dp"
+            android:src="@drawable/v_close_50"
+            android:scaleType="fitCenter"
+            android:layout_centerInParent="true"
+            android:background="@android:color/transparent"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+
+            android:id="@+id/img_close"/>
+
+    </RelativeLayout>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:id="@+id/lvspecialist"
+        android:layout_below="@+id/toolbar"
+        >
+
+    </ListView>
+
+
+</RelativeLayout>

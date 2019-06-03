@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sg.com.ehealthassist.ehealthassist.Account.ActivitySetupPIN">
+
+    <include layout="@layout/toolbar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llBottom"
+        android:layout_below="@+id/toolbar"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="@dimen/dimen_24dp">
+        <TextView
+            android:id="@+id/textNoteSetupPIN"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:text="@string/msg_app_note"
+            android:textStyle="bold"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/dimen_20dp"/>
+        <TextView
+            android:id="@+id/textViewSetupPIN"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/dimen_20dp"
+            android:text="@string/pin_setup"
+            android:layout_below="@id/textNoteSetupPIN"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/dimen_20dp"
+            />
+
+        <EditText
+            android:id="@+id/editTextCreatePIN"
+            style="@style/EditText"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/textViewSetupPIN"
+            android:inputType="numberPassword"
+            android:maxLength="@integer/max_length_pin"/>
+        <TextView
+            android:id="@+id/textViewConfirmPIN"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:text="@string/confirm_setup"
+            android:layout_below="@id/editTextCreatePIN"
+            android:layout_centerHorizontal="true"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/dimen_20dp"/>
+        <EditText
+            android:id="@+id/editTextConfirmCreatePIN"
+            style="@style/EditText"
+            android:cursorVisible="true"
+            android:layout_centerHorizontal="true"
+            android:gravity="center_horizontal"
+            android:layout_below="@id/textViewConfirmPIN"
+            android:inputType="numberPassword"
+            android:maxLength="@integer/max_length_pin"/>
+        <TextView
+            android:id="@+id/textViewSetupPinLockProfile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:text="@string/pin_lock_profile"
+            android:textSize="@dimen/dimen_20dp"
+            android:layout_below="@id/editTextConfirmCreatePIN"
+            android:textColor="#000" />
+        <Spinner
+            android:id="@+id/spinnerSetupPinMinutes"
+            style="@style/MaterialSpinnerStyle"
+            android:prompt="@string/input_spinner_choose_setup_type"
+            android:theme="@style/ThemeOverlay.AppCompat.Light"
+            android:layout_below="@+id/textViewSetupPinLockProfile"/>
+        <Button
+            android:id="@+id/buttonSetupConfirmPIN"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_margin="@dimen/dimen_20dp"
+            android:text="@string/button_setup_confirm"
+            android:background="@drawable/roundedbutton"
+            android:layout_alignParentBottom="true"
+            android:textSize="@dimen/dimen_16dp"
+            />
+    </RelativeLayout>
+
+</RelativeLayout>

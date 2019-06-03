@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/edtsearchrateclinic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Search Clinic"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:background="@drawable/edittext_round"
+            android:padding="@dimen/dimen_two_2dp"
+            android:drawableLeft="@drawable/ic_magnify"
+            android:textSize="@dimen/dimen_15dp"
+            android:layout_toLeftOf="@+id/btnsearchcancel"
+            />
+        <TextView
+            android:id="@+id/btnsearchcancel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Cancel"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            android:background="@android:color/transparent"
+            android:layout_marginRight="@dimen/dimen_five_5dp"
+            android:textSize="@dimen/dimen_16dp"
+            android:textColor="@color/colorblack"
+            android:layout_marginLeft="@dimen/dimen_five_5dp"
+            />
+    </RelativeLayout>
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lv_rateclinic"
+        android:layout_marginTop="@dimen/dimen_10dp">
+
+    </ListView>
+</LinearLayout>

@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/textreceipt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_30dp"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            android:text="RECEIPT"
+            android:textSize="@dimen/dimen_16dp" />
+
+        <TextView
+            android:id="@+id/textreceipt_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            android:textAllCaps="true"
+            android:textSize="@dimen/dimen_16dp" />
+    </LinearLayout>
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/dimen_10dp"
+        android:background="#fff"
+        card_view:cardCornerRadius="2dp"
+        card_view:contentPadding="10dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_five_5dp"
+                android:layout_marginTop="@dimen/dimen_10dp">
+
+                <TextView
+                    android:id="@+id/txtreceipt_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:text="Receipt No :"
+                    android:textColor="@color/cas_color_black"
+                    android:textSize="@dimen/dimen_17dp" />
+
+                <TextView
+                    android:id="@+id/txtreceipt_no_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:layout_marginLeft="@dimen/dimen_50dp"
+                    android:text="-&#45;&#45;"
+                    android:textColor="@color/cas_color_black"
+                    android:textSize="@dimen/dimen_17dp"
+                    android:textStyle="bold"
+                    />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                >
+
+                <TextView
+                    android:id="@+id/txtreceipt_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_five_5dp"
+                    android:text="Date :"
+                    android:textColor="@color/cas_color_black"
+                    android:textSize="@dimen/dimen_17dp" />
+
+                <TextView
+                    android:id="@+id/txtreceipt_date_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/dimen_45dp"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_five_5dp"
+                    android:text="-&#45;&#45;"
+                    android:textColor="@color/cas_color_black"
+                    android:textSize="@dimen/dimen_17dp"
+                    android:textStyle="bold"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_five_5dp"
+                android:layout_marginTop="@dimen/dimen_10dp">
+
+                <TextView
+                    android:id="@+id/txtreceipt_amt"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_five_5dp"
+                    android:text="Amount :"
+                    android:textColor="@color/cas_color_black"
+                    android:textSize="@dimen/dimen_17dp" />
+
+                <TextView
+                    android:id="@+id/txtreceipt_amt_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_15dp"
+                    android:layout_marginTop="@dimen/dimen_five_5dp"
+                    android:text="-&#45;&#45;"
+                    android:textColor="@color/blue_primary_900"
+                    android:textSize="@dimen/dimen_17dp"
+                    android:textStyle="bold"/>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/txtpayment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:text="Payment"
+                android:textColor="@color/cas_color_black"
+                android:textSize="@dimen/dimen_17dp" />
+            <sg.com.ehealthassist.ehealthassist.CustomUI.CustomListView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id= "@+id/lv_paymenttypelist"
+                android:divider="@android:color/transparent"
+                android:layout_marginLeft="40dp">
+            </sg.com.ehealthassist.ehealthassist.CustomUI.CustomListView>
+
+
+            <Button
+                android:id="@+id/btn_ereceipt_pdf"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_38dp"
+                android:layout_marginBottom="@dimen/dimen_five_5dp"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_15dp"
+                android:background="@drawable/button_blue"
+                android:text="View Receipt"
+                android:textColor="@color/colorwhite"
+                android:textSize="@dimen/dimen_15dp" />
+        </LinearLayout>
+    </android.support.v7.widget.CardView>
+
+</LinearLayout>

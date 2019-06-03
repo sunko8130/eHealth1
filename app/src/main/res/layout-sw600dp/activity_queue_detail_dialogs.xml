@@ -1,0 +1,392 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite"
+    tools:context="sg.com.ehealthassist.ehealthassist.Queue.ActivityQueueDetailDialogs">
+    <include layout="@layout/toolbar" />
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/toolbar"
+            android:orientation="vertical"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rlclinic_address" >
+                <TextView
+                    android:id="@+id/queue_dtl_clinic"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:background="@color/cas_default_bg_coreColorDark"
+                    android:gravity="center"
+                    android:padding="@dimen/dimen_10dp"
+                    android:text="Assurance Technology Co ltd"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/dimen_20dp"
+                    android:textStyle="bold" />
+                <ImageButton
+                    android:id="@+id/queue_direction"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/queue_dtl_clinic"
+                    android:layout_marginTop="@dimen/dimen_25dp"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:layout_marginLeft="@dimen/dimen_30dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_location_on_black_18dp" />
+                <TextView
+                    android:id="@+id/queue_clinic_address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:padding="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_toRightOf="@+id/queue_direction"
+                    android:layout_below="@+id/queue_dtl_clinic"
+                    android:text="Assurance Technology Co ltd"
+                    android:textColor="@color/colorlightblue"
+                    android:textSize="@dimen/dimen_20dp"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlclinic_address"
+                android:id="@+id/rlpatient_name"
+
+                >
+                <TextView
+                    android:id="@+id/dtpatient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/queue_detail_patient"
+                    android:layout_marginLeft="@dimen/dimen_30dp"
+                    android:layout_marginRight="@dimen/dimen_five_5dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/dimen_18dp" />
+
+                <TextView
+                    android:id="@+id/queue_patient"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_30dp"
+                    android:layout_marginRight="@dimen/dimen_five_5dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_toRightOf="@+id/dtpatient"
+                    android:text="DARA (1234567)"
+                    android:textAllCaps="true"
+                    android:textColor="@color/colorlightblue"
+                    android:textSize="@dimen/dimen_18dp"
+                    android:textStyle="bold" />
+                <View
+                    android:id="@+id/nview"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:layout_below="@+id/queue_patient"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:background="@color/gray_view"></View>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlpatient_name"
+                android:id="@+id/rlpatient_dob"
+                >
+
+                <TextView
+                    android:id="@+id/dtpatientdob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_30dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:text="@string/queue_detail_dob"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/dimen_18dp" />
+
+                <TextView
+                    android:id="@+id/queue_dob"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_30dp"
+                    android:layout_marginRight="@dimen/dimen_five_5dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_toRightOf="@+id/dtpatientdob"
+                    android:text="20-Jul-1988"
+                    android:textColor="@color/colorlightblue"
+                    android:textSize="@dimen/dimen_18dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/qview"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_one_1dp"
+                    android:layout_below="@+id/queue_dob"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:background="@color/gray_view"></View>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlpatient_dob"
+                android:id="@+id/rlrequest_date"
+                >
+
+                <TextView
+                    android:id="@+id/dtrequestdate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_30dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:text="@string/queue_detail_Request_date"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/dimen_18dp" />
+
+                <TextView
+                    android:id="@+id/queue_request_date"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_30dp"
+                    android:layout_marginRight="@dimen/dimen_five_5dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_toRightOf="@+id/dtrequestdate"
+                    android:text="20-Jul-1988"
+                    android:textColor="@color/colorlightblue"
+                    android:textSize="@dimen/dimen_18dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/rview"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_one_1dp"
+                    android:layout_below="@+id/queue_request_date"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:background="@color/gray_view"></View>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlrequest_date"
+                android:id="@+id/rlrequest_qstatus"
+                >
+
+                <TextView
+                    android:id="@+id/dtqstatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_30dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:text="@string/queue_detail_status"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/dimen_18dp" />
+
+                <TextView
+                    android:id="@+id/txt_qstatus"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_30dp"
+                    android:layout_marginRight="@dimen/dimen_five_5dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_toRightOf="@+id/dtqstatus"
+                    android:text="20-Jul-1988"
+                    android:textColor="@color/colorlightblue"
+                    android:textSize="@dimen/dimen_18dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/rsview"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_one_1dp"
+                    android:layout_below="@+id/txt_qstatus"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:background="@color/gray_view"></View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rsview"
+                android:id="@+id/rlcurrent_no" >
+                <TextView
+                    android:id="@+id/dtcurrentqueueno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_30dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:text="@string/queue_detail_currentno"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/dimen_18dp" />
+
+                <TextView
+                    android:id="@+id/queue_current_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_30dp"
+                    android:layout_marginRight="@dimen/dimen_five_5dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_toRightOf="@+id/dtcurrentqueueno"
+                    android:text="20-Jul-1988"
+                    android:textColor="@color/colorlightblue"
+                    android:textSize="@dimen/dimen_18dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/noview"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_one_1dp"
+                    android:layout_below="@+id/queue_current_no"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:background="@color/gray_view"></View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/rlqueue_no"
+                android:layout_below="@+id/rlcurrent_no">
+                <TextView
+                    android:id="@+id/dtqueueno"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_30dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:text="@string/queue_detail_queue"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/dimen_18dp" />
+
+                <TextView
+                    android:id="@+id/queue_get_no"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_30dp"
+                    android:layout_marginRight="@dimen/dimen_five_5dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_toRightOf="@+id/dtqueueno"
+                    android:text="20-Jul-1988"
+                    android:textColor="@color/colorlightblue"
+                    android:textSize="@dimen/dimen_18dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/getview"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_one_1dp"
+                    android:layout_below="@+id/queue_get_no"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:background="@color/gray_view"></View>
+
+            </RelativeLayout>
+            <RelativeLayout
+                android:id="@+id/rlqmessage"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlqueue_no">
+
+
+                <TextView
+                    android:id="@+id/dtqueuemessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_30dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:text="@string/queue_detail_message"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/dimen_18dp" />
+
+                <TextView
+                    android:id="@+id/queue_qmessage"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/dtqueuemessage"
+                    android:layout_marginLeft="@dimen/dimen_40dp"
+                    android:layout_marginRight="@dimen/dimen_five_5dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:text="20-Jul-1988"
+                    android:textColor="@color/colorlightblue"
+                    android:textSize="@dimen/dimen_18dp"
+                    android:textStyle="bold" />
+
+                <View
+                    android:id="@+id/qmview"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_one_1dp"
+                    android:layout_below="@+id/queue_qmessage"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:background="@color/gray_view"></View>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlrejectreason"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/rlqmessage">
+
+                <TextView
+                    android:id="@+id/dtrejectreson"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_30dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:text="@string/queue_detail_reject_descriotion"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/dimen_18dp" />
+
+                <TextView
+                    android:id="@+id/txt_queue_rejectreason"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/dimen_40dp"
+                    android:layout_marginRight="@dimen/dimen_five_5dp"
+                    android:layout_marginTop="@dimen/dimen_20dp"
+                    android:layout_below="@+id/dtrejectreson"
+                    android:text=""
+                    android:textColor="@color/colorlightblue"
+                    android:textSize="@dimen/dimen_18dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+            <Button
+                android:id="@+id/btnqueue_cancel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:layout_marginLeft="@dimen/dimen_30dp"
+                android:layout_marginTop="@dimen/dimen_30dp"
+                android:background="@drawable/slot_rounded"
+                android:text="Cancel Queue"
+                android:textSize="@dimen/dimen_18dp"
+                android:paddingLeft="@dimen/dimen_10dp"
+                android:paddingRight="@dimen/dimen_10dp"
+                android:layout_below="@+id/txt_queue_rejectreason"
+                android:textColor="@color/colorwhite" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

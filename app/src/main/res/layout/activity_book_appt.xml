@@ -1,0 +1,483 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_book_appt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cas_background"
+    tools:context="sg.com.ehealthassist.ehealthassist.Appointment.ActivityBookAppt">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:id="@+id/scroll_bookappt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_five_5dp"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:text="CLINIC"
+                android:textSize="@dimen/dimen_14dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorwhite">
+
+                <TextView
+                    android:id="@+id/txt_clinicname_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_10dp"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:text="Assurance Pte Ltd"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/dimen_15dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textappt_date"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:text="SELECT APPOINTMENT DATE &amp; SESSION"
+                android:textSize="@dimen/dimen_13dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@color/colorwhite">
+
+                <TextView
+                    android:id="@+id/txt_apptbookdate_value"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_10dp"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:text="Date "
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/dimen_15dp" />
+
+                <TextView
+                    android:id="@+id/txtappt_bookdate"
+                    android:layout_width="@dimen/dimen_200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="@dimen/dimen_25dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:gravity="right"
+                    android:text="12 Dec 2016"
+                    android:textColor="@color/blue_primary_900"
+                    android:textSize="@dimen/dimen_15dp" />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_one_1dp"
+                android:background="@color/gray_view">
+
+            </View>
+            <RelativeLayout
+                android:id="@+id/rlsession"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorwhite">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/colorred"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:textSize="@dimen/dimen_16dp"
+                    />
+                <TextView
+                    android:id="@+id/txt_apptbooktime_value"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_10dp"
+                    android:layout_marginLeft="@dimen/dimen_25dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:text="Session "
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/dimen_15dp" />
+
+                <TextView
+                    android:id="@+id/txtappt_booksession_value"
+                    android:layout_width="@dimen/dimen_200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_toLeftOf="@+id/img_session"
+                    android:clickable="true"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="None"
+                    android:textColor="@color/blue_primary_900"
+                    android:textSize="@dimen/dimen_15dp" />
+
+                <ImageButton
+                    android:id="@+id/img_session"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_five_5dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_chevron_right" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/textappt_doctor"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:text="SELECT DOCTOR"
+                android:textSize="@dimen/dimen_14dp" />
+
+            <RelativeLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@color/colorwhite">
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/colorred"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:textSize="@dimen/dimen_16dp"
+                    />
+                <TextView
+                    android:id="@+id/txt_apptbook_doctor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_10dp"
+                    android:layout_marginLeft="@dimen/dimen_25dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:text="Doctor Name "
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/dimen_15dp" />
+
+                <TextView
+                    android:id="@+id/txtappt_doctor_name_value"
+                    android:layout_width="@dimen/dimen_200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_toLeftOf="@+id/imgappt_doctor_name"
+                    android:clickable="true"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="None"
+                    android:textColor="@color/blue_primary_900"
+                    android:textSize="@dimen/dimen_15dp" />
+
+                <ImageButton
+                    android:id="@+id/imgappt_doctor_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_five_5dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_chevron_right" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textprofile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:text="SELECT PROFILE"
+                android:textSize="@dimen/dimen_14dp" />
+
+            <RelativeLayout
+                android:id="@+id/rlprofilename"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@color/colorwhite">
+
+                <TextView
+
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:textColor="@color/colorred"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:textSize="@dimen/dimen_16dp"
+                    />
+                <TextView
+                    android:id="@+id/text_profile"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_marginBottom="@dimen/dimen_10dp"
+                    android:layout_marginLeft="@dimen/dimen_25dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:text="Profile "
+                    android:textColor="#000"
+                    android:textSize="@dimen/dimen_15dp" />
+
+                <TextView
+                    android:id="@+id/txtprofilename_value"
+                    android:layout_width="@dimen/dimen_200dp"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toLeftOf="@+id/imgprofileinfo"
+                    android:clickable="true"
+                    android:ellipsize="end"
+                    android:gravity="right"
+                    android:singleLine="true"
+                    android:text="None"
+                    android:textColor="@color/blue_primary_900"
+                    android:textSize="@dimen/dimen_15dp" />
+
+
+                <ImageButton
+                    android:id="@+id/imgprofileinfo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_gravity="right"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_five_5dp"
+                    android:background="@android:color/transparent"
+                    android:src="@drawable/ic_chevron_right" />
+
+
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_five_5dp"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:text="PROFILE DETAILS"
+                android:textSize="@dimen/dimen_14dp" />
+
+            <RelativeLayout
+                android:id="@+id/cardvprofile_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardchoseprofile"
+                android:layout_marginTop="@dimen/dimen_five_5dp"
+                android:background="@color/colorwhite">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_10dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_five_5dp"
+                        android:layout_marginTop="@dimen/dimen_five_5dp">
+
+                        <TextView
+                            android:id="@+id/txtnrictype"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/dimen_10dp"
+                            android:text="ID Type "
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/dimen_15dp" />
+
+                        <TextView
+                            android:id="@+id/txtnrictype_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/dimen_10dp"
+                            android:text="---"
+                            android:textColor="@color/blue_primary_900"
+                            android:textSize="@dimen/dimen_15dp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_one_1dp"
+                        android:layout_marginTop="@dimen/dimen_five_5dp"
+                        android:background="@color/gray_view">
+
+                    </View>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_five_5dp"
+                        android:layout_marginTop="@dimen/dimen_five_5dp">
+
+                        <TextView
+                            android:id="@+id/txtnric"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/dimen_10dp"
+                            android:layout_marginTop="@dimen/dimen_five_5dp"
+                            android:text="ID Number "
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/dimen_15dp" />
+
+                        <TextView
+                            android:id="@+id/txtnric_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="@dimen/dimen_10dp"
+                            android:layout_marginRight="@dimen/dimen_10dp"
+                            android:layout_marginTop="@dimen/dimen_five_5dp"
+                            android:text="---"
+                            android:textColor="@color/blue_primary_900"
+                            android:textSize="@dimen/dimen_15dp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_one_1dp"
+                        android:layout_marginTop="@dimen/dimen_five_5dp"
+                        android:background="@color/gray_view">
+
+                    </View>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_five_5dp"
+                        android:layout_marginTop="@dimen/dimen_five_5dp">
+
+
+                        <TextView
+                            android:id="@+id/txtdate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_10dp"
+                            android:layout_marginTop="@dimen/dimen_five_5dp"
+                            android:text="Date of Birth "
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/dimen_15dp" />
+
+                        <TextView
+                            android:id="@+id/txtdate_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="@dimen/dimen_10dp"
+                            android:layout_marginRight="@dimen/dimen_10dp"
+                            android:layout_marginTop="@dimen/dimen_five_5dp"
+                            android:text="---"
+                            android:textColor="@color/blue_primary_900"
+                            android:textSize="@dimen/dimen_15dp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_one_1dp"
+                        android:layout_marginTop="@dimen/dimen_five_5dp"
+                        android:background="@color/gray_view"></View>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_five_5dp"
+                        android:layout_marginTop="@dimen/dimen_five_5dp">
+
+                        <TextView
+                            android:id="@+id/txtage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_10dp"
+                            android:layout_marginTop="@dimen/dimen_five_5dp"
+                            android:text="Age "
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/dimen_15dp" />
+
+                        <TextView
+                            android:id="@+id/txtage_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="@dimen/dimen_10dp"
+                            android:layout_marginRight="@dimen/dimen_10dp"
+                            android:layout_marginTop="@dimen/dimen_five_5dp"
+                            android:text="---"
+                            android:textColor="@color/blue_primary_900"
+                            android:textSize="@dimen/dimen_15dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/text_remark"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentLeft="true"
+                android:layout_marginLeft="@dimen/dimen_20dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:text="REMARK"
+                android:textSize="@dimen/dimen_14dp" />
+            <RelativeLayout
+                android:id="@+id/rlRemark"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@color/colorwhite">
+
+
+                <EditText
+                    android:id="@+id/editext_patientRemark"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_five_5dp"
+                    android:padding="@dimen/dimen_8dp"
+                    android:maxLength="2000"
+                    android:textSize="@dimen/dimen_14dp"
+                    android:maxLines="10"
+
+                    />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btn_bookappt_confirm"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_40dp"
+                android:layout_below="@+id/rlRemark"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@drawable/button_blue"
+                android:text="Appointment Book"
+                android:textColor="@color/colorwhite"
+                android:textSize="@dimen/dimen_14dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

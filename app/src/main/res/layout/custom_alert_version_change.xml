@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="10dp"
+    android:layout_gravity="center"
+    app:cardBackgroundColor="#D9EAEDF1"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="15dp"
+            android:text="Version Changes"
+            android:textAlignment="center"
+            android:textSize="15sp"
+            android:textColor="#000"
+            android:textStyle="bold"
+            android:fontFamily="@font/domine_regular"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:textColor="#000"
+            android:fontFamily="@font/domine_regular"
+            android:text="Do you want to update latest"
+            android:textSize="14sp"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="@dimen/dimen_four_4dp"
+            android:layout_marginRight="20dp"
+            android:fontFamily="@font/domine_regular"
+            android:textColor="#000"
+            android:text="Version?"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_gravity="right"
+            android:layout_marginRight="@dimen/dimen_20dp"
+            android:layout_marginTop="15dp">
+
+            <Button
+                android:id="@+id/btn_alert_version_no"
+                android:layout_width="@dimen/dimen_30dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:textColor="#47525E"
+                android:background="@android:color/transparent"
+                android:text="NO"
+                android:layout_marginRight="@dimen/dimen_35dp"
+                android:gravity="right"
+                android:fontFamily="@font/domine_regular"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/btn_alert_version_ok"
+                android:layout_width="30dp"
+                android:layout_height="wrap_content"
+                android:textColor="#47525E"
+                android:layout_toLeftOf="@id/btn_alert_version_ok"
+                android:background="@android:color/transparent"
+                android:fontFamily="@font/domine_regular"
+                android:text="OK"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </LinearLayout>
+</android.support.v7.widget.CardView>

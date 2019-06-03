@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#fff">
+
+    <TextView
+        android:id="@+id/textView_Login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:fontFamily="@font/domine_regular"
+        android:text="Edit User Information"
+        android:layout_marginTop="10dp"
+        android:textSize="15sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/txtView_CountryCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_Login"
+        android:layout_marginLeft="15dp"
+        android:fontFamily="@font/domine_regular"
+        android:text="Country Code:"
+        android:layout_marginTop="20dp"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/image_mobile_number"
+        android:layout_width="15dp"
+        android:layout_marginTop="18dp"
+        android:layout_height="16dp"
+        android:layout_below="@id/textView_Login"
+        android:layout_marginLeft="70dp"
+        android:layout_toRightOf="@id/txtView_CountryCode"
+        android:scaleType="fitXY"
+        android:src="@drawable/ic_phone" />
+
+    <TextView
+        android:id="@+id/txtView_MobileNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textView_Login"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/image_mobile_number"
+        android:fontFamily="@font/domine_regular"
+        android:text="Mobile no:"
+        android:textSize="12sp" />
+
+    <Button
+        android:id="@+id/btn_alert_edit_userinfo_dropdowncode"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_alignLeft="@+id/img_email"
+        android:layout_alignStart="@+id/img_email"
+        android:layout_alignTop="@+id/et_alert__edit_userinfo_login_mobileId"
+        android:background="@drawable/edittext_create_account_background"
+        android:drawableRight="@drawable/ic_arrow_drop_down_black_24dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:popupBackground="#fff"
+        android:textSize="@dimen/dimen_12dp"
+        android:fontFamily="@font/domine_regular"
+        android:text="SG +65" />
+
+    <EditText
+        android:id="@+id/et_alert__edit_userinfo_login_mobileId"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/image_mobile_number"
+        android:layout_toRightOf="@id/btn_alert_edit_userinfo_dropdowncode"
+        android:ems="10"
+        android:textSize="@dimen/dimen_12dp"
+        android:fontFamily="@font/domine_regular"
+        android:paddingLeft="10dp"
+        android:inputType="phone"
+        android:background="@drawable/edittext_create_account_background"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="10dp"/>
+
+    <ImageView
+        android:id="@+id/img_email"
+        android:layout_width="25dp"
+        android:layout_height="19dp"
+        android:layout_below="@id/btn_alert_edit_userinfo_dropdowncode"
+        android:layout_marginLeft="30dp"
+        android:layout_marginTop="10dp"
+        android:src="@drawable/email" />
+
+    <TextView
+        android:id="@+id/txtView_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="4dp"
+        android:layout_alignBottom="@+id/img_email"
+        android:layout_below="@id/et_alert_login_mobileId"
+        android:layout_toRightOf="@id/img_email"
+        android:layout_marginLeft="5dp"
+        android:fontFamily="@font/domine_regular"
+        android:text="Email :"
+        android:textSize="12sp" />
+
+    <EditText
+        android:id="@+id/et_alert_edit_userinfo_login_emial"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_below="@id/txtView_password"
+        android:layout_marginTop="10dp"
+        android:textSize="@dimen/dimen_12dp"
+        android:fontFamily="@font/domine_regular"
+        android:layout_alignRight="@+id/et_alert__edit_userinfo_login_mobileId"
+        android:layout_alignLeft="@+id/btn_alert_edit_userinfo_dropdowncode"
+        android:paddingLeft="10dp"
+        android:inputType="textEmailAddress"
+        android:background="@drawable/edittext_create_account_background"/>
+        <Button
+            android:id="@+id/btn_alert_edit_userinfo_cancel"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:fontFamily="@font/domine_regular"
+            android:text="Cancel"
+            android:layout_weight="1"
+            android:textColor="#fff"
+            android:background="@drawable/linear_continue_background"
+            android:layout_marginTop="20dp"
+            android:layout_toLeftOf="@+id/btn_alert_edit_userinfo_update"
+            android:layout_below="@+id/et_alert_edit_userinfo_login_emial"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="5dp"
+            android:textAllCaps="false"/>
+
+        <Button
+            android:id="@+id/btn_alert_edit_userinfo_update"
+            android:fontFamily="@font/domine_regular"
+            android:text="Update"
+            android:layout_below="@+id/et_alert_edit_userinfo_login_emial"
+            android:textColor="#fff"
+            android:textAllCaps="false"
+            android:layout_weight="1"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/linear_continue_background"
+            android:layout_width="wrap_content"
+            android:layout_alignRight="@+id/et_alert_edit_userinfo_login_emial"
+            android:layout_height="35dp"
+            android:layout_marginBottom="30dp"/>
+
+</RelativeLayout>

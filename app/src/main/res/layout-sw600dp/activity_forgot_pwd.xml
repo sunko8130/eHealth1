@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite"
+    tools:context="sg.com.ehealthassist.ehealthassist.Account.ActivityForgotPwd">
+
+    <include layout="@layout/toolbar" />
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="@dimen/dimen_22dp"
+        android:id="@+id/textviewlabel"
+        android:text="@string/fogot_pwd_label_info"
+        android:layout_below="@+id/toolbar"
+        android:layout_marginTop="@dimen/dimen_30dp"
+        android:layout_marginLeft="@dimen/dimen_30dp"
+        android:layout_marginRight="@dimen/dimen_30dp"
+        />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/fogot_pwd_label_enter_email"
+        android:id="@+id/textviewemailid"
+        android:layout_below="@+id/textviewlabel"
+        android:textSize="@dimen/dimen_20dp"
+        android:layout_margin="@dimen/dimen_30dp"/>
+    <LinearLayout
+        android:id="@+id/l1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textviewemailid"
+        android:layout_marginLeft="@dimen/dimen_30dp"
+        android:layout_marginRight="@dimen/dimen_30dp"
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/btn_forgotPwddropdownccode"
+            android:layout_width="65dp"
+            android:layout_height="37dp"
+            android:drawableRight="@drawable/ic_arrow_drop_down_24"
+            android:background="@drawable/buttonround"
+            android:text = "SG"
+            />
+
+        <Button android:layout_width="50dp"
+            android:layout_height="37dp"
+            android:layout_marginLeft="@dimen/dimen_five_5dp"
+            android:background="@drawable/buttonround"
+            android:id="@+id/btn_forgotPwdcountrycode"
+            android:text = "+65">
+        </Button>
+        <EditText
+            android:id="@+id/edit_phone"
+            style="@style/EditText"
+            android:background="@drawable/edittext_round"
+            android:inputType="phone"
+            android:maxLength="@integer/max_length_tel_hp"
+            android:textSize="@dimen/dimen_18dp" />
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtforgot_error"
+        android:layout_below="@+id/l1"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginLeft="@dimen/dimen_30dp"
+        android:layout_marginRight="@dimen/dimen_20dp"
+        android:text="error"
+        android:visibility="gone"
+        android:textSize="@dimen/dimen_20dp"
+        android:textColor="@color/colorred"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_58dp"
+        android:layout_below="@+id/txtforgot_error"
+        android:layout_marginTop="@dimen/dimen_30dp"
+        android:layout_marginLeft="@dimen/dimen_30dp"
+        android:layout_marginRight="@dimen/dimen_30dp"
+        android:background="@drawable/slot_rounded"
+        android:text="@string/fogot_pwd_label_send"
+        android:textSize="@dimen/dimen_20dp"
+        android:textColor="@color/colorwhite"
+        android:id="@+id/btn_forgotpwd"/>
+</RelativeLayout>

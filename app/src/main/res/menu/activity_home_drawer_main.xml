@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:title="Clinic">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_find_clinic"
+                    android:icon="@drawable/clinic"
+                    android:title="@string/nav_clinic" />
+                <item
+                    android:id="@+id/nav_add_favourite"
+                    android:icon="@drawable/ic_android_black_24dp"
+                    android:title="@string/nav_add_favoiurite_clinic" />
+            </group>
+        </menu>
+    </item>
+    <item
+        android:id="@+id/nav_profile"
+        android:title="Profile">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_bio_data"
+                    android:icon="@drawable/ic_android_black_24dp"
+                    android:title="@string/nav_bio_data" />
+                <item
+                    android:id="@+id/nav_vital_sign"
+                    android:icon="@drawable/vitalsign"
+                    android:title="@string/nav_vital_sign" />
+                <item
+                    android:id="@+id/nav_lab_result"
+                    android:icon="@drawable/lab_512"
+                    android:title="@string/nav_lab_result" />
+
+            </group>
+        </menu>
+    </item>
+
+    <group
+        android:id="@+id/profile_group"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_queue"
+            android:icon="@drawable/queue"
+            android:title="@string/nav_queue" />
+        <item
+            android:id="@+id/nav_appointment"
+            android:icon="@drawable/appticon"
+            android:title="@string/nav_appointment" />
+        <item
+            android:id="@+id/nav_medical_reminder"
+            android:icon="@drawable/medicine"
+            android:title="@string/nav_med_reminder" />
+        <item
+            android:id="@+id/nav_edocument"
+            android:icon="@drawable/documents"
+            android:title="@string/nav_edocument" />
+        <item
+            android:id="@+id/nav_clinic_message"
+            android:icon="@drawable/chat"
+            android:title="@string/nav_clinic_message" />
+    </group>
+
+
+    <item
+        android:id="@+id/nav_account"
+        android:title="Account">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_create_account"
+                    android:icon="@drawable/user_font"
+                    android:title="@string/nav_create_new_account" />
+                <item
+                    android:id="@+id/nav_login"
+                    android:icon="@drawable/loginout50"
+                    android:title="@string/nav_login" />
+            </group>
+        </menu>
+    </item>
+
+
+    <item android:title="Other">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_event"
+                    android:icon="@drawable/event"
+                    android:title="@string/nav_event" />
+                <item
+                    android:id="@+id/nav_haze_info"
+                    android:icon="@drawable/hazeinfo"
+                    android:title="@string/nav_haze_info" />
+            </group>
+
+        </menu>
+
+
+    </item>
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/setting250"
+            android:title="@string/nav_setting" />
+        <item
+            android:id="@+id/nav_help_and_support"
+            android:icon="@drawable/helpandsupport"
+            android:title="Help &amp; Support" />
+
+    </group>
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_log_out"
+            android:icon="@drawable/loginout50"
+            android:title="@string/nav_logout" />
+    </group>
+
+</menu>

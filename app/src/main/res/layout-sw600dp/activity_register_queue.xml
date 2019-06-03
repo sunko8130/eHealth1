@@ -1,0 +1,461 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_register_queue"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cas_background"
+    tools:context="sg.com.ehealthassist.ehealthassist.Queue.ActivityRegisterQueue">
+
+    <include layout="@layout/toolbar" />
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/toolbar">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_five_5dp"
+                android:layout_marginLeft="@dimen/dimen_30dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:text="CLINIC"
+                android:textSize="@dimen/dimen_18dp" />
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/colorwhite"
+                android:layout_marginBottom="@dimen/dimen_10dp">
+
+                <TextView
+                    android:id="@+id/txt_clinicname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_20dp"
+                    android:layout_marginLeft="@dimen/dimen_40dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/dimen_18dp" />
+            </RelativeLayout>
+
+            <TextView
+                android:id="@+id/textprofile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_30dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:text="SELECT PROFILE"
+                android:textSize="@dimen/dimen_18dp" />
+
+            <RelativeLayout
+                android:id="@+id/cardchoseprofile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/toolbar"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@color/colorwhite">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="*"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:textColor="@color/colorred"
+                    android:layout_marginLeft="@dimen/dimen_30dp"
+                    android:textSize="@dimen/dimen_16dp"
+                    />
+                <RelativeLayout
+                    android:id="@+id/rlprofilename"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:layout_marginBottom="@dimen/dimen_10dp"
+                    >
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginBottom="@dimen/dimen_20dp"
+                        android:layout_marginLeft="@dimen/dimen_40dp"
+                        android:layout_centerVertical="true"
+                        android:text="Profile"
+                        android:textColor="#000"
+                        android:textSize="@dimen/dimen_18dp" />
+
+                    <TextView
+                        android:id="@+id/txtprofilename_value"
+                        android:layout_width="@dimen/dimen_300dp"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_toLeftOf="@+id/imgprofileinfo"
+                        android:clickable="true"
+                        android:ellipsize="end"
+                        android:gravity="right"
+                        android:singleLine="true"
+                        android:text="None"
+                        android:textColor="#000"
+
+                        android:textSize="@dimen/dimen_18dp" />
+
+
+                    <ImageButton
+                        android:id="@+id/imgprofileinfo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="@dimen/dimen_20dp"
+                        android:layout_centerVertical="true"
+                        android:background="@android:color/transparent"
+                        android:src="@drawable/ic_chevron_right" />
+                </RelativeLayout>
+            </RelativeLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/dimen_five_5dp"
+                android:layout_marginLeft="@dimen/dimen_30dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:text="PROFILE DETAILS"
+                android:textSize="@dimen/dimen_18dp" />
+
+            <RelativeLayout
+                android:id="@+id/cardvprofile_summary"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardchoseprofile"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@color/colorwhite">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="@dimen/dimen_10dp"
+                    android:orientation="vertical">
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_five_5dp"
+                        android:layout_marginTop="@dimen/dimen_five_5dp">
+
+                        <TextView
+                            android:id="@+id/txtnrictype"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/dimen_30dp"
+                            android:text="ID Type"
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/dimen_18dp" />
+
+                        <TextView
+                            android:id="@+id/txtnrictype_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginRight="@dimen/dimen_20dp"
+                            android:text="---"
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/dimen_18dp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_one_1dp"
+                        android:layout_marginTop="@dimen/dimen_five_5dp"
+                        android:background="@color/gray_view">
+
+                    </View>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_five_5dp"
+                        android:layout_marginTop="@dimen/dimen_five_5dp">
+
+                        <TextView
+                            android:id="@+id/txtnric"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentLeft="true"
+                            android:layout_marginLeft="@dimen/dimen_30dp"
+                            android:layout_marginTop="@dimen/dimen_five_5dp"
+                            android:text="ID Number"
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/dimen_18dp" />
+
+                        <TextView
+                            android:id="@+id/txtnric_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="@dimen/dimen_10dp"
+                            android:layout_marginRight="@dimen/dimen_20dp"
+                            android:layout_marginTop="@dimen/dimen_five_5dp"
+                            android:text="---"
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/dimen_18dp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_one_1dp"
+                        android:layout_marginTop="@dimen/dimen_five_5dp"
+                        android:background="@color/gray_view">
+
+                    </View>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_five_5dp"
+                        android:layout_marginTop="@dimen/dimen_five_5dp">
+
+
+                        <TextView
+                            android:id="@+id/txtdate"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_30dp"
+                            android:layout_marginTop="@dimen/dimen_five_5dp"
+                            android:text="Date of Birth"
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/dimen_18dp" />
+
+                        <TextView
+                            android:id="@+id/txtdate_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="@dimen/dimen_10dp"
+                            android:layout_marginRight="@dimen/dimen_20dp"
+                            android:layout_marginTop="@dimen/dimen_five_5dp"
+                            android:text="---"
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/dimen_18dp" />
+                    </RelativeLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_one_1dp"
+                        android:layout_marginTop="@dimen/dimen_five_5dp"
+                        android:background="@color/gray_view"></View>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="@dimen/dimen_five_5dp"
+                        android:layout_marginTop="@dimen/dimen_five_5dp">
+
+                        <TextView
+                            android:id="@+id/txtage"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="@dimen/dimen_30dp"
+                            android:layout_marginTop="@dimen/dimen_five_5dp"
+                            android:layout_marginBottom="@dimen/dimen_five_5dp"
+                            android:text="Age"
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/dimen_18dp" />
+
+                        <TextView
+                            android:id="@+id/txtage_value"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentRight="true"
+                            android:layout_marginLeft="@dimen/dimen_10dp"
+                            android:layout_marginRight="@dimen/dimen_20dp"
+                            android:layout_marginTop="@dimen/dimen_five_5dp"
+                            android:text="---"
+                            android:textColor="@color/colorblack"
+                            android:textSize="@dimen/dimen_18dp" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </RelativeLayout>
+
+            <!-- Profile Pending -->
+            <RelativeLayout
+                android:id="@+id/rlv_pending"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:background="@color/colorwhite"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txt_rl_pending"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_10dp"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginRight="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/dimen_18dp" />
+
+            </RelativeLayout>
+
+            <!-- Profile Existing -->
+            <RelativeLayout
+                android:id="@+id/rlv_existing"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:background="@color/colorwhite"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/txt_rl_existing"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="@dimen/dimen_10dp"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:layout_marginRight="@dimen/dimen_20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/dimen_18dp" />
+
+                <Button
+                    android:id="@+id/btn_existing_regqueue_req"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/dimen_40dp"
+                    android:layout_below="@+id/txt_rl_existing"
+                    android:layout_marginBottom="@dimen/dimen_five_5dp"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginRight="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_five_5dp"
+                    android:background="@drawable/button_blue"
+                    android:text="Register Queue Request"
+                    android:textColor="@color/colorwhite"
+                    android:textSize="@dimen/dimen_16dp" />
+            </RelativeLayout>
+
+            <!-- Profile Not Existing -->
+            <RelativeLayout
+                android:id="@+id/rlv_notexisting"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardvprofile_summary"
+                android:layout_marginTop="@dimen/dimen_20dp"
+                android:background="@color/colorwhite"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:visibility="gone">
+
+                <RelativeLayout
+                    android:id="@+id/llcontent"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dimen_10dp">
+
+                    <TextView
+                        android:id="@+id/txt_notexisting"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="@dimen/dimen_four_4dp"
+                        android:textColor="@color/colorblack"
+                        android:textSize="@dimen/dimen_18dp" />
+
+
+                    <Button
+                        android:id="@+id/btn_notexist_submitto_clinic"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_45dp"
+                        android:layout_below="@+id/txt_notexisting"
+                        android:layout_marginBottom="@dimen/dimen_five_5dp"
+                        android:layout_marginLeft="@dimen/dimen_five_5dp"
+                        android:layout_marginRight="@dimen/dimen_10dp"
+                        android:layout_marginTop="@dimen/dimen_five_5dp"
+                        android:background="@drawable/button_blue"
+                        android:text="Profile Submission to Clinic"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="@dimen/dimen_16dp"
+                        android:visibility="gone"/>
+
+                </RelativeLayout>
+            </RelativeLayout>
+            <!-- Profile Unknown-->
+            <RelativeLayout
+                android:id="@+id/rlv_unknown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/cardv_terms"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:background="@color/colorwhite"
+                android:layout_marginBottom="@dimen/dimen_10dp"
+                android:visibility="gone">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="@dimen/dimen_10dp"
+
+                    >
+
+                    <TextView
+                        android:id="@+id/txt_queue_unknown1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dimen_10dp"
+                        android:textColor="@color/colorblack"
+                        android:textSize="@dimen/dimen_18dp" />
+
+
+                    <Button
+                        android:id="@+id/btn_unknow_profile_submit_clinic"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_40dp"
+                        android:layout_below="@+id/CheckBoxqueuAgree"
+                        android:layout_marginBottom="@dimen/dimen_five_5dp"
+                        android:layout_marginLeft="@dimen/dimen_five_5dp"
+                        android:layout_marginRight="@dimen/dimen_10dp"
+                        android:layout_marginTop="@dimen/dimen_five_5dp"
+                        android:background="@drawable/button_blue"
+                        android:text="Profile Submission to Clinic"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="@dimen/dimen_16dp"
+                        android:visibility="gone"/>
+
+
+                    <TextView
+                        android:id="@+id/txt_queue_unknown2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="@dimen/dimen_10dp"
+                        android:textColor="@color/colorblack"
+                        android:textSize="@dimen/dimen_18dp" />
+
+                    <Button
+                        android:id="@+id/btn_unkown_queue_request"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/dimen_40dp"
+                        android:layout_below="@+id/CheckBoxqueuAgree"
+                        android:layout_marginBottom="@dimen/dimen_five_5dp"
+                        android:layout_marginLeft="@dimen/dimen_five_5dp"
+                        android:layout_marginRight="@dimen/dimen_10dp"
+                        android:layout_marginTop="@dimen/dimen_five_5dp"
+                        android:background="@drawable/button_blue"
+                        android:text="Register Queue Request"
+                        android:textColor="@color/colorwhite"
+                        android:textSize="@dimen/dimen_16dp" />
+
+                </LinearLayout>
+
+            </RelativeLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

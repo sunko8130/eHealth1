@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite"
+    tools:context="sg.com.ehealthassist.ehealthassist.Clinic.ActivityPreferredClinic">
+
+    <include layout="@layout/toolbar" />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/llBottom"
+        android:layout_below="@+id/toolbar"
+        >
+
+        <Button
+            android:id="@+id/btnSearchClinic"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nav_search_clinic"
+            android:layout_marginLeft="@dimen/dimen_10dp"
+            android:layout_marginRight="@dimen/dimen_10dp"
+            android:layout_marginTop="@dimen/dimen_10dp"
+            android:padding="@dimen/dimen_10dp"
+            android:textColor="@color/colorblack"
+            android:textSize="@dimen/dimen_16dp"
+            android:background="@drawable/roundedbutton"/>
+
+        <ListView
+            android:id="@+id/listViewPreferredClinic"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/btnSearchClinic"
+
+
+            />
+    </RelativeLayout>
+
+    <!--bottom menu -->
+    <LinearLayout
+        android:id="@+id/llBottom"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_58dp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorPrimaryDark"
+        android:baselineAligned="false"
+        android:orientation="horizontal"
+        android:weightSum="5">
+
+        <LinearLayout
+            android:id="@+id/tabHome"
+            style="@style/toolbarBottom">
+
+            <ImageView
+                android:id="@+id/iconHome"
+                style="@style/toolbarBottom.ImageView"
+                android:src="@drawable/home_white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tabProfile"
+            style="@style/toolbarBottom">
+
+            <ImageView
+                android:id="@+id/iconProfile"
+                style="@style/toolbarBottom.ImageView"
+                android:src="@drawable/my_profile_white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tabClinic"
+            style="@style/toolbarBottom">
+
+            <ImageView
+                android:id="@+id/iconClinic"
+                style="@style/toolbarBottom.ImageView"
+                android:src="@drawable/my_clinic_press" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tabAppointment"
+            style="@style/toolbarBottom">
+
+            <ImageView
+                android:id="@+id/iconAppt"
+                style="@style/toolbarBottom.ImageView"
+                android:src="@drawable/my_queue_white" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/tabSetting"
+            style="@style/toolbarBottom">
+
+            <ImageView
+                android:id="@+id/iconAbout"
+                style="@style/toolbarBottom.ImageView"
+                android:src="@drawable/setting_white" />
+        </LinearLayout>
+    </LinearLayout>
+    <RelativeLayout
+        android:id="@+id/preferred_loadingPanel"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_60dp"
+        android:layout_centerInParent="true"
+        android:layout_marginRight="@dimen/dimen_60dp"
+        android:background="#DD111120"
+        android:alpha="0.5"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_horizontal|center_vertical"
+            android:orientation="horizontal">
+            <ProgressBar
+                android:id="@+id/FC_Prgogress"
+                android:layout_width="@dimen/dimen_30dp"
+                android:layout_height="@dimen/dimen_30dp"
+                android:indeterminate="true" />
+            <TextView
+                android:id="@+id/txtdownloadac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/progressloading"
+                android:layout_marginLeft="@dimen/dimen_five_5dp"
+                android:textColor="#fff"></TextView>
+            <TextView
+                android:id="@+id/txtdownloadaccount"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:textColor="#fff"></TextView>
+            <TextView
+                android:id="@+id/txtdownloadlist"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:text="@string/progressclinic"
+                android:textColor="#fff"></TextView>
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

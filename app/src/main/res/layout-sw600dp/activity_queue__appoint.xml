@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    tools:context="sg.com.ehealthassist.ehealthassist.Queue_Appt.ActivityQueue_Appoint">
+
+    <include layout="@layout/toolbar" />
+
+    <sg.com.ehealthassist.ehealthassist.CustomUI.MaterialTabHost
+        android:id="@+id/tabHost"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_58dp"
+        android:layout_below="@+id/toolbar"
+        app:accentColor="@color/cas_color_tab_yellow">
+
+    </sg.com.ehealthassist.ehealthassist.CustomUI.MaterialTabHost>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/myqueue_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llBottom"
+        android:layout_below="@+id/tabHost" />
+
+    <!--bottom menu -->
+    <!--   <LinearLayout
+           android:id="@+id/llBottom"
+           android:layout_width="match_parent"
+           android:layout_height="@dimen/toolbar_bottom_height"
+           android:layout_alignParentBottom="true"
+           android:background="@color/primary_700"
+           android:baselineAligned="false"
+           android:orientation="horizontal"
+           android:weightSum="5">
+
+           <LinearLayout
+               android:id="@+id/tabHome"
+               style="@style/toolbarBottom">
+
+               <ImageView
+                   android:id="@+id/iconHome"
+                   style="@style/toolbarBottom.ImageView"
+                   android:src="@drawable/home_white" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/tabProfile"
+               style="@style/toolbarBottom">
+
+               <ImageView
+                   android:id="@+id/iconProfile"
+                   style="@style/toolbarBottom.ImageView"
+                   android:src="@drawable/my_profile_white" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/tabClinic"
+               style="@style/toolbarBottom">
+
+               <ImageView
+                   android:id="@+id/iconClinic"
+                   style="@style/toolbarBottom.ImageView"
+                   android:src="@drawable/my_clinic_white" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/tabAppointment"
+               style="@style/toolbarBottom">
+
+               <ImageView
+                   android:id="@+id/iconAppt"
+                   style="@style/toolbarBottom.ImageView"
+                   android:src="@drawable/events_press" />
+           </LinearLayout>
+
+           <LinearLayout
+               android:id="@+id/tabSetting"
+               style="@style/toolbarBottom">
+
+               <ImageView
+                   android:id="@+id/iconAbout"
+                   style="@style/toolbarBottom.ImageView"
+                   android:src="@drawable/setting_white" />
+           </LinearLayout>
+       </LinearLayout>-->
+    <!-- End Bottom menu -->
+
+</RelativeLayout>

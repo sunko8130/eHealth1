@@ -1,0 +1,90 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorwhite"
+    tools:context="sg.com.ehealthassist.ehealthassist.Clinic.ActivityManualClinicDialog">
+
+    <LinearLayout
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:background="@color/colorPrimaryDark">
+        <customs_library.MyTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title_qrclinicDetail"
+            android:textColor="@color/colorwhite"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="@dimen/dimen_40dp"
+            android:textSize="@dimen/dimen_24dp"
+            android:layout_marginTop="@dimen/dimen_15dp"
+            />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llcontent"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/llBottom"
+        android:layout_below="@+id/toolbar"
+        android:layout_margin="@dimen/dimen_24dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/llBottom"
+            android:layout_below="@+id/llTop"
+            android:layout_margin="@dimen/dimen_one_1dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:text="@string/msg_enter_clinic"
+                android:textColor="@color/colorblack"
+                android:textIsSelectable="false"
+                android:textSize="@dimen/dimen_20dp" />
+
+            <TextView
+                android:id="@+id/txterror"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:text="@string/error_manual_clinic_Dialog"
+                android:textColor="#ff0000"
+                android:textSize="@dimen/dimen_16dp"
+                android:visibility="gone" />
+
+            <EditText
+                android:id="@+id/editTextClinicId"
+                style="@style/EditText"
+                android:gravity="center"
+                android:hint="@string/input_clinic_id"
+                android:textAllCaps="true"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:maxLength="@integer/max_length_unit_no"
+                android:textSize="@dimen/dimen_17dp"/>
+
+            <RelativeLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_margin="@dimen/dimen_10dp"
+                android:clickable="true">
+
+                <Button
+                    android:id="@+id/btnmanual"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/action_manual"
+                    android:textSize="@dimen/dimen_20dp"
+                    android:background="@drawable/roundedbutton"/>
+            </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

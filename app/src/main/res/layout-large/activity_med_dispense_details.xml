@@ -1,0 +1,264 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:orientation="vertical"
+    xmlns:card_view="http://schemas.android.com/tools"
+    tools:context="sg.com.ehealthassist.ehealthassist.Medication.ActivityMedDispenseDetails">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/toolbar" />
+
+        <ImageButton
+            android:id = "@+id/btnimg_deletemedical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:background="@android:color/transparent"
+            android:src="@drawable/ic_delete_forever_white_24dp">
+
+        </ImageButton>
+    </RelativeLayout>
+
+    <ScrollView
+        android:id="@+id/scrollitems"
+        android:layout_width="match_parent"
+        android:layout_height="fill_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_30dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:text="@string/medDispense_medtitle"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/dimen_16dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_five_5dp"
+                android:layout_marginBottom="@dimen/dimen_five_5dp"
+                android:layout_marginLeft="@dimen/dimen_10dp"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:background="#fff"
+                card_view:cardCornerRadius="2dp"
+                card_view:contentPadding="10dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/blue_100">
+
+                    <TextView
+                        android:id="@+id/label_patinetname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:text="@string/medDispense_name"
+                        android:textColor="#000"
+                        android:textSize="@dimen/dimen_15dp" />
+
+                    <TextView
+                        android:id="@+id/txt_dtlpatinetname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/dimen_10dp"
+                        android:layout_toRightOf="@+id/label_visitdate"
+
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:textSize="@dimen/dimen_16dp" />
+
+                    <TextView
+                        android:id="@+id/label_patinetnrictype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_dtlpatinetname"
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/dimen_five_5dp"
+                        android:textColor="#000"
+                        android:text="@string/medDispense_nrictype"
+                        android:textSize="@dimen/dimen_15dp" />
+
+                    <TextView
+                        android:id="@+id/txt_dtlpatinetnrictype"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_dtlpatinetname"
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/dimen_five_5dp"
+                        android:layout_toRightOf="@+id/label_visitdate"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/dimen_16dp" />
+
+                    <TextView
+                        android:id="@+id/label_patinetnric"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_dtlpatinetnrictype"
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/dimen_five_5dp"
+                        android:text="@string/medDispense_nric"
+                        android:textColor="#000"
+                        android:textSize="@dimen/dimen_15dp"/>
+
+                    <TextView
+                        android:id="@+id/txt_dtlpatinetnric"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_dtlpatinetnrictype"
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/dimen_five_5dp"
+                        android:layout_toRightOf="@+id/label_visitdate"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/dimen_16dp" />
+
+                    <TextView
+                        android:id="@+id/label_patinetdob"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_dtlpatinetnric"
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/dimen_five_5dp"
+                        android:textColor="#000"
+                        android:text="@string/medDispense_dob"
+                        android:textSize="@dimen/dimen_15dp" />
+
+                    <TextView
+                        android:id="@+id/txt_dtlpatinetdob"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_dtlpatinetnric"
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/dimen_five_5dp"
+                        android:layout_toRightOf="@+id/label_visitdate"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/dimen_16dp" />
+
+                    <TextView
+                        android:id="@+id/label_visitno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_dtlpatinetdob"
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/dimen_five_5dp"
+                        android:textColor="#000"
+                        android:text="@string/medDispense_visitno"
+                        android:textSize="@dimen/dimen_15dp" />
+
+                    <TextView
+                        android:id="@+id/txt_dtlvisitno"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_dtlpatinetdob"
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/dimen_five_5dp"
+                        android:layout_toRightOf="@+id/label_visitdate"
+                        android:textStyle="bold"
+                        android:textColor="#000"
+                        android:textSize="@dimen/dimen_16dp" />
+
+                    <TextView
+                        android:id="@+id/label_visitdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_dtlvisitno"
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/dimen_five_5dp"
+                        android:text="@string/medDispense_visitdate"
+                        android:textColor="#000"
+                        android:textSize="@dimen/dimen_15dp" />
+
+                    <TextView
+                        android:id="@+id/txt_dtlvisitdate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_dtlvisitno"
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/dimen_five_5dp"
+                        android:layout_toRightOf="@+id/label_visitdate"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/dimen_16dp" />
+
+                    <TextView
+                        android:id="@+id/label_clinicname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_dtlvisitdate"
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/dimen_five_5dp"
+                        android:text="@string/medDispense_clinic"
+                        android:textColor="#000"
+                        android:textSize="@dimen/dimen_15dp" />
+
+                    <TextView
+                        android:id="@+id/txt_dtlclinicname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/txt_dtlvisitdate"
+                        android:layout_marginLeft="@dimen/dimen_20dp"
+                        android:layout_marginTop="@dimen/dimen_five_5dp"
+                        android:layout_toRightOf="@+id/label_visitdate"
+                        android:textColor="#000"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/dimen_16dp" />
+
+                </RelativeLayout>
+                </android.support.v7.widget.CardView>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/dimen_30dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                >
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/dimen_20dp"
+                    android:text="@string/medDispense_medicals"
+                    android:textColor="@color/colorblack"
+                    android:textSize="@dimen/dimen_16dp"
+                    android:textStyle="bold" />
+
+            </RelativeLayout>
+
+            <sg.com.ehealthassist.ehealthassist.CustomUI.CustomListView
+                android:id="@+id/lvmedication_item"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/dimen_10dp">
+
+            </sg.com.ehealthassist.ehealthassist.CustomUI.CustomListView>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="7dp"
+        card_view:cardCornerRadius="5dp"
+        card_view:contentPadding="5dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="@dimen/dimen_five_5dp">
+                <ImageView
+                    android:id="@+id/imgstatus"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:src = "@drawable/v_tick_50"
+                    android:layout_marginLeft="20dp"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_eventname"
+                    android:textColor="@color/material_orange"
+                    android:text="Living with Cancer Education"
+                    android:layout_marginLeft="@dimen/dimen_10dp"
+                    android:layout_marginTop="@dimen/dimen_five_5dp"
+                    android:textStyle="bold"
+                    android:layout_marginRight="10dp"
+                    android:textSize="16dp"/>
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/txt_event_venue"
+                android:text="Nov,22 2016 - Nov,25 2016"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:textSize="14dp"
+                android:textColor="@color/colorblack"
+                android:textStyle="bold"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lbl_event_date"
+                    android:text="Date :"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorblack"
+                    android:textStyle="bold|italic"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_event_date"
+                    android:text="Nov,22 2016 to Nov,25 2016"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:textSize="14dp"
+                    android:textColor="@color/colorblack"
+                    android:textStyle="bold|italic"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/lbl_event_time"
+                    android:text="Time :"
+                    android:layout_marginLeft="20dp"
+                    android:textSize="14dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:textColor="@color/colorblack"
+                    android:textStyle="bold|italic"/>
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/txt_event_time"
+                    android:text="13:00 to 14:00"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="14dp"
+                    android:layout_marginTop="@dimen/dimen_10dp"
+                    android:textColor="@color/colorblack"
+                    android:textStyle="bold|italic"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txt_event_description"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Join us to learn more about various coping strategies and share"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textSize="14dp"
+                android:layout_marginTop="@dimen/dimen_10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="@dimen/dimen_10dp"
+                android:layout_marginBottom="@dimen/dimen_10dp"/>
+
+        </LinearLayout>
+
+    </android.support.v7.widget.CardView>
+
+
+
+</RelativeLayout>

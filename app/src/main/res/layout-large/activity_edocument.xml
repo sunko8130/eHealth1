@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="sg.com.ehealthassist.ehealthassist.eDocument.ActivityEDocument">
+
+    <include layout="@layout/toolbar" />
+
+    <ImageButton
+        android:id="@+id/imgbtn_edocrefresh"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:src="@drawable/ic_refresh_white_24dp"
+        android:background="@android:color/transparent"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_15dp"/>
+
+    <sg.com.ehealthassist.ehealthassist.CustomUI.MaterialTabHost
+        android:id="@+id/tabHostedoc"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/dimen_50dp"
+        android:layout_below="@+id/toolbar"
+        app:accentColor="@color/cas_color_tab_yellow">
+
+    </sg.com.ehealthassist.ehealthassist.CustomUI.MaterialTabHost>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/edoc_pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/llBottom"
+        android:layout_below="@+id/tabHostedoc" />
+
+</RelativeLayout>

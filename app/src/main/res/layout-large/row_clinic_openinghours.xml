@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+    <TextView
+        android:id="@+id/txt_openday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=""
+        android:textSize="@dimen/dimen_16dp"
+        android:textColor="#000"
+        android:layout_marginLeft="@dimen/dimen_10dp">
+
+    </TextView>
+
+    <sg.com.ehealthassist.ehealthassist.CustomUI.CustomGridView
+        android:id="@+id/GridView_toolbar"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:layout_marginLeft="@dimen/dimen_20dp"
+        android:listSelector="@android:color/transparent" />
+
+    <!--<TextView
+        android:id="@+id/tablelayoutopenhour"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:textColor="#000"
+        android:textSize="16sp"
+        android:maxLines="10"
+        ></TextView>-->
+
+</LinearLayout>

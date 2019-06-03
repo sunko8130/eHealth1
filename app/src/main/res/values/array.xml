@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="array_test_clinicId">
+        <item>1000</item>
+        <item>1001</item>
+        <item>1002</item>
+        <item>1006</item>
+        <item>2006</item>
+        <item>2118</item>
+        <item>8000</item>
+        <item>8081</item>
+        <item>8165</item>
+    </array>
+    <array name="tabs">
+        <item>Basic Information</item>
+        <item>Medical condition</item>
+    </array>
+    <array name="edoc_tabs">
+        <item>Fin</item>
+        <item>Lad</item>
+        <item>Rad</item>
+        <item>Certs</item>
+    </array>
+
+    <array name="arrays_language">
+        <item>CANTONESE</item>
+        <item>CHINESE</item>
+        <item>ENGLISH</item>
+        <item>HAKKA</item>
+        <item>HOKKIEN</item>
+        <item>JAPANESE</item>
+        <item>MALAY</item>
+        <item>OTHERS</item>
+        <item>TAMIL</item>
+        <item>TEOCHEW</item>
+        <item>THAI</item>
+
+    </array>
+    <array name="appointment_slot">
+        <item>Calendar</item>
+        <item>Slot</item>
+    </array>
+    <array name="my_tabs">
+        <item>Clinics</item>
+        <item>Booked lists</item>
+    </array>
+    <array name="my_queue_appt">
+        <item>Queue</item>
+        <item>Appointments</item>
+
+    </array>
+
+    <string-array name="array_nric_type_passport">
+        <item>OTHER</item>
+        <item>PINK IC</item>
+        <item>BLUE IC</item>
+        <item>FIN</item>
+        <item>Passport</item>
+
+    </string-array>
+
+    <string-array name="array_nric_type">
+    <item>OTHER</item>
+    <item>PINK IC</item>
+    <item>BLUE IC</item>
+    <item>FIN</item>
+    </string-array>
+
+    <string-array name="array_relation">
+        <item>PARENT</item>
+        <item>SPOUSE</item>
+        <item>SIBLING</item>
+        <item>CHILD</item>
+        <item>Relative/Next-Of-Kin</item>
+    </string-array>
+    <string-array name="array_myself_relation">
+        <item>MYSELF</item>
+        <item>PARENT</item>
+        <item>SPOUSE</item>
+        <item>SIBLING</item>
+        <item>CHILD</item>
+        <item>Relative/Next-Of-Kin</item>
+    </string-array>
+
+    <string-array name="array_marriedStaus">
+        <item>UNKNOWN</item>
+        <item>SEPARATED</item>
+        <item>DIVORCED</item>
+        <item>MARRIED</item>
+        <item>SINGLE</item>
+        <item>WIDOWED</item>
+        <item>OTHERS</item>
+    </string-array>
+    <string-array name="array_gender">
+        <item>FEMALE</item>
+        <item>MALE</item>
+    </string-array>
+
+    <string-array name="array_country_prefixph">
+        <item>+65</item>
+    </string-array>
+    <string-array name="array_minutes_to_lock_profile">
+        <item>Never</item>
+        <item>Immediate</item>
+        <item>After 1 Minute</item>
+        <item>After 3 Minutes</item>
+        <item>After 5 Minutes</item>
+        <item>After 10 Minutes</item>
+        <item>After 15 Minutes</item>
+        <item>After 20 Minutes</item>
+    </string-array>
+    <string-array name="array_med_reminder">
+        <item>Once a day</item>
+        <item>twice a day</item>
+        <item>3 times a day</item>
+        <item>4 times a day</item>
+        <item>5 times a day</item>
+    </string-array>
+    <string-array name="array_med_week">
+        <item>Sun</item>
+        <item>Mon</item>
+        <item>Tue</item>
+        <item>Wed</item>
+        <item>Thu</item>
+        <item>Fri</item>
+        <item>Sat</item>
+    </string-array>
+
+    <array name="appt_doctor_color">
+        <item>@color/bg_psi3hr_color</item>
+        <item>@color/bg_psi24hr_color</item>
+        <item>@color/bg_pm25_color</item>
+        <item>@color/colorAccent</item>
+    </array>
+
+    <string-array name="array_gp_clinic_type">
+        <item>General</item>
+    </string-array>
+    <string-array name="array_menu">
+        <item>Search Clinic</item>
+        <item>Queue &amp; Appointment</item>
+        <item>Event</item>
+        <item>eDocument</item>
+        <item>Haze Info</item>
+        <item>Medicine Reminder</item>
+        <item>Message</item>
+        <item>eMart</item>
+
+    </string-array>
+
+    <string-array name="clinictype">
+        <item>All</item>
+        <item>General Clinic</item>
+        <item>Specialist Clinic</item>
+        <item>Dental Clinic</item>
+    </string-array>
+
+    <string-array name="freqcode">
+        <item>B</item>
+        <item>T</item>
+        <item>Q</item>
+        <item>F</item>
+        <item>M</item>
+        <item>N</item>
+        <item>D</item>
+        <item>E</item>
+        <item>W</item>
+    </string-array>
+    <string-array name="weekslotname">
+        <item>Sunday</item>
+        <item>Monday</item>
+        <item>Tueday</item>
+        <item>Wednesday</item>
+        <item>Thursday</item>
+        <item>Friday</item>
+        <item>Saturday</item>
+    </string-array>
+
+    <string-array name="ratequestion">
+        <item>Doctor</item>
+        <item>Staff</item>
+        <item>Clinic</item>
+        <!--<item>Q4</item>
+        <item>Q5</item>
+        <item>Q6</item>-->
+    </string-array>
+
+    <string-array name="array_nationality">
+        <item>AMERICAN,UNITED STATES</item>\
+        <item>AUSTRALIAN</item>
+        <item>AUSTRIAN</item>
+        <item>BANGLADESHI</item>
+        <item>BELGIAN</item>
+        <item>BRAZILIAN</item>
+        <item>BRITISH</item>
+        <item>BRUNEIAN</item>
+        <item>CAMBODIAN</item>
+        <item>CANADIAN</item>
+        <item>CHINESE</item>
+        <item>CHINESE, MACAO</item>
+        <item>DANISH</item>
+        <item>EAST TIMORESE</item>
+        <item>FILIPINO</item>
+        <item>FINNISH</item>
+        <item>FRENCH</item>
+        <item>GERMAN</item>
+        <item>GREEK</item>
+        <item>HONGKONGER</item>
+        <item>ICELANDER</item>
+        <item>INDIAN</item>
+        <item>INDONESIAN</item>
+        <item>IRANIAN</item>
+        <item>IRAQI</item>
+        <item>IRISH</item>
+        <item>ISRAELI</item>
+        <item>ITALIAN</item>
+        <item>JAPANESE</item>
+        <item>KOREAN, NORTH KOREA</item>
+        <item>KOREAN, SOUTH KOREA</item>
+        <item>KUWAITI</item>
+        <item>MALAYSIAN</item>
+        <item>MALDIVIAN</item>
+        <item>MEXICAN</item>
+        <item>MONGOLIAN</item>
+        <item>MYANMAR</item>
+        <item>NATIONALITY UNKNOWN</item>
+        <item>NEPALESE</item>
+        <item>NETHERLANDS</item>
+        <item>NEW ZEALANDER</item>
+        <item>NON-SINGAPORE CITIZEN</item>
+        <item>NORWEGIAN</item>
+        <item>PAKISTANI</item>
+        <item>PAPUA NEW GUINEAN</item>
+        <item>PORTUGUESE</item>
+        <item>ROMANIAN</item>
+        <item>RUSSIAN</item>
+        <item>SINGAPOREAN</item>
+        <item>SOUTH AFRICAN</item>
+        <item>SWEDISH</item>
+        <item>SWISS</item>
+        <item>TAIWANESE</item>
+        <item>THAI</item>
+        <item>VIETNAMESE</item>
+    </string-array>
+
+</resources>

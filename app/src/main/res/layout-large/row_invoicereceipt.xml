@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <TextView
+        android:id= "@+id/txtclinic_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Assurance Technology"
+        android:textSize="14dp"
+        android:layout_marginLeft="10dp"
+        android:textColor="@color/colorblack"
+        android:layout_toLeftOf="@+id/txtrinvoiceamount_value"
+        android:layout_marginTop="5dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/txtclinic_name"
+        android:layout_toLeftOf="@+id/txtrinvoiceamount_value"
+        android:layout_marginRight="@dimen/dimen_five_5dp">
+        <TextView
+            android:id= "@+id/txtinvoicedate_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/txtclinic_name"
+            android:layout_marginTop="5dp"
+            android:textSize="13dp"
+            android:textColor="@color/colorblack"
+            />
+
+        <TextView
+            android:id= "@+id/txtinvoiceno_value"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="(Name)"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/txtclinic_name"
+            android:layout_toRightOf="@+id/txtinvoicedate_value"
+            android:layout_marginTop="5dp"
+            android:textSize="13dp"
+            android:textColor="@color/colorblack"
+
+            />
+        </LinearLayout>
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id = "@+id/imag_rightarrow"
+        android:src="@drawable/ic_chevron_right"
+        android:layout_alignParentRight="true"
+
+        android:layout_centerVertical="true"
+        android:layout_marginRight="10dp"
+
+        />
+    <TextView
+        android:id= "@+id/txtrinvoiceamount_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/imag_rightarrow"
+        android:layout_centerVertical="true"
+        android:text="Name"
+        android:textColor="@color/colorblack"
+        android:textSize="18dp"
+        android:textStyle="bold"
+        />
+
+
+</RelativeLayout>

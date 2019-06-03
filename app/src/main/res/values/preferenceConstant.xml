@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+  <!--  <string name="preference_constant">CASConstantData</string>
+    <string name="pref_permanent_clinic_download_flag">downloadflag</string>
+
+    <string name="pref_is_logged_in">IsLoggedIn</string>
+    <string name="pref_is_account_verified">IsUsersAccountVerified</string>
+    <string name="pref_login_Access_token">AccessToken</string>
+    <string name="pref_main_user_data_email">UsersEmail</string>
+    <string name="pref_login_memberId">MemberId</string>
+    <string name="pref_main_user_data_hp">UsersHP</string>
+    <string name="pref_main_user_data_hp_iso">UsersHPISO</string>
+    <string name="pref_main_user_data_hp_code">UsersHPCode</string>-->
+
+</resources>

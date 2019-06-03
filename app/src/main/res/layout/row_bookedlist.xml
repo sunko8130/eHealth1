@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="@dimen/dimen_five_5dp"
+        card_view:cardCornerRadius="@dimen/dimen_two_2dp"
+        card_view:contentPadding="@dimen/dimen_10dp">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <ImageView
+                android:id="@+id/booked_doctor_image"
+                android:layout_width="@dimen/dimen_50dp"
+                android:layout_height="@dimen/dimen_50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="@dimen/dimen_16dp"
+                android:src="@drawable/image2"
+                />
+
+         <!--   <com.android.volley.toolbox.NetworkImageView
+                android:id="@+id/booked_doctor_image"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginRight="16dp"
+                android:src="@drawable/image2"
+
+
+                />-->
+
+            <TextView
+                android:id="@+id/booked_doctor_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/dimen_three_3dp"
+                android:layout_toRightOf="@+id/booked_doctor_image"
+                android:text="Mr Lwin"
+                android:textColor="@android:color/black"
+                android:textSize="@dimen/dimen_14dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/clinic_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/booked_doctor_name"
+                android:layout_margin="@dimen/dimen_three_3dp"
+                android:textSize="@dimen/dimen_14dp"
+                android:layout_toRightOf="@+id/booked_doctor_image"
+                android:text="Gateway Dental Center " />
+
+            <Button
+                android:id="@+id/button_detail"
+                android:layout_width="@dimen/dimen_70dp"
+                android:layout_height="@dimen/dimen_30dp"
+                android:layout_alignParentRight="true"
+                android:layout_below="@+id/clinic_name"
+                android:background="@drawable/slot_rounded"
+                android:text="@string/appt_btn_detail"
+                android:textColor="#fff"
+                android:textSize="@dimen/dimen_14dp" />
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>
+</RelativeLayout>

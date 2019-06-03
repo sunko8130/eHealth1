@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txt_openday"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ttt"
+        android:textColor="@color/blue_primary_900"
+        android:textSize="15sp"
+        android:textStyle="bold">
+
+    </TextView>
+
+    <sg.com.ehealthassist.ehealthassist.CustomUI.CustomListView
+        android:id="@+id/listview_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:divider="@android:color/transparent"
+        android:layout_marginTop="@dimen/dimen_five_5dp"
+        android:layout_marginLeft="@dimen/dimen_60dp"
+        android:listSelector="@android:color/transparent" />
+</LinearLayout>

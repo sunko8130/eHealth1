@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- GCM -->
+   <!-- <string name="gcm_sender_id">632971709154</string>
+    <string name="pref_gcm_property_reg_id">gcm_registration_id</string>
+    <string name="pref_gcm_appversion">appVersion</string>
+    <string name="mobile_jwtclientid">099153c2625149bc8ecb3e85e03f0022</string>
+    <string name="mobile_jwtgranttype">password</string>
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBYogKaSYTXq-p3SdhD6qDTipiyLfKjV2E</string>-->
+    <string name="google_maps_key" templateMergeStrategy="preserve" translatable="false">AIzaSyBYogKaSYTXq-p3SdhD6qDTipiyLfKjV2E</string>
+    <string name="google_app_id">632971709154-go70qlgblocg88a157o52annqfb5gtor.apps.googleusercontent.com</string>
+    <string name="google_maps_package_name">com.google.android.apps.maps</string>
+    <string name="url_google_map_install">market://details?id=com.google.android.apps.maps</string>
+    <string name="Load_url">http://www.google.com</string>
+    <string name="testpwd">cas76238</string>
+    <string name="gcm_sender_id">632971709154</string>
+    <string name="mobile_jwtclientid">099153c2625149bc8ecb3e85e03f0022</string>
+    <string name="mobile_jwtgranttype">password</string>
+    <string name="default_weekslot">0800,1,2,3,4,5,6,7</string>
+
+    <string name="main_url">http://ehealthassist-uat.southeastasia.cloudapp.azure.com/eha_jwt/v1</string>
+    <string name="url_term_privacy">http://ehealthassist.southeastasia.cloudapp.azure.com/</string>
+    <string name="medicaldispense_URL">http://ehealthassist-uat.southeastasia.cloudapp.azure.com/MedicationServices</string>
+    <string name="URL_Authtoken">http://ehealthassist-uat.southeastasia.cloudapp.azure.com/AuthenticationService/oauth2/token</string>
+
+</resources>

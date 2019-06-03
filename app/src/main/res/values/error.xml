@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--<string name="error_response_unauthorize">Currently you haven\'t authorize ,Please Make sure your account Verification!!</string>-->
+    <string name="error_response_invalidtoken_code">InvalidToken</string>
+    <string name="error_response_unauthorize_code">Unauthorized</string>
+    <string name="error_response_invalidtoken_message">Unauthorize User</string>
+    <!-- ActivityMedicalProfile -->
+    <string name="error_response_upload_profile_status_Failed">Verified account is required to perform this action. Please verify your account</string>
+    <string name="response_upload_profile_status_local_success">Profile Save Successfully</string>
+    <!-- ActivityDoctorOnDuty !-->
+    <string name="error_response_doctoronduty_no_information_avaliavle">Sorry, No Information Avaliable for Now.</string>
+    <!-- Activity Setting-->
+    <!--<string name="error_response_upload_profile_status_InvalidUserToken">Your account had not been verified. Kindly check your email or press SMS to verify your account</string>-->
+    <string name="error_response_upload_profile_status_InvalidUserToken">Your account had not been verified. Kindly request SMS to verify your account</string>
+    <string name="error_response_sms_reverify">Your account had not been verified. Click on Re-verify to get OTP code via SMS to </string>
+    <!-- <string name="error_verify1">Your account had not been verified </string>
+     <string name="error_verify2">, submit the OTP code to complete the account verification </string>-->
+    <!--VolleyQueueRegister-->
+    <string name="error_response_queue_request_Submitted">Request Submitted.It might take up to 10 minutes for the clinic to respond to your request.
+          A notification will be sent to you once the clinic respond.</string>
+    <!-- VolleyQueueWatch-->
+    <string name="error_response_check_queue_request_invalidclinicid">Invalid Clinic Id, Please Try Again</string>
+    <!--VolleyUploadMedicalProfile -->
+    <string name="error_response_upload_profile_status_SUCCESS"> Clinic can now download your profile by your NRIC</string>
+    <string name="error_response_upload_profile_submission_success">You have authorized</string>
+    <!-- VolleyCancle -->
+    <string name="errror_response_cancel_appointment_Fail">Please Choose Patient able to book</string>
+
+    <string name="error_response_clinic_close">Clinic Closed , No Information Avaliable for Now.</string>
+    <string name="error_response_queue_request_close">Clinic is close ,Can\'t make Queue Request for Now. Please Try Later</string>
+    <string name="error_response_cancel_appointment">Are you sure You want to  Cancel appointment?</string>
+    <string name="error_response_queue_delete">Are you sure You want to Cancel?</string>
+    <string name="error_response_otp_empty">OTP cannot be empty</string>
+    <string name="error_response_appointment_date">No Appointment Available</string>
+    <string name="response_queue_cancle">Queue status changed to Cancelled successfully. Cancelled queue will be remove after 24 hours based on the registration time</string>
+    <string name ="profile_invalid">Selected profile is not valid,missing profile data,Please use my profile function to update profile data.</string>
+
+
+</resources>

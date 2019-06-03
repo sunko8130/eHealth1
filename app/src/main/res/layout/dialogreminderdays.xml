@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+      >
+        <TextView
+            android:id="@+id/main_toolbar_title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="@string/dayDialog_title"
+            android:gravity="center_vertical"
+            android:textSize="@dimen/dimen_18dp"
+            android:layout_marginLeft="@dimen/dimen_20dp"
+            android:textColor="@color/colorwhite"/>
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/dayDialog_message"
+        android:textSize="@dimen/dimen_16dp"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_10dp"
+        android:textColor="@color/colorlightblue"/>
+
+    <EditText
+        android:id="@+id/edt_numberofdays"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_15dp"
+        android:background="@drawable/edittext_round"
+        android:hint=""
+        android:padding="@dimen/dimen_8dp"
+        android:inputType="number"
+        android:singleLine="true"
+        android:textColor="@color/colorblack"
+        android:textColorHighlight="@color/colorhint"
+        android:textSize="@dimen/dimen_16dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/dimen_10dp">
+
+    <Button
+        android:id="@+id/btnremidnersave"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/dimen_38dp"
+        android:layout_marginLeft="@dimen/dimen_10dp"
+        android:layout_marginRight="@dimen/dimen_10dp"
+        android:layout_marginTop="@dimen/dimen_20dp"
+        android:layout_marginBottom="@dimen/dimen_10dp"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/buttonround_drive_blue"
+        android:text="@string/dayDialog_button"
+        android:textColor="@color/colorwhite"
+        android:textSize="@dimen/dimen_16dp"
+         />
+    </RelativeLayout>
+</LinearLayout>

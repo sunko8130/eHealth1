@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="country_code">
+        <item>AMERICAN, UNITED STATES</item>
+        <item>AUSTRALIAN</item>
+        <item>AUSTRIAN</item>
+        <item>BANGLADESHI</item>
+        <item>BELGIAN</item>
+        <item>BRAZILIAN</item>
+        <item>BRITISH</item>
+        <item>BRUNEIAN</item>
+        <item>CAMBODIAN</item>
+        <item>CANADIAN</item>
+        <item>CHINESE</item>
+        <item>CHINESE, MACAO</item>
+        <item>DANISH</item>
+        <item>East Timorese</item>
+        <item>FILIPINO</item>
+        <item>FINNISH</item>
+        <item>FRENCH</item>
+        <item>GERMAN</item>
+        <item>GREEK</item>
+        <item>HONGKONGER</item>
+        <item>ICELANDER</item>
+        <item>INDIAN</item>
+        <item>INDONESIAN</item>
+        <item>IRANIAN</item>
+        <item>IRAQI</item>
+        <item>IRISH</item>
+        <item>ISRAELI</item>
+        <item>ITALIAN</item>
+        <item>JAPANESE</item>
+        <item>KOREAN, NORTH KOREA</item>
+        <item>KOREAN SOUTH KOREA</item>
+        <item>KUWAITI</item>
+        <item>MALAYSIAN</item>
+        <item>MALDIVIAN</item>
+        <item>MEXICAN</item>
+        <item>MONGOLIAN</item>
+        <item>MYANMAR</item>
+        <item>NATIONALITY UNKNOWN</item>
+        <item>NEPALESE</item>
+        <item>Netherlands</item>
+        <item>NEW ZEALANDER</item>
+        <item>Non-Singapore Citizen</item>
+        <item>NORWEGIAN</item>
+        <item>PAKISTANI</item>
+        <item>PAPUA NEW GUINEAN</item>
+        <item>PORTUGUESE</item>
+        <item>ROMANIAN</item>
+        <item>RUSSIAN</item>
+        <item>SINGAPOREAN</item>
+        <item>SOUTH AFRICAN</item>
+        <item>SWEDISH</item>
+        <item>SWISS</item>
+        <item>TAIWANESE</item>
+        <item>THAI</item>
+        <item>VIETNAMESE</item>
+    </string-array>
+
+   <string-array name="nationality_code">
+       <item>US</item>
+       <item>AU</item>
+       <item>AT</item>
+       <item>BD</item>
+       <item>BE</item>
+       <item>BR</item>
+       <item>GB</item>
+       <item>BN</item>
+       <item>KA</item>
+       <item>CA</item>
+       <item>CN</item>
+       <item>MO</item>
+       <item>DK</item>
+       <item>TP</item>
+       <item>PH</item>
+       <item>FI</item>
+       <item>FR</item>
+       <item>DG</item>
+       <item>GR</item>
+       <item>HK</item>
+       <item>IS</item>
+       <item>IN</item>
+       <item>ID</item>
+       <item>IR</item>
+       <item>IQ</item>
+       <item>IE</item>
+       <item>IL</item>
+       <item>IT</item>
+       <item>JP</item>
+       <item>KP</item>
+       <item>KR</item>
+       <item>KW</item>
+       <item>MY</item>
+       <item>MV</item>
+       <item>MX</item>
+       <item>MN</item>
+       <item>BU</item>
+       <item>UN</item>
+       <item>NP</item>
+       <item>NT</item>
+       <item>NZ</item>
+       <item>NS</item>
+       <item>NO</item>
+       <item>PK</item>
+       <item>PG</item>
+       <item>PT</item>
+       <item>RO</item>
+       <item>RF</item>
+       <item>SG</item>
+       <item>ZA</item>
+       <item>SE</item>
+       <item>CH</item>
+       <item>TW</item>
+       <item>TH</item>
+       <item>VN</item>
+   </string-array>
+
+</resources>
